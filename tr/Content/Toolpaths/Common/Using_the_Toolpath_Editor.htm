@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Toolpaths|Common" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Toolpath editor allows you to modify your toolpaths and change the way areas of your part are machined." />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Using the Toolpath Editor</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Using the Toolpath Editor</h1>
+                                                <p>The Toolpath Editor gives you a fine level of control over toolpath 
+ motion. You can make modifications to the tool motion created by Mastercam 
+ and change the way areas of the toolpath are machined. Use the Toolpath 
+ Editor to modify, add, move, or delete points. For toolpaths that include 
+ them, you can also delete selected sections, cuts, or passes.</p>
+                                                <p>
+                                                    <img src="../ToolpathsPics/Toolpath_editor_dialog_box.png" alt="The toolpath editor dialog box." />
+                                                </p>
+                                                <p>Access the Toolpath Editor by selecting a single toolpath in the 
+ <span class="Bold">Toolpaths Manager</span>, right-clicking on the operation title, and then choosing 
+ <span class="Bold">Toolpath Editor</span> from the right-click menu.</p>
+                                                <p>
+                                                    <img src="../ToolpathsPics/Toolpaths_editor.png" alt="The toolpath editor selected in the right-click menu." class="MaxWidth" />
+                                                </p>
+                                                <p>Make all other necessary changes to the toolpath (such as tool or parameter 
+ changes) <span class="Italic">before</span> using the Toolpath Editor. 
+ The Toolpath Editor locks the toolpath after you edit it. Locked toolpaths 
+ are not updated by Mastercam. To further modify the toolpath, you must 
+ unlock it. If the toolpath is regenerated after editing, any custom modifications 
+ will be overwritten.</p>
+                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                    <p>Use the <span class="Bold">Toolpath Hole Definition</span> function panel
+ when you need to edit a hole-making toolpath.</p>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />To add a new point to a toolpath</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <ol style="list-style-type: decimal;">
+                                                            <li value="1">In the Toolpaths Manager list, select the 
+	 toolpath operation to edit, right-click on the operation title, and 
+	 choose <span class="Bold">Toolpath Editor</span> from the Toolpaths 
+	 Manager right-click menu.</li>
+                                                            <li value="2">In the <span class="Bold">Edit 
+	 Toolpath</span> dialog box, use <span class="Bold">Before</span> to indicate whether to insert the new point in the toolpath 
+	 before or after the point position you choose in the next step.</li>
+                                                            <li value="3">Click <span class="Bold">Add point</span> 
+	 and, when prompted, select a position in the graphics window. Mastercam adds the 
+	 new point to the toolpath and the point appears highlighted in the 
+	 graphics window.</li>
+                                                            <li value="4">Continue editing the toolpath, or click 
+	 <span class="Bold">OK</span> to accept all changes made to the toolpath 
+	 in this session of the Toolpath Editor.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />To delete a toolpath section</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <ol style="list-style-type: decimal;">
+                                                            <li value="1">In the Toolpaths Manager, select the toolpath 
+	 operation to edit, right-click on the operation title, and choose 
+	 <span class="Bold">Toolpath editor</span> from the Toolpaths 
+	 Manager right-click menu.</li>
+                                                            <li value="2">In the <span class="Bold">Edit 
+	 Toolpath</span> dialog box, use the <span class="Bold">Point</span> 
+	 field to select the first toolpath point position of the section to 
+	 delete. Then click <span class="Bold">Delete section</span>.</li>
+                                                            <li value="3">In the <span class="Bold">Section</span>
+	 dialog box, set the section endpoint by:</li>
+                                                            <ul>
+                                                                <li>Clicking the up and down scroll arrows, 
+		 or clicking in the field and using the mouse wheel or arrow keys 
+		 to scroll.</li>
+                                                                <li>Entering a number directly in the field.</li>
+                                                                <li>Clicking a position in the graphics 
+		 window. When you choose an endpoint, the defined section is highlighted 
+		 in the graphics window.</li>
+                                                            </ul>
+                                                            <li value="4">To delete the defined section and return 
+	 to the <span class="Bold">Edit Toolpath</span> dialog box, click <span class="Bold">OK</span>.</li>
+                                                            <li value="5">Continue editing the toolpath, or click 
+	 <span class="Bold">OK</span> to accept all changes made to the toolpath 
+	 in this session of the Toolpath Editor.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />To move a toolpath point</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <ol style="list-style-type: decimal;">
+                                                            <li value="1">In the Toolpaths Manager list, select the 
+	 toolpath operation you want to edit, right-click on the operation 
+	 title, and choose <span class="Bold">Toolpath editor</span> from the 
+	 Toolpaths 
+	 Manager right-click menu.</li>
+                                                            <li value="2">In the <span class="Bold">Edit 
+	 Toolpath</span> dialog box, use one of the following methods to select 
+	 the toolpath point position to move:<ul><li>Click the up and down scroll arrows, or click in the field and use the mouse wheel or arrow keys to scroll.</li><li>Enter a number directly in the field.</li><li>Click a position in the graphics window.</li></ul></li>
+                                                            <li value="3">Click <span class="Bold">Move point</span> 
+	 and, when prompted, select a new position in the graphics window. 
+	 Mastercam edits the toolpath to reflect the new point position, and this 
+	 position is highlighted in the graphics window.</li>
+                                                            <li value="4">Continue editing the toolpath, or click 
+	 <span class="Bold">OK</span> to accept all changes made to the toolpath 
+	 in this session of the Toolpath Editor.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />To edit a toolpath point position:</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <ol style="list-style-type: decimal;">
+                                                            <li value="1">In the Toolpaths Manager, select the toolpath 
+	 operation you want to edit, right-click on the operation title, and 
+	 choose <span class="Bold">Toolpath editor</span> from the Toolpaths 
+	 Manager right-click menu.</li>
+                                                            <li value="2">In the <span class="Bold">Edit 
+	 Toolpath</span> dialog box, use the <span class="Bold">Point</span> 
+	 field to select the first toolpath point position of the section to 
+	 delete. Then click <span class="Bold">Edit point</span>.</li>
+                                                            <li value="3">Use the <span class="Bold">Edit 
+	 Point Parameters</span> dialog box to change the toolpath motion at the 
+	 selected point and modify other toolpath actions at that point, such 
+	 as turning coolant on or off, and changing cutter compensation.</li>
+                                                            <li value="4">When you finish entering changes for the 
+	 selected point position, click <span class="Bold">OK</span> to return 
+	 to the <span class="Bold">Edit Toolpath</span> dialog box.</li>
+                                                            <li value="5">If you changed the feed rate in step 3 and 
+	 chose <span class="Bold">Section</span> as the change type, the <span class="Bold">Section</span> dialog box displays next. 
+	 Use it to enter the endpoint for the new feed rate. As you choose 
+	 the end point, the defined section is highlighted in the graphics 
+	 window. To accept it and exit the dialog box, click <span class="Bold">OK</span>.</li>
+                                                            <li value="6">Continue editing the toolpath, or click 
+	 <span class="Bold">OK</span> to accept all changes made to the toolpath 
+	 in this session of the Toolpath Editor.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Toolpath editor tips</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <ul>
+                                                            <li>
+                                                                <p>Use the fields in the <span class="Bold">Position</span>
+	 section of the <span class="Bold">Edit Toolpath</span> dialog box to select a toolpath point 
+	 position (XYZ coordinates). If the toolpath includes multiple passes 
+	 and depth cuts, you can also choose to delete a pass (XY motion) or 
+	 cut (Z motion) in that point position. Use one of the following selection 
+	 methods:</p>
+                                                                <ul>
+                                                                    <li>Click the up and down scroll arrows, 
+			 or click in the field and use the mouse wheel or arrow keys 
+			 to scroll.</li>
+                                                                    <li>Enter a number directly in the field.</li>
+                                                                    <li>Click a position in the graphics window. The selected position appears highlighted 
+			 in the graphics window. The display changes as you use other 
+			 Toolpath Editor options to move, edit, or delete the selected 
+			 toolpath point, cut, or pass.</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><span class="Bold">Pass</span> and <span class="Bold">Cut</span> are unavailable for Lathe 
+	 toolpaths. For other toolpath types, <span class="Bold">Pass</span>
+	 is available only if multiple passes are used in the toolpath, and 
+	 <span class="Bold">Cut</span> is available only if depth cuts are 
+	 used.</li>
+                                                            <li>When adding a new point, select <span class="Bold">Before</span> to insert the new point before 
+	 the point position in the toolpath. Deselect it to add the new point 
+	 after this point position.</li>
+                                                            <li>Use the options in the <span class="Bold">Show</span>
+	 section of the <span class="Bold">Edit Toolpath</span> dialog box to set toolpath display options 
+	 in the graphics window. You can view only the pass or cut you enter 
+	 in the corresponding <span class="Bold">Position</span> parameter, or 
+	 display all cuts and passes in the toolpath.</li>
+                                                            <li>The <span class="Bold">Delete Section</span> 
+	 option lets you remove a defined section of the toolpath, based on 
+	 the starting and ending point positions you choose.</li>
+                                                            <li>Make all other changes to the toolpath (such 
+	 as tool or parameter changes) before 
+	 using the Toolpath Editor. The Toolpath Editor locks the toolpath 
+	 after you edit it. Locked toolpaths are not updated by Mastercam. 
+	 To further modify the toolpath, you must unlock it. If the toolpath 
+	 is regenerated after editing, any custom modifications will be overwritten.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li><a href="Edit_Toolpath.htm" class="MCXref xref">Edit Toolpath dialog box</a>
+                                                    </li>
+                                                    <li><a href="../../File/File Management Overview.htm" class="MCXref xref">File Management Overview</a>
+                                                    </li>
+                                                    <li><a href="../../TopLevel/Managing_Workflow.htm" class="MCXref xref">Managing Your Workflow</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

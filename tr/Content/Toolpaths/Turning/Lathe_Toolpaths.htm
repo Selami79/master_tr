@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Toolpaths|Mill-Turn|Turning|Common Turning" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Learn about creating toolpaths with Mastercam Lathe." />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Creating a Lathe Toolpath</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyleSheets/CNC_RegularTable.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Creating a Lathe Toolpath</h1>
+                                                <p><span class="mc-variable CNC_Product.Product variable">Mastercam</span> Lathe's  toolpaths allow you to boost productivity by turning your part accurately and efficiently, including roughing, grooving, threading, and more. Live tooling, quick setup times, and C- and Y-axis machining all help you meet your machining needs.  Combine your Lathe license with a Mill or Mill-Turn license to expand your machining options. </p>
+                                                <p>
+                                                    <img src="../ToolpathsPics/Lathe.png" alt="" />
+                                                </p>
+                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                    <p>Your ability to access specific toolpaths and features depends on your license and the capabilities of the active machine  definition.</p>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I create a lathe toolpath?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Following is a general overview of how to create a lathe toolpath.</p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>Select a Lathe machine definition. Choose <span class="Bold">Machine</span>, 
+	 <span class="Bold">Lathe</span>, and select a definition from the list.</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/Lathe_machine_def.png" alt="The list of machine definitions from the lathe drop-down list. " class="MaxWidth" />
+                                                                </p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>Double-click <span class="Bold">Stock setup</span> in Toolpaths 
+	 Manager to open <span class="Bold">Machine Group Properties</span>. Choose defaults, define a stock model and material, 
+	 and set up peripherals like chucks, tailstocks and steady rests. </p>
+                                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                                    <p>Learn about the settings on each page by clicking the <span class="Bold">Help</span>.</p>
+                                                                    <p>
+                                                                        <img src="../ToolpathsPics/Help_button.png" alt="" />
+                                                                    </p>
+                                                                </div>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/Lathe_stock_setup.png" alt="The machine group properties dialog box. " />
+                                                                </p>
+                                                                <p>See <a href="../../View/Adding_Lathe_Stock_Chucks_and_Peripherals_to_Your_Machine.htm" class="MCXref xref">Adding Lathe Stock, Chucks, and Peripherals to Your Machine</a> to learn more. </p>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p>Select a toolpath from the galleries in the <span class="Bold">Lathe</span> contextual tabs.  A description of each toolpath can be found in the <a href="#What_toolpaths_are_available" class="MCXref xref">What toolpaths are available?</a> section of this page.</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/Lathe_toolpath_choices.png" alt="Lathe toolpath options in the turning tab. " class="MaxWidth" />
+                                                                </p>
+                                                            </li>
+                                                            <li value="4">
+                                                                <p>The <span class="Bold">Chaining</span> dialog box opens and <span class="mc-variable CNC_Product.Product variable">Mastercam</span> prompts you to select any necessary geometry. When finished, click <span class="Bold">OK</span>.</p>
+                                                            </li>
+                                                            <li value="5">
+                                                                <p>A dialog box specific to your toolpath type opens. For example, the dialog box below is for a Lathe Rough toolpath. Enter your settings.</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/Lathe_rough_dialog_box.png" alt="The lathe rough dialog box." class="MaxWidth" />
+                                                                </p>
+                                                            </li>
+                                                            <li value="6">
+                                                                <p>Click <span class="Bold">OK</span> to generate your toolpath. </p>
+                                                            </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="What_toolpaths_are_available"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">What toolpaths are available?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Mastercam 
+ Lathe includes three main categories of toolpaths: General turning toolpaths, part handling operations, and C-axis toolpaths. Depending on your project goals and machine setup, you may wish to use these toolpath categories independently, or in conjunction with each other. </p>
+                                                        <p>Part handling operations 
+ manipulate the stock and program the movements of peripherals like tailstocks, 
+ chucks, and steady rests. These operations might output M-code or G-code. 
+ You can only program part handling operations for peripherals that are 
+ supported by the active machine definition. 
+                    </p>
+                                                        <p>C-axis toolpaths let Mastercam Lathe users create simple milling operations that use live 
+ tooling. The part can be 
+ stationary in the chuck, or the part spindle can be programmed as a rotary 
+ axis (C-axis). Use tool planes to specify how the tool is oriented with 
+ respect to the part.</p>
+                                                        <table class="TableStyle-CNC_RegularTable" style="mc-table-style: url('../../Resources/TableStyleSheets/CNC_RegularTable.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                                                            <col class="TableStyle-CNC_RegularTable-Column-BoldColumn" data-mc-pattern="5" data-mc-conditions="" />
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" data-mc-conditions="" />
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" data-mc-pattern="0" data-mc-conditions="" />
+                                                            <thead>
+                                                                <tr class="TableStyle-CNC_RegularTable-Head-Header1">
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadE-BoldColumn-Header1">Toolpath Name</th>
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadE-Column1-Header1">Gallery Image</th>
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadD-Column1-Header1">Description</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-pattern="4">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-BoldColumn-RowGrouping" colspan="3">General</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Rough_Toolpaths.htm">Rough</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/RoughIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Quickly removes large amounts of stock in preparation for a finish pass.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Finish_Toolpaths.htm">Finish</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheFinishIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Follows the contour of the chained geometry.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Lathe_Drill_Toolpaths.htm">Drill</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheDrillIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Drills into the face of the part. </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Face_Toolpaths_Turning.htm">Face</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheFaceIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Quickly cleans the face of the part. </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Cutoff_Toolpaths.htm">Cutoff</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheCutoffIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Vertically cuts off pieces of the part, such as sections of the bar stock.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Groove_Toolpaths.htm">Groove</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheGrooveIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Machines indented or recessed areas that are not otherwise machinable by roughing toolpaths or tools.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Dynamic_Rough_Lathe Toolpaths.htm">Dynamic Rough</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheDynamicIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Quickly removes large amounts of stock while remaining engaged in the material more effectively, using more of the surface of your insert.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Thread_Toolpaths.htm">Thread</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheThreadToolpath.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Machines spiral shapes on a part to make a screw, bolt, or nut.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Plunge_Turn_Toolpaths.htm">Plunge Turn</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LathePlungeTurnIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Creates a toolpath that adds lateral movement to groove-style toolpaths. </p>
+                                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                                            <p>This is designed for special plunge turn tools only, the ISCAR plunge and turn inserts.</p>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Contour_Rough_Lathe_Toolpaths.htm">Contour Rough</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheContourRough.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Removes large amounts of stock in a pattern offset from part. </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="PrimeTurning.htm">PrimeTurning</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LathePrimeTurningIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Creates a toolpath for the Sandvik Coromant PrimeTurning method using a CoroTurn Prime tool.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Lathe_Custom_Thread.htm">Custom Thread</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/CustomThreadIcon_28x28.png" alt="" style="width: 28;height: 28;" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Creates custom thread forms.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-pattern="4">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-BoldColumn-RowGrouping" colspan="3">Manual</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Common/Manual_Entry_Operations.htm">Manual Entry</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/ManualEntryIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Directly inserts text, comments, or G-codes into your NC programs.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Point_Toolpaths_Turning.htm">Point</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LathePointIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Moves the tool to a specific point or series of points to avoid a fixture or clamp, or to move the tool through intricate features.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-conditions="" data-mc-pattern="4">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-BoldColumn-RowGrouping" colspan="3">Canned (<a href="Canned_Toolpaths.htm" class="MCXref xref">Canned Toolpaths</a>)</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Canned_Rough_Toolpaths.htm">Rough</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheCannedRoughIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Creates a roughing toolpath which is based on your machine tool control's canned cycles.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Canned_Finish_Toolpaths.htm">Finish</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheCannedFinishIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Creates a finish pass which is based on your machine tool control's canned cycles, to finish a canned rough or pattern repeat toolpath.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Canned_Groove_Toolpaths.htm">Groove</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheCannedGrooveIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Creates a groove using your machine tool control's canned cycles.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Pattern_Repeat_Toolpaths.htm">Pattern Repeat</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LathePatternRepeatIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Creates a roughing toolpath in which the cutting passes follow the part contour.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-conditions="Product.Lathe" data-mc-pattern="4">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-BoldColumn-RowGrouping" colspan="3">C-axis</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="Product.Lathe">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Face_Contour_Toolpaths.htm">Face Contour</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheFaceContourIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Creates a toolpath on the face of the part with the tool parallel to the axis of rotation.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="Product.Lathe">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="C-axis_Contour_Toolpaths.htm">C-axis Contour</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheCaxisContourIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Machines geometry which wraps around a cylinder.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="Product.Lathe">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Cross-Contour_Toolpaths.htm">Cross Contour</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheCrossContourIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Machines parallel to the axis of rotation. </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="Product.Lathe">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Face_Drill_Toolpaths.htm">Face Drill</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheFaceDrillIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Drills holes in the face of the part. </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="Product.Lathe">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="C-axis_Drill_Toolpaths.htm">C-axis Drill</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheCAxisDrillIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Drills holes perpendicular to the part's spindle axis.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="Product.Lathe">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Cross_Drill_Toolpaths.htm">Cross Drill</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheCrossDrillIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Drills holes perpendicular to the part's spindle axis, as when drilling holes in a cylinder or to drill off-center.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-pattern="4" data-mc-conditions="Product.Lathe">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-BoldColumn-RowGrouping" colspan="3">Part Handling (<a href="Part_Handling_Operations.htm" class="MCXref xref">Part Handling Operations (Lathe)</a>)</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="Product.Lathe">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Lathe_Stock_Flip.htm">Stock Flip</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheStockFlipIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Outputs a comment and program stop in the NC code, which lets the operator manually remove the stock and reposition (flip) it in the chuck.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Cutoff_Pickoff_Bar_Pull_Setup.htm">Pickoff/Pull/Cutoff</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LathePickoffPullCutoffIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Translates geometry and creates a part transfer operation from the main spindle to the sub spindle and/or a bar pull operation prior to a cutoff toolpath. </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="Product.Lathe">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Lathe_Stock_Transfer.htm">Stock Transfer</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/StockTransferIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1"> Transfers the stock to a chuck on the other spindle.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="Product.Lathe">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Lathe_Chuck.htm">Chuck</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheChuckIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Clamps, unclamps, or repositions the chuck.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="Product.Lathe">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Lathe_Tailstock.htm">Tailstock</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheTailstockIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Repositions the tailstock.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="Product.Lathe">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="Lathe_Stock_Advance.htm">Stock Advance</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheStockAdvancedIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Repositions the stock in the spindle or to control a bar feeder.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="Product.Lathe">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyB-BoldColumn-Body1"><a href="Lathe_Steady_Rest.htm">Steady Rest</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyB-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/LatheSteadyRestIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyA-Column1-Body1">Repositions the steady rest.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>Mastercam Lathe users who also have a Mill license can also select regular Mastercam Mill 
+ toolpaths. For more information, see <a href="Mill_Operations_in_Lathe.htm" class="MCXref xref">Creating Milling Operations in Mastercam Lathe</a> or view the table of available toolpaths in the <a href="../Common/Mill_Router_Toolpaths.htm" class="MCXref xref">Creating a Mill or Router Toolpath</a> Help topic. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />What are the differences between C-axis and Y-axis milling operations?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Milling operations in Lathe come in two styles: C-axis and Y-axis.</p>
+                                                        <ul>
+                                                            <li>C-axis operations, which are more 
+		 common, have linear motion in the X and Z axes and rotary 
+		 motion around the C axis. The C-axis motion is provided by controlled rotation and positioning of the spindle that holds the part.</li>
+                                                            <li>Y-axis operations support the C-axis 
+		 motion and use an additional linear axis that allows the milling 
+		 tool to move above and below the spindle's center line.</li>
+                                                        </ul>
+                                                        <p>All Mastercam Lathe C-Axis toolpaths (<span class="Bold">Lathe Turning</span>, 
+ <span class="Bold">C-Axis</span>) and many Mill toolpaths in Lathe (<span class="Bold">Lathe Milling</span>), use 
+ the <span class="Bold">Rotary 
+ Axis Control</span> property page to select the axis of rotation.</p>
+                                                        <p>The following sample part has examples of cross-contour toolpaths with 
+ both C-axis and Y-axis rotation. The first cross-contour toolpath uses C-axis rotation to cut the slots parallel to the centerline. The second uses 
+ Y-axis rotation to cut the flats on the hexagon, across the centerline.</p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/Y-C-axis_contour.png" alt="Cross-contour toolpaths with labeled C-axis and Y-axis rotations." />
+                                                        </p>
+                                                        <ol style="list-style-type: upper-alpha;">
+                                                            <li value="1">C-axis rotation</li>
+                                                            <li value="2">Y-axis rotation</li>
+                                                        </ol>
+                                                        <p>The following sample part has examples of cross-drill toolpaths with 
+ both C-axis and Y-axis rotation. The C-axis rotation is used to drill 
+ towards the part centerline, and the Y-axis rotation to drill off the 
+ centerline.</p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/Y-C-axis_drill.png" alt="Cross-drill toolpaths with labeled C-axis and Y-axis rotations." />
+                                                        </p>
+                                                        <ol style="list-style-type: upper-alpha;" start="3">
+                                                            <li value="3">C-axis drilling</li>
+                                                            <li value="4">Y-axis drilling</li>
+                                                        </ol>
+                                                        <p>With Y-axis drilling, Mastercam automatically sets the Tplane to the 
+ plane of the arc. Because of this, you cannot select points for your drill 
+ locations, only arcs. However, with C-axis drilling, because the drill 
+ axis is automatically perpendicular to the centerline, you can select 
+ either points or arcs.</p>
+                                                        <p>To learn more about rotary axis motion, see <a href="Rotary_Axis_Control_Lathe.htm" class="MCXref xref">Rotary Axis Control dialog box: Lathe</a>.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />What are the differences between Lathe and Mill-Turn toolpaths?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Mastercam Mill-Turn is a separate product from Mastercam Lathe. Users who have a Mastercam Lathe license can also purchase Mastercam Mill-Turn. Mill-Turn users can access all of Mastercam Lathe's turning operations. See <a href="Mill-Turn-vs-Lathe.htm" class="MCXref xref">Comparing Mill-Turn and Lathe</a> to learn more.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />More functionality</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p><span class="mc-variable CNC_Product.Product variable">Mastercam</span> includes several other operations available in the <span class="Bold">Utilities</span> group of the contextual tab that can be used to help machine your parts. </p>
+                                                        <ul>
+                                                            <li data-mc-conditions="Product.Mill,Product.Router,Product.Lathe"><span class="Bold">Stock Model operations</span>—Creates a stock model that is associative to the source toolpath operations. For more information, read the <a href="../Utilities/Working_with_Stock_Model_Operations.htm" class="MCXref xref">Working with Stock Model Operations</a> Help topic. </li>
+                                                            <li data-mc-conditions="Product.Mill,Product.Router,Product.Wire,Product.Lathe"><span class="Bold">Toolpath Transform</span>—Creates copies of operations in different orientations by transforming them, trimming them, or wrapping them around a cylinder with axis substitution. For more information, read the <a href="../Utilities/Transforming_Toolpaths.htm" class="MCXref xref">Transforming Toolpaths</a> Help topic.</li>
+                                                            <li data-mc-conditions="Product.Lathe"><span class="Bold">CView</span>—Set Tplanes and Cplanes when you are creating Mill Contour and Drill toolpaths. For more information read the <a href="../Utilities/Cview.htm" class="MCXref xref">CView dialog box</a> Help topic.</li>
+                                                            <li data-mc-conditions="Product.Lathe"><span class="Bold">Align to Z</span>—Aligns a solid body that is used for a turning operation to a new WCS or existing construction plane along the Z axis. For more information read the <a href="../Utilities/Align_to_Z.htm" class="MCXref xref">Align to Z panel</a> Help topic.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />What is the Generate toolpath option on the toolpath pages and tabs?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>The <span class="Bold">Generate toolpath</span> option automatically generates the toolpath when you click <span class="Bold">OK</span>. This option is on the pages and tabs of <span class="mc-variable CNC_Product.Product variable">Mastercam</span>'s toolpath dialog boxes, and is on by default for new and edited operations. By selecting this option, you no longer need to select <span class="Bold">Regenerate dirty operations</span> in the Toolpaths Manager after editing your toolpath. </p>
+                                                        <p data-mc-conditions="Product.Mill,Product.Lathe,Product.Mill-Turn,Product.Router">The <span class="Bold">Generate toolpath</span> option also works with the <span class="Bold">Apply</span> button on tree-style milling toolpaths. The <span class="Bold">Apply</span> button applies your parameter changes to the toolpath you are editing without closing the dialog box. </p>
+                                                        <p>For more information on how this option functions, refer to the <a href="../Common/Generate_Toolpath.htm" class="MCXref xref">Accepting and Generating Toolpaths</a> Help topic. </p>
+                                                    </div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li><a href="Mill_Operations_in_Lathe.htm" class="MCXref xref">Creating Milling Operations in Mastercam Lathe</a>
+                                                    </li>
+                                                    <li><a href="../../TopLevel/Creating_Toolpaths.htm" class="MCXref xref">Creating Toolpaths</a>
+                                                    </li>
+                                                    <li><a href="../../TopLevel/Get_Started.htm" class="MCXref xref">Getting Started With Mastercam</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

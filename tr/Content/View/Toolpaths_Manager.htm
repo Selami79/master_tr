@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="View|Managers|Toolpaths Manager" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Toolpaths Manager</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyleSheets/CNC_RegularTable.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Toolpaths Manager</h1>
+                                                <p>The Toolpaths Manager is a central location where you can manage all 
+ the elements of the current job. Use the Toolpaths 
+		 Manager to generate, sort, edit, regenerate, verify, backplot, 
+		 and post any operation.</p>
+                                                <p>
+                                                    <img src="ViewPics/toolpath_manager_w_extended_toolpaths.png" alt="The Toolpaths Manager." style="border: none;" border="0" />
+                                                </p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How does the Toolpaths Manager affect my part file?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>The Toolpaths Manager organizes toolpath information in machine 
+		 and toolpath groups. Once you have generated toolpaths for the part, most activity in <span class="mc-variable CNC_Product.Product variable">Mastercam</span>
+ takes place in the Toolpaths Manager. A toolpath operation is created 
+ in the Toolpaths Manager automatically every time you create a toolpath. </p>
+                                                        <p><span class="mc-variable CNC_Product.Product variable">Mastercam</span> machines operations in the order in which they display in the Toolpaths Manager. Dependent operations, such as a stock model operation, must come after the operation to which they reference. To learn how to reorganize operations in the Toolpaths Manager, see <a href="#How" class="MCXref xref">How do I use the Toolpaths Manager?</a>.</p>
+                                                        <p>Toolpaths cannot be created 
+ until you identify the machine properties by either selecting or creating 
+ a machine group. For more information on setting up the machine properties, 
+ please see <a href="../Machine/About_the_Control_Definition.htm" class="MCXref xref">About the Control Definition</a> and <a href="../Machine/About_the_Machine_Definition.htm" class="MCXref xref">About the Machine Definition</a>.</p>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />What are machine groups and how are they organized?</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p> When you choose or create a machine definition in <span class="mc-variable CNC_Product.Product variable">Mastercam</span>, that information is housed in a <span class="Bold">Machine Group</span> folder in Toolpaths Manager. When that folder is created, it is automatically populated with a machining properties folder and a toolpath group. You manually add operations to the toolpath groups.</p>
+                                                                <p>
+                                                                    <img src="ViewPics/Machine_group_numbered.png" alt="" />
+                                                                </p>
+                                                                <ol>
+                                                                    <li value="1">
+                                                                        <p><span class="Italic">Machining properties folder</span>: A single part can 
+	 have multiple machine groups, each containing machining properties 
+	 folders that identify properties (i.e., 
+	 support files, tooling, stock, etc.). These details are set in the <span class="Bold">Machine 
+	 Group Properties</span> dialog box or <span class="Bold">Machine Group Setup</span> function panel, depending on the machine type. Each toolpath group listing 
+	 begins with this information.</p>
+                                                                        <p><span class="mc-variable CNC_Product.Product variable">Mastercam</span> splits these machining properties details into three categories: </p>
+                                                                        <ul>
+                                                                            <li>
+                                                                                <p><span class="Bold">Files</span>
+                                                                                </p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <p><span class="Bold">Tool settings</span>
+                                                                                </p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <p><span class="Bold">Stock/Job Setup</span>
+                                                                                </p>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li value="2">
+                                                                        <p><span class="Italic">Toolpath groups</span>: Toolpath groups are subgroups of operations inside a machine group. They contain details of the operations, such as parameters, tools, and embedded operations. </p>
+                                                                        <p>These subgroups provide 
+	 not only a way to logically organize your operations, but also allow 
+	 quick selection of toolpaths: selecting a toolpath group automatically 
+	 selects all operations within the group.</p>
+                                                                        <p>You can have an unlimited 
+	 number of subgroups embedded into other subgroups.</p>
+                                                                    </li>
+                                                                    <li value="3">
+                                                                        <p><span class="Italic">Operation folders</span>: Each operation has 
+	 a name that describes the kind of machining action it includes, such 
+	 as 2D Contour. A single part can have many operations that 
+	 are housed in toolpath groups. Each operation has 
+	 at least four parts:</p>
+                                                                        <ul>
+                                                                            <li>
+                                                                                <p><span class="Bold">Parameters</span>
+                                                                                </p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <p><span class="Bold">Tool definition</span>
+                                                                                </p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <p><span class="Bold">Part geometry</span>
+                                                                                </p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <p><span class="Bold">Toolpath data</span>
+                                                                                </p>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <p> For more information about icons and functions within the Toolpaths Manager list, refer to the <a href="Toolpaths_Manager_Icons.htm" class="MCXref xref">Toolpaths Manager Icons</a> help topic.</p>
+                                                                </ol>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="How"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">How do I use the Toolpaths Manager?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>The Toolpaths Manager allows you to interact with your machine and toolpath groups in the following ways:</p>
+                                                        <ul>
+                                                            <li>Use toolbar buttons to control the machine and toolpath groups within the manager. See <a href="#Toolbar" class="MCXref xref">Toolbar buttons</a> to learn about the toolbar functions.
+                      <p> <img src="ViewPics/Toolpaths_manager_toolbar.png" alt="" /></p></li>
+                                                            <li>
+                                                                <p>Create new operations and groups, edit existing operations, view part details, and control operations in your file using the right-click menu. For information on all right-click options available to you, refer to the <a href="Toolpaths_Manager_Right_click_Menu.htm" class="MCXref xref">Toolpaths Manager Right-click Menu</a> help topic. To learn about creating multiple machine groups, see <a href="Machine_Groups.htm" class="MCXref xref">Working with Machine Groups</a>.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Organize new and existing operations and groups. </p>
+                                                                <p>Once a group has 
+	 been set up in the Toolpaths Manager, an operation insert arrow (shown 
+	 below) appears, indicating the point where new operations will be 
+	 inserted into the parent group.</p>
+                                                                <p>
+                                                                    <img src="ViewPics/TPM_Insert_Arrow.png" alt="" />
+                                                                </p>
+                                                                <p>The default position 
+	 of this insert arrow is at the bottom of the list of current operations. 
+	 To create an operation somewhere in the list other than at the default 
+	 position, drag the arrow and drop it after the operation you want 
+	 the new operation to be created. You can also use the <span class="Bold">Insert Arrow</span> 
+	 navigating buttons (shown below) located at the top of the Toolpaths 
+	 Manager.</p>
+                                                                <p>
+                                                                    <img src="../General/GeneralPics/ArrowUpIcon.png" alt="" />
+                                                                    <img src="../General/GeneralPics/ArrowDownIcon.png" alt="" />
+                                                                </p>
+                                                                <p>You can also organize operations and groups by using the <a href="#Toolbar" class="MCXref xref">Toolbar buttons</a>, the <a href="Toolpaths_Manager_Right_click_Menu.htm" class="MCXref xref">Toolpaths Manager Right-click Menu</a>, and  standard Windows commands for functions such as copy, paste, select multiple, and delete.</p>
+                                                                <p>To learn more, see <a href="Moving_and_Copying_Items_in_the_Toolpath_Manager.htm" class="MCXref xref">Moving and Copying Items in the Toolpaths Manager</a> and <a href="Machine_Groups.htm" class="MCXref xref">Working with Machine Groups</a>.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Quickly access toolpath functions  by clicking on an operation icon. See <a href="Toolpaths_Manager_Icons.htm" class="MCXref xref">Toolpaths Manager Icons</a> to learn more about machine group and toolpath group icons. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>As with all <span class="mc-variable CNC_Product.Product variable">Mastercam</span> managers, you can also dock, resize, and personalize the Toolpaths Manager to suit your work style. See <a href="Docking_Undocking_Re-Sizing_and_Closing_Operations_Manager.htm" class="MCXref xref">Docking/Undocking, Re-Sizing, and Closing Toolpaths/Solids Manager</a> for more information. </p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="Toolbar"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Toolbar buttons</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <table class="TableStyle-CNC_RegularTable" style="mc-table-style: url('../Resources/TableStyleSheets/CNC_RegularTable.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                            <col class="TableStyle-CNC_RegularTable-Column-BoldColumn" data-mc-pattern="5" />
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-CNC_RegularTable-Head-Header1">
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadE-Column1-Header1">Icon</th>
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadE-BoldColumn-Header1">Name</th>
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadD-Column1-Header1">Description </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/SelectAllIconSm.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">
+                                                                        <p>Select all operations
+</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Selects all operations listed in Toolpaths Manager. Use to post, verify, regenerate, or perform other functions on all operations within a job. </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/SelectDirtyIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Select all dirty operations</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Selects all dirty (invalid) operations in the Toolpaths Manager. Use to post, verify, regenerate, or perform other functions on selected operations within a job.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/RegenerateAllIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Regenerate all selected operations</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Recalculates selected operations.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/RegenDirtyIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Regenerate all dirty operations</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Recalculates all dirty (invalid) operations.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/Dependencies.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Dependencies</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Toggle on to automatically select or regenerate dependent operations.</p>
+                                                                        <ul>
+                                                                            <li><span class="Bold">Selection</span>: Selects all dependent operations when you select the parent operation.</li>
+                                                                            <li><span class="Bold">Regeneration</span>: Regenerates all dependent operations when you regenerate the parent operation, even if the dependent operations are not selected.</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/BackplotSelectedIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Backplot selected operations</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Simulates tool movement for selected operations using Classic Backplot.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/VerifySelectedIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Verify selected operations</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Simulates machining and material removal for selected operations using Mastercam Simulator.</p>
+                                                                        <ul>
+                                                                            <li>
+                                                                                <p><span class="Bold">Add to current verification</span>: Adds the operation to the current verification session. </p>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <p>Only operations positioned below the selected operation can be added to the current session. </p>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <p>Operations that depend on a previous operation cannot be added unless the parent operation is also selected. </p>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </li>
+                                                                            <li>
+                                                                                <p><span class="Bold">Verify selected machine group</span>: Verifies the selected machine group. </p>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/SimulatorOptionsIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Simulator options</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Opens the <span class="Bold">Simulator Options</span> dialog box.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/PostSelectedIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Post selected operations</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+
+For a non-Mill-Turn part, runs the post processor for selected operations and creates
+the NC program. If you are in a Mill-Turn machine group, this button runs Sync Manager. For more information, please see <a href="../Machine/About_Post_Processing.htm" class="MCXref xref">About Post Processing</a>.
+</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/HighFeedIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">High feed</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+
+Optimizes feed rates for selected operations. For more information, please see <a href="../Toolpaths/Milling/Highfeed_Machining.htm" class="MCXref xref">Highfeed Machining</a>.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../Toolpaths/ToolpathsPics/DeleteAll.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Delete all operations, groups and tools 
+
+</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>
+
+Deletes all machine groups in Toolpaths Manager except the last one in the
+list. This deletion includes operations, tools, and machine definitions. </p>
+                                                                        <div class="Caution" data-mc-autonum="&lt;b&gt;CAUTION&lt;/b&gt; "><span class="autonumber"><span><b>CAUTION</b> </span></span>
+                                                                            <p>You will not be able to undo this deletion.</p>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/HelpIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Help</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Displays Mastercam's Help. </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/ToggleLockingIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Toggle locking on selected operations</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>
+
+
+
+Locks and unlocks selected operations. Locking the operation prevents you from regenerating
+the toolpath. </p>
+                                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                                            <p>If you regenerate the toolpath after unlocking it, you will lose
+any changes you have made.
+
+
+</p>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/ToggleDisplay.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Toggle display on selected operations</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+
+Displays and hides selected operations in the graphics window. When a part contains
+a mixture of operations that are displayed or hidden, clicking <span class="Bold">Select all operations</span>
+and then <span class="Bold">Toggle display on selected operations</span> hides all toolpaths in the graphics
+window. Clicking <span class="Bold">Toggle display on selected operations</span> again shows all toolpaths.
+</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/TogglePostingIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Toggle posting on selected operations</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>
+
+Enables and disables posting on selected operations. Note that the symbol indicates that posting is off for the operation.
+</p>
+                                                                        <p>
+                                                                            <img src="ViewPics/TPM_Ghosted_Toolpath.png" alt="The disabled post icon next to a toolpath name in the Toolpaths Manager." />
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/ArrowDownIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Move insert arrow down one item
+
+</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+
+Moves the insert arrow down past the next operation. The insert arrow controls where
+new operations will be inserted. Its default position is at the bottom of the list
+of operations. 
+</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/ArrowUpIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Move insert arrow up one item
+</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+
+Moves the insert arrow up past the previous operation. Its default position is at
+the bottom of the list of operations. The insert arrow controls where new operations
+will be inserted. 
+</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/PositionArrowIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Position insert arrow after selected operation or after selected group
+</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+
+Moves the insert arrow down past the selected operation or group. Its default position
+is at the bottom of the list of operations. The insert arrow controls where new operations
+will be inserted. 
+</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/ScrollWindowIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Scroll window so insert arrow is visible 
+
+</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Scrolls the viewing area to display the point at which you can view the insert arrow. </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/DisplaySelectedIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Only display selected toolpaths</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">When enabled, displays toolpaths in the graphics window only for the operations you
+select in Toolpaths Manager list. This state will persist across <span class="mc-variable CNC_Product.Product variable">Mastercam</span> sessions.
+
+</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/DisplayAssociativeIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Only display associative geometry
+
+</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">When enabled, displays all geometry associated with the selected operations, provided
+that the geometry is not hidden or blanked and is on levels that are visible. This state will persist across <span class="mc-variable CNC_Product.Product variable">Mastercam</span> sessions.
+</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/AdvancedDisplayIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Advanced display</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Toggles the toolpath display, allowing you to see the differences between individual toolpath entities such as entry motion and endpoints by modifying their color and display state.
+Use the drop-down to hide or show different sections of the toolpath.</p>
+                                                                        <p>For more information, see <a href="Using_Advanced_Display.htm" class="MCXref xref">Using Advanced Display</a>.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/ToolSetupIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Tool setup</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Opens the <span class="Bold">Tool Setup Manager</span> dialog box. Use the dialog box to establish
+the physical orientation and positioning of tools used in the active machine group.
+</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyB-Column1-Body1">
+                                                                        <img src="../General/GeneralPics/EditRefPositionsIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyB-BoldColumn-Body1">Edit reference positions</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyA-Column1-Body1">
+                                                                        <p>Opens the <span class="Bold">Machine Reference Position Manager</span> dialog box. Use to edit the
+location of the reference positions.
+</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li><a href="Toolpath_Display.htm" class="MCXref xref">Toolpath Display</a>
+                                                    </li>
+                                                    <li><a href="Toolpaths_Manager_Right_click_Menu.htm" class="MCXref xref">Toolpaths Manager Right-click Menu</a>
+                                                    </li>
+                                                    <li><a href="Toolpaths_Manager_Icons.htm" class="MCXref xref">Toolpaths Manager Icons</a>
+                                                    </li>
+                                                    <li><a href="Toolpaths_Manager_Shortcut_Keys.htm" class="MCXref xref">Toolpaths Manager Shortcut Keys</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

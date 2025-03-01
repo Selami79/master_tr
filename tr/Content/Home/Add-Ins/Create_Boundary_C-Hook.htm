@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Home|Add-Ins" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Create Boundary Add-In</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyleSheets/CNC_RegularTable.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Create Boundary Add-In</h1>
+                                                <p>Use this Add-In 
+		 to create boundaries based on surfaces, solids, or solid faces. 
+		 You can create boundaries that represent not just the surfaces, 
+		 but the area that would be machined with any of several cutting 
+		 strategies. Use this Add-In to create containment boundaries for 
+		 surface toolpaths, or to preview and analyze the effects of different 
+		 machining scenarios without having to repeatedly generate the 
+		 toolpath. Follow these steps:</p>
+                                                <ol style="list-style-type: decimal;">
+                                                    <li value="1">After selecting the Add-In, you 
+			 are prompted to select the surfaces, solids, or solid faces 
+			 to be analyzed. Click <span class="Bold">Select</span> to select different 
+			 surfaces while the Add-In is running.</li>
+                                                    <li value="2">Select one of four boundary strategies.</li>
+                                                    <li value="3">Set boundary parameters in the bottom 
+			 half of the dialog box. These include the size of the tool 
+			 used to calculate the machined area.</li>
+                                                    <li value="4">Click <span class="Bold">Apply</span> to generate the boundary geometry.</li>
+                                                    <li value="5">Edit settings, and click <span class="Bold">Apply</span> to generate new 
+			 boundaries representing different scenarios. While the function 
+			 is active, you can change entity attributes—such as color and level—so that different boundaries 
+			 are distinct.</li>
+                                                </ol>
+                                                <p>You can generate the following types of boundaries:</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Silhouette boundary</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>This projects the outer extent of the 
+			 selected surfaces as a 2D boundary at the current Z depth 
+			 in the current Cplane. No tool is involved in the calculations, 
+			 and the cutter dimensions are not active.</p>
+                                                        <p>
+                                                            <img src="../HomePics/c-bound_silhouette.png" alt="A tool adjacent to its 2D silhouette boundary." />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Shallow area</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Mastercam calculates the portion of the 
+			 surfaces that falls between the specified angle limits, and 
+			 offsets it by the tool dimensions. Each point on the boundary 
+			 corresponds to the compensation point of the tool at the angle 
+			 limit.</p>
+                                                        <p>
+                                                            <img src="../HomePics/c-bound_shallow.png" alt="The offset boundary surrounding the part's surfaces." />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Theoretical rest area</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>This boundary uses the dimensions of 
+			 two tools:</p>
+                                                        <ul>
+                                                            <li>The first tool is a reference 
+				 tool that Mastercam uses to calculate the theoretical 
+				 rest area.</li>
+                                                            <li>Mastercam then calculates how 
+				 much of this area would be machined by the second tool.</li>
+                                                        </ul>
+                                                        <p>The boundary represents the machined 
+			 area.</p>
+                                                        <p>
+                                                            <img src="../HomePics/c-bound_theor_rest_area.png" alt="Boundary surrounding sections of the part." />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Cutter contact area</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>This boundary shows how much of the surfaces 
+			 would be machined by the cutter. Configure the machining area 
+			 by choosing whether to limit the boundary to the tool center 
+			 or the contact point.</p>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>This boundary type is not effective 
+			 for vertical or near-vertical walls. Typically, you should 
+			 use this on surface angles less than 80 degrees.</p>
+                                                        </div>
+                                                        <p>
+                                                            <img src="../HomePics/c-bound_cutter_contact_a.png" alt="Boundary surrounding sections of the part." />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />XY Thickness and Z Thickness</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Use these settings to move the tool away from the surfaces 
+			 by a specified amount. The <span class="Bold">XY 
+			 Thickness</span> moves the tool away from walls and vertical 
+			 surfaces, and the <span class="Bold">Z Thickness</span> moves the 
+			 tool away from horizontal surfaces. For sloping surfaces, 
+			 Mastercam interpolates a value between the two.</p>
+                                                        <table style="vertical-align: top;margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyleSheets/CNC_RegularTable.css');" cellspacing="0" class="TableStyle-CNC_RegularTable">
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-CNC_RegularTable-Head-Header1">
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadE-Column1-Header1">Option Settings</th>
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadD-Column1-Header1">Outcome</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr style="vertical-align: top;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="width: 45%;padding-right: 10px;padding-top: 15px;padding-left: 10px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><span class="Bold">XY Thickness</span> and <span class="Bold">Z 
+					 Thickness</span> are 
+					 both zero.</p>
+                                                                    </td>
+                                                                    <td style="width: 55%;padding-right: 10px;padding-top: 15px;padding-left: 10px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>For finishing operations, 
+					 these values should be set to zero. The calculations 
+					 are based on the dimensions of the cutter as entered 
+					 in this dialog box, with no offset.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="width: 45%;padding-right: 10px;padding-left: 10px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><span class="Bold">XY Thickness</span> and  <span class="Bold"> Z Thickness</span> have 
+					 the same positive value.</p>
+                                                                    </td>
+                                                                    <td style="width: 55%;padding-right: 10px;padding-left: 10px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>For roughing and semi-finishing 
+					 operations, you should set these values greater than 
+					 zero. The calculations are based on a modified cutter, 
+					 the surface of which is offset to be larger than the 
+					 entered dimensions. This simulates leaving material 
+					 on the part.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="width: 45%;padding-right: 10px;padding-left: 10px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><span class="Bold"> XY Thickness</span> and <span class="Bold">Z Thickness</span> have 
+					 the same negative value.</p>
+                                                                    </td>
+                                                                    <td style="width: 55%;padding-right: 10px;padding-left: 10px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>In special circumstances—such as when making 
+					 electrodes with a spark gap—you 
+					 can set the thickness to a value less than zero. The 
+					 cutter removes material at a level below the designated 
+					 surface. The calculations are based on a modified 
+					 cutter, offset to be smaller than the entered dimensions.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="width: 45%;padding-right: 10px;padding-left: 10px;" class="TableStyle-CNC_RegularTable-BodyB-Column1-Body1">
+                                                                        <p><span class="Bold">XY 
+					 Thickness</span> and <span class="Bold">Z Thickness</span> are different.</p>
+                                                                    </td>
+                                                                    <td style="width: 55%;padding-right: 10px;padding-left: 10px;" class="TableStyle-CNC_RegularTable-BodyA-Column1-Body1">
+                                                                        <p>The 
+					 thickness in the XY plane may be set to one value 
+					 and the thickness in the Z direction to another. This 
+					 is often useful for operations near steep walls. The 
+					 calculations are based on a modified cutter, offset 
+					 by different amounts in the XY plane and Z directions. 
+					 This leaves material on the part.</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                    <ul>
+                                                        <li>Typically, Mastercam should be in 
+			 3D mode when creating the boundaries. 2D mode is useful for 
+			 creating tool containment boundaries.</li>
+                                                        <li>Click <span class="Bold">Undo</span> 
+			 to remove boundaries that have been created with 
+			 <span class="Bold">Apply</span>. <span class="Bold">Undo</span> is active while 
+			 the CreateBoundary function is running.</li>
+                                                        <li>Most of the fields store recently 
+			 used values so you can easily recall them.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Parameters</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="Term">Select button</p>
+                                                        <p>Returns to the graphic window so you can edit the set of selected surfaces.</p>
+                                                        <p class="Term">Silhouette boundary</p>
+                                                        <p>Projects the outer extent of the selected surfaces as a 2D boundary at the current Z depth in the current Cplane.</p>
+                                                        <p class="Term">XY offset</p>
+                                                        <p>After calculating the silhouette boundary, Mastercam offsets it by an additional amount that you specify here.</p>
+                                                        <p class="Term">Z offset</p>
+                                                        <p>After the silhouette boundary is created, Mastercam translates it by this amount in the Z axis.</p>
+                                                        <p class="Term">Shallow area</p>
+                                                        <p>Calculates the portion of the surfaces that falls between the specified angle limits, and offsets it by the tool dimensions.</p>
+                                                        <p class="Term">Start angle</p>
+                                                        <p>Enter the lower angle limit.</p>
+                                                        <p class="Term">End angle</p>
+                                                        <p>Enter the upper angle limit.</p>
+                                                        <p class="Term">Theoretical rest area</p>
+                                                        <p>Creates a boundary based on the dimensions of two tools. The first tool is a reference tool that Mastercam uses to calculate the theoretical rest area. Mastercam then calculates how much of this area would be machined by the second tool and displays its boundary.</p>
+                                                        <p class="Term">Reference tool diameter</p>
+                                                        <p>Enter the diameter of a reference roughing tool. Mastercam uses this to calculate the initial rest area.</p>
+                                                        <p class="Term">Reference tool radius</p>
+                                                        <p>Enter the corner radius of a reference roughing tool. Mastercam uses this to calculate the initial rest area.</p>
+                                                        <p class="Term">Cutter contact area</p>
+                                                        <p>Shows how much of the surfaces would be machined by the cutter whose dimensions are entered below.</p>
+                                                        <p class="Term">Adjust to</p>
+                                                        <p>With <span class="Bold">Adjust To: Center</span>, Mastercam limits the tool so that its center point stays on the boundary. With <span class="Bold">Adjust To: Contact Pt</span>, Mastercam limits the tool so that its contact point stays on the boundary. This has the effect of increasing the machining area for convex parts or bosses, and decreasing the machining area for concave parts or pockets.</p>
+                                                        <p class="Term">Resolution</p>
+                                                        <p>Represents the granularity of the boundary. A small value results in a more detailed boundary, but it takes longer to calculate.</p>
+                                                        <p class="Term">Tool diameter</p>
+                                                        <p>Enter the diameter of the theoretical tool that will machine the selected surfaces.</p>
+                                                        <p class="Term">Corner radius</p>
+                                                        <p>Enter the corner radius of the theoretical tool that will machine the selected surfaces.</p>
+                                                        <p class="Term">XY thickness</p>
+                                                        <p>Keeps the tool away from walls and vertical surfaces by the specified distance. Use this when you want to see the effect of a roughing operation or leftover stock.</p>
+                                                        <p class="Term">Z thickness</p>
+                                                        <p>Keeps the tool away from floors and horizontal surfaces by the specified distance. Use this when you want to see the effect of a roughing operation or leftover stock.</p>
+                                                        <p class="Term">Offset</p>
+                                                        <p>After calculating the boundary, Mastercam offsets it by an additional amount that you specify here. If you see jagged edges on the calculated boundary, sometimes adding a small amount with this field can result in a smoother boundary. This <span class="Bold">Offset</span> works differently than the <span class="Bold">XY Thickness</span>. The <span class="Bold">XY Thickness</span> is applied to the tool diameter before the boundary is calculated. The <span class="Bold">Offset</span> is added to the boundary after it is calculated.</p>
+                                                    </div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li><a href="../../Wireframe/Silhouette_Boundary.htm" class="MCXref xref">Silhouette Boundary panel</a>
+                                                    </li>
+                                                    <li><a href="Add-ins.htm" class="MCXref xref">Mastercam Add-Ins</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

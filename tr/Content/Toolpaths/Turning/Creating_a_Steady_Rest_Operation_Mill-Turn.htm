@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Toolpaths|Mill-Turn|Turning|Part Handling" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Creating a Steady Rest Operation: Mill-Turn</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Creating a Steady Rest Operation: Mill-Turn</h1>
+                                                <p>Mastercam Mill-Turn gives you several ways to include steady rest operations in your part. </p>
+                                                <ul>
+                                                    <li>Create steady rest operations for a standalone steady rest.</li>
+                                                    <li>Create steady rest point operations for a turret mounted steady rest.</li>
+                                                    <li>Select a part handling strategy that includes steady rest operations.</li>
+                                                </ul>
+                                                <p>You can also follow the tool or turret with the steady rest while machining the part. Expand the section below to learn more about each topic.</p>
+                                                <p>Before you can create either type of steady rest operation, you need to select the steady rest in Job Setup. See <a href="../../View/Selecting_a_steady_rest_Mill-Turn.htm" class="MCXref xref">Selecting a Steady Rest: Mill-Turn Job Setup</a> to learn more.</p>
+                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                    <p>Mastercam Lathe and Mill-Turn support steady rests differently. Each uses different steady rest components and operations. See <a href="Lathe_Steady_Rest.htm" class="MCXref xref">Lathe Steady Rest dialog box</a> to learn about steady rest support in Lathe.</p>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Creating a steady rest operation for a standalone steady rest</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Follow these steps to create a steady rest operation. This type of operation is used by standalone steady rests, not turret mounted steady rests.  </p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>Select <span class="Bold">Steady Rest</span> from the <span class="Bold">Turning</span> contextual tab.</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/select-steady-rest-op.png" title="Selecting Steady Rest from the ribbon bar." alt="Selecting Steady Rest from the ribbon bar." />
+                                                                </p>
+                                                                <p>Mastercam displays the <span class="Bold">Steady Rest</span> dialog box.</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/steadrest-op.png" title="The Steady Rest dialog box." alt="The Steady Rest dialog box." />
+                                                                </p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>If your <span class="Filepath">.machine</span> file is equipped with more than one steady rest, select the primary steady rest that will be used in this operation. See the section <a href="#Programm" class="MCXref xref">Programming multiple steady rests</a> below to learn more about programming multiple steady rests.</p>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p>Select the <span class="Bold">Move type</span>. Choose from the following actions:</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p><span class="Bold">Linear position</span>. Moves the steady rest to a specified location. You can choose to create a rapid move or a linear move at a specified feed rate.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p><span class="Bold">Clamp</span>. Clamps the steady rest. The steady rest must already be in the clamping position (X = 0) before you create this operation.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p><span class="Bold">Unclamp</span>. Unclamps the steady rest.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p><span class="Bold">Retract</span>. Returns the steady rest to its home position. You can only select this option after an <span class="Bold">Unclamp</span> operation. You can choose to create a rapid move or a linear move at a specified feed rate.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p><span class="Bold">Follow</span> is reserved for use in part handling strategies; these can only be created by machine developers. </p>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li value="4">
+                                                                <p>Select the <span class="Bold">Spindle origin</span>. Mastercam populates this list from your Job Setup information. Typically you will choose between the left and right spindle origins.</p>
+                                                            </li>
+                                                            <li value="5">
+                                                                <p>If you wish you can select a different <span class="Bold">Data stream</span>. The default stream that Mastercam displays is set in the machine definition by the machine developer.</p>
+                                                            </li>
+                                                            <li value="6">
+                                                                <p>For <span class="Bold">Linear position</span> operations, enter the coordinates of the destination point. You can also click the <span class="Bold">Select</span> button to select a point from the graphics window. </p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/steadrest-position.png" title="Entering the destination coordinates." alt="Entering the destination coordinates." />
+                                                                </p>
+                                                            </li>
+                                                            <li value="7">
+                                                                <p>For <span class="Bold">Linear position</span> or <span class="Bold">Retract</span> operations, choose whether the move type will be a <span class="Bold">Rapid</span> move or a <span class="Bold">Feed</span> move. If it will be a <span class="Bold">Feed</span> move, enter the feed rate. </p>
+                                                            </li>
+                                                            <li value="8">
+                                                                <p>For <span class="Bold">Clamp</span> or <span class="Bold">Unclamp</span> operations, you can also specify a <span class="Bold">Dwell</span> time.</p>
+                                                            </li>
+                                                            <li value="9">
+                                                                <p>When you select <span class="Bold">Clamp</span>, Mastercam activates the <span class="Bold">Use boundary in collision detection</span> option. When this option is selected, Mastercam applies a 2D wireframe boundary around the steady rest when it calculates subsequent toolpaths. </p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/steady-rest-containment-boundary-option.png" title="Applying a collision avoidance boundary." alt="Applying a collision avoidance boundary." />
+                                                                </p>
+                                                                <p>This is separate from the collision checking that Mastercam performs when you simulate your operations. This is a boundary that is applied <em>before</em> you create the toolpaths. </p>
+                                                                <p>The boundary is defined when the component is created and is part of the component properties. The following picture shows an example of a steady rest boundary: </p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/steady-rest-containment-boundary.png" title="Example of a collision avoidance boundary." alt="Example of a collision avoidance boundary." />
+                                                                </p>
+                                                                <p>The boundary will be in effect until the steady rest is unclamped.</p>
+                                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                                    <p>The steady rest boundaries will not be visible unless the <span class="Bold">Update stock</span> option has been turned on.  </p>
+                                                                    <p>
+                                                                        <img src="../ToolpathsPics/stock-update-setting.png" title="The Update Stock setting." alt="The Update Stock setting." />
+                                                                    </p>
+                                                                    <p>If the setting for your operation is <span class="Bold">Do not update stock</span>, click on the text to toggle the setting. This option is not available in the toolpath dialog box like it is for Lathe operations.</p>
+                                                                </div>
+                                                            </li>
+                                                            <li value="10">
+                                                                <p>Click <span class="Bold">OK</span> to create the operation.</p>
+                                                            </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Creating a steady rest point operation for a turret mounted steady rest</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Follow these steps to create a steady rest point operation. This type of operation is used by turret mounted steady rests, not standalone steady rests. </p>
+                                                        <p>This operation differs from the standalone steady rest operation because each operation can contain several points or events, whereas the standalone steady rest operation requires a separate operation for each event.</p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>Select <span class="Bold">Steady Rest Point</span> from the <span class="Bold">Turning</span> contextual tab.</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/select-steady-rest-point-op.png" title="Selecting Steady Rest Point from the ribbon bar." alt="Selecting Steady Rest Point from the ribbon bar." />
+                                                                </p>
+                                                                <p>Mastercam displays the <span class="Bold">Steady Rest Point</span> dialog box.</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/steadrest-point-op.png" title="The Steady Rest Point dialog box." alt="The Steady Rest Point dialog box." />
+                                                                </p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>Click the <span class="Bold">Axis Combination</span> / <span class="Bold">Spindle Origin</span> button. Mastercam displays the <span class="Bold">Axis Combination</span> / <span class="Bold">Spindle Origin</span> dialog box.</p>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p>Select the desired <span class="Bold">Spindle Origin</span>. Mastercam populates this list from your Job Setup information. Typically you will choose between the left and right spindle origins.</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/select-spindle-origin.png" title="Selecting the spindle origin." alt="Selecting the spindle origin." />
+                                                                </p>
+                                                            </li>
+                                                            <li value="4">
+                                                                <p>Click <span class="Bold">OK</span> to return to the <span class="Bold">Steady Rest Point</span> dialog box.</p>
+                                                            </li>
+                                                            <li value="5">
+                                                                <p>Build your list of points and steady rest events in the <span class="Bold">Motion Points</span> window. After adding a point, click in the <span class="Bold">Type</span> cell to select the type of motion. You can choose from <span class="Bold">G0</span> (interpolated rapid move), <span class="Bold">G0 - Break</span> (dog-leg rapid move), or <span class="Bold">G1</span> (linear move at feed rate).</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/grid-select-motion.png" title="Selecting the type of motion." alt="Selecting the type of motion." />
+                                                                </p>
+                                                                <p>See <a href="Steady_Rest_Point_Mill-Turn.htm" class="MCXref xref">Steady Rest Point (Mill-Turn) dialog box</a> to learn more about using the buttons and other controls in the window.</p>
+                                                            </li>
+                                                            <li value="6">
+                                                                <p>Enter a <span class="Bold">Tool number</span> or <span class="Bold">Offset number</span>. Typically these are equal to the turret index position in which the steady rest is mounted. </p>
+                                                            </li>
+                                                            <li value="7">
+                                                                <p>When you select <span class="Bold">Clamp</span>, Mastercam activates the <span class="Bold">Use boundary in collision detection</span> option. When this option is selected, Mastercam applies a 2D wireframe boundary around the steady rest when it calculates subsequent toolpaths. </p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/steady-rest-containment-boundary-option.png" title="Applying a collision avoidance boundary." alt="Applying a collision avoidance boundary." />
+                                                                </p>
+                                                                <p>This is separate from the collision checking that Mastercam performs when you simulate your operations. This is a boundary that is applied <em>before</em> you create the toolpaths. </p>
+                                                                <p>The boundary is defined when the component is created and is part of the component properties. The following picture shows an example of a steady rest boundary: </p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/steady-rest-containment-boundary.png" title="Example of a collision avoidance boundary." alt="Example of a collision avoidance boundary." />
+                                                                </p>
+                                                                <p>The boundary will be in effect until the steady rest is unclamped.</p>
+                                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                                    <p>The steady rest boundaries will not be visible unless the <span class="Bold">Update stock</span> option has been turned on.  </p>
+                                                                    <p>
+                                                                        <img src="../ToolpathsPics/stock-update-setting.png" title="The Update Stock setting." alt="The Update Stock setting." />
+                                                                    </p>
+                                                                    <p>If the setting for your operation is <span class="Bold">Do not update stock</span>, click on the text to toggle the setting. This option is not available in the toolpath dialog box like it is for Lathe operations.</p>
+                                                                </div>
+                                                            </li>
+                                                            <li value="8">
+                                                                <p>Click <span class="Bold">OK</span> to create the operation.</p>
+                                                            </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Using steady rest operations in part handling strategies</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>In addition to creating individual steady rest operations, Mastercam also lets you incorporate steady rest operations into your part by selecting part handling strategies. These are created by your machine developer and integrate steady rest operations with spindle and chuck commands. Machines that are equipped with steady rests typically include a mix of part handling strategies both with and without steady rest events. This picture shows an example:</p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/sr-poco.png" title="Selecting a part handling strategy with steady rest support." alt="Selecting a part handling strategy with steady rest support." />
+                                                        </p>
+                                                        <p>Once you select the desired strategy, enter the destination of each steady rest. </p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>In the <span class="Bold">Operations</span> list, look for each <span class="Bold">Position Steady Rest</span> operation.</p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>Enter the coordinates of the destination <span class="Bold">Position</span>. </p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/editing-sr-position.png" title="Editing the steady rest destination." alt="Editing the steady rest destination." />
+                                                                </p>
+                                                            </li>
+                                                        </ol>
+                                                        <p>Your machine developer can also create part handling strategies that only include steady rest operations if there are sequences of steady rest events that you need to reuse often.  </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Following the tool with the steady rest</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Mastercam lets you create steady rest operations that follow a tool or the other turret while the part is being machined. However, there are several guidelines that you need to follow. These apply to both standalone and turret mounted steady rests. The following outline summarizes the steps and requirements.</p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>Create a steady rest operation that clamps the steady rest. Choose a location on your part where the diameter will not change while the steady rest follows the part. The follow operation will not be successful if the diameter changes. </p>
+                                                                <p>To be clear, the turning operation can include sections of the part with different diameters, but the portion of the part over which the steady rest travels must be a constant diameter.</p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>Once the steady rest is clamped, create the turning operation. The only supported operations are rough and finish turning operations. </p>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p>Create the steady rest operation that will follow the turning operation. Use only <span class="Bold">Linear</span> or feed rate moves, not rapids.</p>
+                                                            </li>
+                                                            <li value="4">
+                                                                <p>Ensure that the feed rates for the turning operation and the steady rest are the same:</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/lathe-feedrate.png" title="The feed rate for the turning operation." alt="The feed rate for the turning operation." />
+                                                                </p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/sr-feedrate.png" title="The feed rate for the steady rest operation." alt="The feed rate for the steady rest operation." />
+                                                                </p>
+                                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                                    <p>When you create the turning toolpath, Mastercam lets you specify the units for the feed rate, but not for the steady rest operation. You do not need to worry about the units, you only need to ensure that the number matches. When the steady rest and turning operations are properly synced (see step 6 below), Mastercam will adjust for the different units in your post and your code will be output correctly.</p>
+                                                                </div>
+                                                            </li>
+                                                            <li value="5">
+                                                                <p>When you have finished creating operations, click the <span class="Bold">G1</span> button to post your operations to the Sync Manager.</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/click-G1.png" title="Clicking the G1 button to post your operations to the Sync Manager." alt="Clicking the G1 button to post your operations to the Sync Manager." />
+                                                                </p>
+                                                            </li>
+                                                            <li value="6">
+                                                                <p>In the Sync Manager, sync the turning operation and the steady rest follow operation as shown here. Create one sync between the beginning of the steady rest operation and the beginning of the motion block in the turning operation, and another sync between their ends. </p>
+                                                            </li>
+                                                            <p>
+                                                                <img src="../ToolpathsPics/sync-yes.png" title="Syncing the turning operation and the steady rest operation." alt="Syncing the turning operation and the steady rest operation." />
+                                                            </p>
+                                                            <p>Notice that the first sync must be placed before the <span class="Bold">Motion</span> block, not the <span class="Bold">Approach</span> move as shown here:</p>
+                                                            <p>
+                                                                <img src="../ToolpathsPics/sync-no.png" title="Showing the incorrect location for the syncs." alt="Showing the incorrect location for the syncs." />
+                                                            </p>
+                                                        </ol>
+                                                        <p>You can only follow one operation at a time. For each turning operation that you want to follow, you need to create a separate steady rest operation.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="Programm"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Programming multiple steady rests</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>If your <span class="Filepath">.machine</span> file is equipped with multiple standalone steady rests, Mastercam lets you link one or more steady rests so that they move as one unit. You can do this for linear moves and follow operations; however, each steady rest must be clamped and unclamped individually. </p>
+                                                        <p>The first step is to select the primary steady rest component for the operation. This is referred to as the driven component. Select it from the <span class="Bold">Driven Component</span> window. This is the steady rest component that will be moved to the destination coordinates for the operation.</p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/component-driven.png" title="Showing the available steady rest components." alt="Showing the available steady rest components." />
+                                                        </p>
+                                                        <p>If the operation and its context allow for multiple steady rests, Mastercam activates the <span class="Bold">Linked Components</span> option. To link additional steady rests to the primary component, select <span class="Bold">Linked Components</span>, then select the desired steady rests.  </p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/component-linked.png" title="Showing the available steady rest components." alt="Showing the available steady rest components." />
+                                                        </p>
+                                                        <p>The following sequence of operations is typical for a pickoff/cutoff application with multiple steady rests.</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>The yellow and green operations position each steady rest with separate operations, since each is going to a different location on the part.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>The purple operation moves both steady rests in tandem as linked components, following the pickoff spindle home after the part transfer.</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/sr-sequence.png" title="List of operations in a typical steady rest application." alt="List of operations in a typical steady rest application." />
+                                                                </p>
+                                                            </li>
+                                                        </ul>
+                                                        <p>Mastercam supports several different kinematic arrangements of multiple steady rests:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>Multiple independent steady rests. These are each mounted on separate linear axes so that they can be positioned independently. Program them as described in this section.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Tandem steady rests. These consist of multiple steady rests mounted as a block on a single set of linear axes. In this case, you do not need to select a linked component. Select the primary steady rest as the <span class="Bold">Driven Component</span>, but you do not need to select a linked component. However, you still need to create separate operations to clamp and unclamp each steady rest.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Multiple tandem steady rests. In this case, in the <span class="Bold">Linked Components</span> window select only the single main steady rest from each block.</p>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>Mastercam only allows you to link steady rests if they are in the same stream. To link steady rests from different streams, create separate operations for each steady rest. Then, sync the operations in the Sync Manager. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li>
+                                                        <p><a href="Steady_Rest_Mill-Turn.htm" class="MCXref xref">Steady Rest (Mill-Turn) dialog box</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="Steady_Rest_Point_Mill-Turn.htm" class="MCXref xref">Steady Rest Point (Mill-Turn) dialog box</a>
+                                                        </p>
+                                                    </li>
+                                                    <li><a href="../../Machine/Introduction_to_Steady_Rests.htm" class="MCXref xref">Introduction to Mill-Turn Steady Rests</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

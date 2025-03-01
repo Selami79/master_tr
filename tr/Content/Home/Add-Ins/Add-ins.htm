@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Home|Add-Ins" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Use Add-Ins, formerly known as C-hooks and NET-hooks, to customize and enhance Mastercam's functionality." />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Mastercam Add-Ins</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyleSheets/CNC_RegularTable.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1><span class="mc-variable CNC_Product.Product variable">Mastercam</span> Add-Ins</h1>
+                                                <p><span class="mc-variable CNC_Product.Product variable">Mastercam</span> Add-Ins (formerly known as C-Hooks and NET-Hooks) are  applications or utilities that customize, 
+ enhance, or extend <span class="mc-variable CNC_Product.Product variable">Mastercam</span>'s functionality. They can be created by individual 
+ users, Mastercam Resellers, third-party application developers, or by <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>.</p>
+                                                <p>To run an Add-In that has not been added to the interface, select 
+ <span class="Bold">Run Add-In</span> from 
+ the <span class="Bold">Home</span> tab. <span class="mc-variable CNC_Product.Product variable">Mastercam</span> displays a list 
+ of all the Add-Ins available on your workstation. Select 
+ the desired DLL and click <span class="Bold">Open</span>.</p>
+                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                    <p>Support inquiries can be sent to <a href="mailto:sdk@mastercam.com">sdk@mastercam.com</a>.</p>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How can I create my own Add-In?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>To create and add a utility, you must have the necessary C, C++, C#, and/or .NET 
+ programming skills and the proper development tools to compile and link 
+ your program. C-Hooks are written in C and C++, while NET-Hooks are written 
+ in Visual Basic.NET or C#. You can also create .NET scripts for use within <span class="mc-variable CNC_Product.Product variable">Mastercam</span>, written in C#. </p>
+                                                        <p>All created utilities should be placed in your <span class="Filepath"> ../Shared Mastercam <span class="mc-variable CNC_Product.VersionNumber variable">2025</span>/Add-Ins</span> folder. </p>
+                                                        <p>The <a href="https://my.mastercam.com/communities/3rd-party-developers/" title="3rd Party Developers section of Mastercam.com" alt="3rd Party Developers section of Mastercam.com" target="_blank">3rd Party Developers</a> section of the <span class="mc-variable CNC_Product.Product variable">Mastercam</span> website has documentation 
+ for setup and debugging C-Hooks and NET-Hooks, as well as sample projects 
+ to download. You must be a registered user with active maintenance to access these documents.</p>
+                                                        <p>The included APIs expose a significant amount of <span class="mc-variable CNC_Product.Product variable">Mastercam</span>'s functionality 
+ and feature set. In addition, a number 
+ of useful Add-Ins are already supplied with <span class="mc-variable CNC_Product.Product variable">Mastercam</span>. <span class="mc-variable CNC_Product.Product variable">Mastercam</span> also 
+ provides a number of ways for you to integrate Add-Ins into the <span class="mc-variable CNC_Product.Product variable">Mastercam</span> workspace to further customize 
+ the interface.</p>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />C-Hook requirements</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p>The C-Hook software 
+	 development kit (SDK) is available on the <a href="https://my.mastercam.com/communities/3rd-party-developers/sdk-downloads/" target="_blank" alt="myMastercam website"><span class="mc-variable CNC_Product.Product variable">Mastercam</span> website</a> and includes 
+	 all the necessary files and documentation. You can install it anywhere on your workstation. </p>
+                                                                <p>Build C-Hooks using 
+	 any version of <a href="https://visualstudio.microsoft.com/" target="_blank" alt="Microsoft Visual Studio">Visual Studio</a>, including the free Community Edition. 
+	 <span class="mc-variable CNC_Product.Product variable">Mastercam</span> C-Hook project templates (C and C++) can be 
+	 installed from within Visual Studio. From within Visual Studio, select <span class="Bold">Extensions</span>, <span class="Bold">Manage Extensions</span> and search online for <span class="mc-variable CNC_Product.Product variable">Mastercam</span>.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />NET-Hook requirements</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p>The <span class="Filepath">NETHook3_0.dll</span>, <span class="Filepath">SimAccessManaged.dll</span>, and <span class="Filepath">ToolNetAPI.dll</span>
+are installed in your <span class="mc-variable CNC_Product.Product variable">Mastercam</span> program directory when you install 
+	 <span class="mc-variable CNC_Product.Product variable">Mastercam</span>. It contains all the NET-Hook programming resources that 
+	 your .NET development tool needs.</p>
+                                                                <p>Build Net-Hooks using 
+	 any version of <a href="https://visualstudio.microsoft.com/" target="_blank" alt="Microsoft Visual Studio">Visual Studio</a>, including the free Community Edition. 
+	 <span class="mc-variable CNC_Product.Product variable">Mastercam</span> NET-Hook project templates (C# and Visual Basic) can be 
+	 installed from within Visual Studio. From within Visual Studio, select <span class="Bold">Extensions</span>, <span class="Bold">Manage Extensions</span> and search online for <span class="mc-variable CNC_Product.Product variable">Mastercam</span>.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />NET-Script requirements</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p>By default, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> includes the necessary files for scripting. You can use the NET-Script Editor to create, test, and run C# scripts directly from the console. For more complex scripts, use <a href="https://code.visualstudio.com/" target="_blank" alt="Visual Studio Code">Visual Studio Code</a>. </p>
+                                                                <p>For more information on creating scripts and accessing <span class="mc-variable CNC_Product.Product variable">Mastercam</span>'s API documentation, refer to the <a href="../../General/NET-Script-Editor.htm">NET-Script Editor</a> Help. </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />What is the difference between installed Add-Ins and third-party Add-Ins?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Add-Ins supplied by <span class="mc-variable CNC_Product.Product variable">Mastercam</span> are installed to your <span class="Filepath"> ..\My <span class="mc-variable CNC_Product.Product variable">Mastercam</span> <span class="mc-variable CNC_Product.VersionNumber variable">2025</span>\<span class="mc-variable CNC_Product.Product variable">Mastercam</span>\chooks</span> folder and are installed by default.  Add-Ins that are sold as added-cost options are not installed. Refer to <a href="#Table" class="MCXref xref">Add-Ins supplied with Mastercam</a> drop-down below for more information. </p>
+                                                        <p><span class="mc-variable CNC_Product.Product variable">Mastercam</span> allows the use of Reseller and third-party Add-Ins. These Add-Ins are not supplied by <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> and  should be placed in the <span class="Filepath"> ../Shared Mastercam <span class="mc-variable CNC_Product.VersionNumber variable">2025</span>/Add-Ins</span> folder. </p>
+                                                        <p>Installed and third-party Add-Ins can both be launched using <span class="Bold">Run Add-In</span> on the <span class="Bold">Home</span> tab. </p>
+                                                    </div>
+                                                </div>
+                                                <h2>Add-Ins Supplied with Mastercam</h2>
+                                                <p>Expand the following table for a list of the Add-Ins supplied with 
+		 <span class="mc-variable CNC_Product.Product variable">Mastercam</span>. The table does not include Add-Ins that are sold as added-cost 
+		 options. A wide variety of Resellers and other third-parties also 
+		 develop Add-Ins, so your workstation might have others installed 
+		 than those listed here.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="Table"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Add-Ins supplied with Mastercam</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <table style="vertical-align: top;width: 100%;mc-table-style: url('../../Resources/TableStyleSheets/CNC_RegularTable.css');margin-left: 0;margin-right: auto;" cellspacing="0" class="TableStyle-CNC_RegularTable">
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-CNC_RegularTable-Head-Header1">
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadE-Column1-Header1">Add-In</th>
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadD-Column1-Header1">Description</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr style="vertical-align: top;height: 31px;" class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-pattern="4">
+                                                                    <th colspan="2" style="border-top: None 0px #000000;text-align: left;padding-left: 2px;padding-right: 2px;padding-top: 2px;padding-bottom: 2px;border-top-style: None;border-top-width: 0px;border-top-color: #000000;" class="TableStyle-CNC_RegularTable-BodyD-Column1-RowGrouping">Input utilities</th>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="DXFRescuer.htm">DXFRescuer</a>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Loads and converts non-standard 
+				 DXF data from AutoCad® 
+				 files</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="Digitize.htm">MCDigitize</a>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Enters points, lines, and 
+				 splines from a digitizer</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="Machine_Probe_to_Points.htm">Prob2Spl</a>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Converts 3D (XYZ), 5D (XYZ 
+				 AB), or 8D (XYZ AB UVW) probe center data into splines. 
+				 Used for reverse engineering of machine probe position 
+				 data.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 31px;" class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-pattern="4">
+                                                                    <th colspan="2" style="text-align: left;padding-left: 2px;padding-right: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-RowGrouping">Wireframe 
+				 geometry</th>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="Arc_MultiEdit.htm">Arc MultiEdit</a>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Resizes multiple arcs simultaneously</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="Asphere.htm">Asphere</a>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Creates the geometry for 
+				 an aspherical lens</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="BreakCircles.htm">BreakCircles</a>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Breaks full circles into 
+				 smaller arcs</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="FindOverlap_C-Hook.htm">FindOverlap</a> </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Finds and deletes overlapping 
+				 entities</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="Fplot.htm">Fplot</a>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Plots a mathematical function</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 26px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="Gear.htm">Gear</a>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Creates one tooth or all 
+				 teeth of an involute spur or internal gear</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="GridPock.htm">GridPock</a>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Fills a pocket with points or circles or draws points along its boundary
+</td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="MedialAxis.htm">MedialAxis</a> </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Generates geometry on the 
+				 medial axis of a closed pocket boundary</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="Points_to_Circles.htm">Pts2Arcs</a>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Creates circles around all 
+				 selected points</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="Sort_Circles.htm">SortCircles</a>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Sorts all full circles in 
+				 the part by size and plane</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="Sprocket.htm">Sprocket</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Creates the geometry for 
+				 a sprocket</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="Please_Select_a_Font.htm">Txtchain</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Creates single lines of text 
+				 on lines, curves, and other geometric entities</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="Variable_Pitch_Helix.htm">vHelix</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Creates a helix with a variable 
+				 pitch</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="Z-Spiral.htm">zSpiral</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Creates a spiral with a specific 
+				 height and diameter</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 31px;" class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-pattern="4">
+                                                                    <th colspan="2" style="text-align: left;padding-left: 2px;padding-right: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-RowGrouping">Surfaces 
+				 and solids</th>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="ConsToSpline.htm">ConsToSpline</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Converts surface curves to 
+				 parametric splines</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="CoonsSurf.htm">CoonsSurf</a> </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Creates a surface from a 
+				 grid of curves, called a Coons surface</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="Create_Boundary_C-Hook.htm">CreateBoundary</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Creates a 2D or 3D boundary 
+				 curve around a set of surfaces or around the theoretical 
+				 machined area for specific tool sizes</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="Create_Fillets.htm">CreateFillets</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Creates fillets at surface 
+				 and solids intersections</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="FlattenSurf_C-Hook.htm">FlattenSurf</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Produces a planar surface 
+				 from a 3-dimensional non-planar surface</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="Map.htm">Map</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Maps a surface curve from 
+				 one surface to another</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="Rev2Rev.htm">Rev2Rev</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Converts a surface to a new 
+				 surface based on a specified number of U/V patches</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="STLHeal.htm">STLHeal</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Repairs gaps in an STL file</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 31px;" class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-pattern="4">
+                                                                    <th colspan="2" style="text-align: left;padding-left: 2px;padding-right: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-RowGrouping">Toolpath 
+				 utilities</th>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="../../Toolpaths/Wire/AgieReg_C-Hook.htm">AgieReg</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Provides data entry for AgieVision 
+				 controls</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="Arc3D.htm">Arc3D </a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Converts linear moves into 
+				 2D or 3D arcs</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 39px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="../../Machine/Automatic_Toolpathing_(ATP)_Add-on.htm">Automatic Toolpathing (ATP)</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Imports part 
+				 files and automatically assigns toolpaths to the geometry 
+				 and nests the toolpaths. This is typically used for cabinet 
+				 applications. This is a Mastercam Add-On. </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 39px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="Compensate_3D_Chook.htm">Comp3D</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Adds surface compensation 
+				 vectors to 3-axis surface toolpaths to support machine 
+				 controls that have 3D tool compensation</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="Rolldie.htm">Rolldie </a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Creates toolpaths around 
+				 a rotary axis</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="Shape_Parameters_Thread_Contour.htm">ThreadC</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Creates a thread on a selected 
+				 chain </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 31px;" class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-pattern="4">
+                                                                    <th colspan="2" style="text-align: left;padding-left: 2px;padding-right: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-RowGrouping">Posts, 
+				 machine definitions, control definitions</th>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="MPBin/Mpbin_Utility.htm">MPBin</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Encrypts all or part of a 
+				 post as a binary post</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 39px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="Update_Post.htm">UpdatePost</a>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Upgrades post processors 
+				 from  earlier versions of Mastercam to the current version</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 31px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="Steady_Rest_Component_Boundaries.htm">SteadyRest</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Defines the boundaries for 
+				 an existing steady rest machine component for lathe machine 
+				 definitions</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 31px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="MD_CD_PST_File_Rename_Utility.htm">MD_CD_PST_Rename</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Renames the post processor, 
+				 machine definition, and control definition</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 31px;" class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-pattern="4">
+                                                                    <th colspan="2" style="text-align: left;padding-left: 2px;padding-right: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-RowGrouping">Screen 
+				 and views</th>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="BlankDuplicates.htm">BlankDuplicates</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Locates duplicate entities 
+				 and blanks them, instead of deleting them</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="Metafile.htm" class="MCXref xref">Metafile</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Saves the contents of the 
+								graphics window to a .EMF file</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <p><a href="3D_Annontation_Finder.htm" class="MCXref xref">3D Annotation Finder</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                        <p>Locate 3D annotations that are associated with selected geometry.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 31px;" class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-pattern="4">
+                                                                    <th colspan="2" style="text-align: left;padding-left: 2px;padding-right: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyD-Column1-RowGrouping">Support 
+				 utilities</th>
+                                                                </tr>
+                                                                <tr style="vertical-align: top;height: 23px;" class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyB-Column1-Body1">
+                                                                        <p><a href="Control_Definition_Compare.htm">Control Definition Compare</a>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="padding-right: 2px;padding-left: 2px;padding-top: 2px;padding-bottom: 2px;" class="TableStyle-CNC_RegularTable-BodyA-Column1-Body1">
+                                                                        <p>Compares two control definitions 
+				 (or their post text) and highlights the differences</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <h2>Adding Add-Ins to the Interface</h2>
+                                                <p>In <span class="mc-variable CNC_Product.Product variable">Mastercam</span>, you can link to an Add-In 
+		 to further customize a function. Select a drop-down below to learn 
+		 more.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Running 
+		 an Add-In automatically when starting or exiting Mastercam</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>You can configure <span class="mc-variable CNC_Product.Product variable">Mastercam</span> to automatically run an Add-In 
+			 every time you start <span class="mc-variable CNC_Product.Product variable">Mastercam</span>, close <span class="mc-variable CNC_Product.Product variable">Mastercam</span>, or both. </p>
+                                                        <ol>
+                                                            <li value="1">
+                    On the <span class="Bold">File</span> 
+				 tab, click <span class="Bold">Configuration</span>, 
+				 and choose the <span class="Bold">Start/Exit</span> 
+				 page.
+                </li>
+                                                            <li value="2">
+                    Select the desired Add-Ins 
+				 in the <span class="Bold">Add-In programs</span> 
+				 section, and save the <span class="Filepath">.config</span> file.
+                </li>
+                                                        </ol>
+                                                        <p>If you work in both U.S. and metric modes, make sure you 
+			 add the Add-In to both <span class="Filepath">.config</span> files.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Linking 
+		 an Add-In to the Miscellaneous values button</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>You can attach an Add-In to the <span class="Bold">Miscellaneous 
+			 values</span> button on the <span class="Bold">Toolpath parameters</span> 
+			 tab so that when a user clicks the button, Mastercam runs 
+			 the Add-In instead of opening the <span class="Bold">Miscellaneous Values</span> dialog 
+			 box. This also replaces the <span class="Bold">Miscellaneous values</span> page with the selected 
+			 Add-In for tree-style toolpath dialog boxes.</p>
+                                                        <p>This is a property of the control definition, so you can 
+			 select an Add-In particular to a machine, product type, or 
+			 post. It is used most often when you need to create custom 
+			 input for specific machine tools, such as an AgieVision EDM.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Adding Add-Ins to a tab or menu</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Use the <span class="Bold">Options</span> dialog box (<span class="Bold">File</span>, <span class="Bold">Options</span>) 
+			 to add frequently used Add-Ins to a tab  or the graphics window context menu.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Assigning 
+		 a keyboard shortcut to an Add-In</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Select <span class="Bold">Customize</span> next to <span class="Bold">Keyboard shortcuts</span> in the <span class="Bold">Customize Ribbon</span> page of the <span class="Bold">Options</span> dialog box (<span class="Bold">File</span>, <span class="Bold">Options</span>) to map keyboard shortcuts to frequently used Add-Ins.</p>
+                                                    </div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li><a href="../../General/NET-Script-Editor.htm" class="MCXref xref">NET-Script Editor</a> </li>
+                                                    <li><a href="../../File/File Management Overview.htm" class="MCXref xref">File Management Overview</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

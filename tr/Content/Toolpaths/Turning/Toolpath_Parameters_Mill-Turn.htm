@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Toolpaths|Mill-Turn|Turning|Common Turning" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Toolpath Parameters tab: Mill-Turn</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Toolpath Parameters tab: Mill-Turn</h1>
+                                                <p>Use this tab to 
+		 select a tool and offsets, set feeds and speeds, and set other general toolpath 
+		 parameters. Click on a sub-topic below to learn more. </p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Selecting a tool</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>
+			 Select tools for the operation in one of three ways:</p>
+                                                        <ul>
+                                                            <li>Mastercam displays 
+				 all of the available tools in the 
+				 current toolpath group. Select <span class="Bold">Show 
+				 library tools</span> to also display tools from the tool 
+				 library. Click a tool to use it in the operation.</li>
+                                                            <li>If the tool you want to use 
+				 is not displayed, click <span class="Bold">Select library 
+				 tool</span>. This lets you choose tools from different 
+				 tool libraries.</li>
+                                                            <li>Create an entirely new tool. The new tool definition will 
+				 be stored in the current toolpath group unless you choose 
+				 to save it to a tool library. Depending on the type of toolpath, either right-click in the tool display window or use the buttons below the tool list.</li>
+                                                        </ul>
+                                                        <p>Mastercam uses a distinctive icon to identify Y-axis tools:</p>
+                                                        <p data-mc-conditions="Product.Lathe">
+                                                            <img src="../ToolpathsPics/y-axis-icon-1.png" alt="The icon used to identify Y-axis tools in tabbed toolpath interface." />
+                                                        </p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/y-axis-icon-2.png" alt="The icon used to identify Y-axis tools in the function panel toolpath interface." />
+                                                        </p>
+                                                        <p>When you select a tool, the other fields on the tab update 
+			 with default values. Override any of them by just 
+			 typing in the desired values. Default parameters come from 
+			 the tool definition, machine or control definition, or operation 
+			 defaults. The machine group properties tell Mastercam where 
+			 to get the default values.</p>
+                                                        <ul>
+                                                            <li>If you select a Y-axis tool, Mastercam automatically filters the list of available planes and spindle origins. </li>
+                                                            <li>If you are creating an A-axis contour toolpath, Mastercam only displays Y-axis tools in the list. </li>
+                                                        </ul>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <ul>
+                                                                <li>To simplify the display, click 
+				 <span class="Bold">Tool 
+				 filter</span> to display only the tools from the library 
+				 that meet filtering criteria.</li>
+                                                                <li>Use the right-click menu options 
+				 to customize the display. If the tools are displayed as 
+				 a detailed list, click on column headers to sort the list. 
+				 Reorder columns by dragging their headings.</li>
+                                                                <li>Double-click a tool to edit 
+				 its tool definition or properties. This includes setting 
+				 it in a different turret, changing its mounting angle, 
+				 or using it with a different spindle.</li>
+                                                                <li>Hover the mouse over a tool 
+				 to see a larger picture of it.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Feeds and speeds</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>As soon as you select a tool, Mastercam inputs default feed 
+			 rates and spindle speed. To prevent this behavior for completed 
+			 toolpaths, select the <span class="Bold">Lock 
+			 feedrates</span> option in the <span class="Bold">Toolpaths</span> 
+			 page of the <span class="Bold">System Configuration</span> dialog box. You can calculate 
+			 the defaults in either of two ways:</p>
+                                                        <ul>
+                                                            <li>Read them directly from the 
+			tool definition.</li>
+                                                            <li>Dynamically 
+				calculate them from the material, operation type, 
+			and tool characteristics.</li>
+                                                        </ul>
+                                                        <p>Use the machine group properties to tell Mastercam which 
+			type of default you prefer. You can override any of 
+		the defaults by entering different values.</p>
+                                                        <p>Mastercam validates your feeds and speeds against the maximum 
+			and minimum values set in the machine definition, and 
+		warns you if you try to enter a value outside these limits.</p>
+                                                        <p>If you later select a different machine for the toolpath 
+			group or import the operation into a file with a different 
+			machine, Mastercam validates the programmed values against 
+			the values in the new machine definition. If the programmed 
+			values are out of range, they  display in italics 
+		until you edit them.</p>
+                                                        <ul>
+                                                            <li>The feed rate and spindle speed that you enter here are 
+			typically in effect for the entire operation. However, you 
+			can use <span class="Bold">Change 
+			at Point</span> to change them for specific 
+		moves.</li>
+                                                            <li>Use the <span class="Bold">Feed</span> 
+			page in the control definition to configure the feed 
+		rate units, inverse feed rates, or other advanced options.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <p>The 
+		 bottom area of the tab includes  many 
+		 advanced toolpath options. Select the checkbox  
+		 to activate a feature, and click the button to set values for 
+		 this operation. Some  options might not be available if 
+		 they are not supported by the current control 
+		 definition.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Parameters</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>Many of the field and button labels on this tab can be customized and might differ from those listed here, or might be disabled.</p>
+                                                        </div>
+                                                        <p class="Term">Tool display window</p>
+                                                        <p>Shows the tools available in the current machine group. Click a tool in this list to use it in the current operation. Right-click in this area to add tools to this list from a tool library, create a new tool, or change how this list is displayed. </p>
+                                                        <p class="Term">Show library tools</p>
+                                                        <p>Adds all the tools in the current tool library to the tool display window. Use <span class="Bold">Filter</span> to screen the list if there are too many tools to view conveniently. The name of the current library is displayed on the right-click menu.</p>
+                                                        <p class="Term">Select library tool</p>
+                                                        <p>Opens the <span class="Bold">Tool Selection</span> dialog box so that you can select a tool from a tool library, or select a different tool library. When you select a tool, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> copies the tool to the  current machine group and saves it to the part. The tool is then listed in the tool display window where it can be selected for any operation in the machine group.</p>
+                                                        <p class="Term">Tool filter </p>
+                                                        <p data-mc-conditions="Product.Lathe,Product.Mill-Turn">Opens the <span class="Bold">Lathe Tool Filter</span> dialog box to set filter criteria for finding tools. </p>
+                                                        <p data-mc-conditions="Product.Mill-Turn">When you select an axis combination for Mill-Turn toolpaths, the tool filter automatically filters the upper and lower turret tools based on the turret used by the axis combination.</p>
+                                                        <p class="Term">Tool number</p>
+                                                        <p>Shows the tool number used in the NC program. When <span class="Bold">Assign tool numbers sequentially</span> is selected in your machine group properties, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> numbers the tools starting with 1, 2, and so on. When this option is deselected, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> takes the tool number from the tool definition. You can also automatically check for duplicate tool numbers. You can override either method by entering a new number.</p>
+                                                        <p>The post processor can associate the tool number with length and diameter offsets in the control. The control definition determines how Mastercam assigns the offsets for each tool.</p>
+                                                        <p class="Term">Offset number </p>
+                                                        <p>Information about possible offsets required for each tool in the turret is stored in an offset register. Each offset register is given a one- or two-digit number. Enter a value that corresponds with the number of the offset register you want to use for the specified tool.</p>
+                                                        <p class="Term">Tool angle</p>
+                                                        <p>Click to open the <span class="Bold">Tool Angle</span> dialog box where you can rotate the tool to a specific angle for the toolpath. It is only enabled if the active axis combination contains a compatible rotary axis. For a multi-function lathe, this is usually a B axis.</p>
+                                                        <p class="Term">Tool angles</p>
+                                                        <p>Read-only. Displays the angle and orientation entered in the <span class="Bold">Tool Angle</span> dialog box. </p>
+                                                        <p class="Term">Turret index position</p>
+                                                        <p>Sets the turret index position to which the tool is added.</p>
+                                                        <p class="Term">Feed rate</p>
+                                                        <p data-mc-conditions="Product.Lathe,Product.Mill-Turn">Determines the speed at which the tool cuts along the toolpath. Enter a value in the text box and choose the calculation type:</p>
+                                                        <ul>
+                                                            <li data-mc-conditions="Product.Lathe,Product.Mill-Turn"><span class="Bold">in/rev or mm/rev</span>: Calculates the value in inches (or millimeters) per revolution.</li>
+                                                            <li data-mc-conditions="Product.Lathe,Product.Mill-Turn"><span class="Bold">in/min or mm/min</span>: Calculates the value in inches (or millimeters) per minute.</li>
+                                                            <li data-mc-conditions="Product.Lathe,Product.Mill-Turn"><span class="Bold">micro-in or microns</span>: Lets you enter a theoretical surface finish value in micro-inches, or microns. Surface finish refers to the depth of the grooves created on the surface of the part by the insert and is determined by several factors including the insert corner radius, coolant, machine vibration, and feed rate/revolution.  <span class="mc-variable CNC_Product.Product variable">Mastercam</span> converts the value you enter to a feed rate/revolution that will give you a surface finish close to the one entered. The feed rate calculation varies for different radius arcs, but is the same for linear moves. Since microns are very small units, the numbers entered in the feed rate text box will be relatively large.</li>
+                                                        </ul>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; " data-mc-conditions="Product.Lathe,Product.Mill-Turn"><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>When you create a Lathe Thread toolpath, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> automatically calculates the feed rate based on the value you enter for <span class="Bold">Lead</span> (on the <span class="Bold">Thread shape parameters</span> tab) and <span class="Bold">Spindle speed</span> (on the <span class="Bold">Toolpath parameters</span> tab). </p>
+                                                        </div>
+                                                        <p class="Term">Plunge feed rate</p>
+                                                        <p>Select to activate the field and the feed rate calculation type, <span class="Bold">in/rev or mm/rev</span>, <span class="Bold">in/min or mm/min</span>, or <span class="Bold">micro-in or microns</span> as described previously. Enter a plunge feed rate value by:</p>
+                                                        <ul>
+                                                            <li>Accepting the default value.</li>
+                                                            <li>Manually entering a custom value.</li>
+                                                            <li>Have Mastercam calculate the value based on 50% of the tool's feed rate by selecting <span class="Bold">Compute from material</span> in the <span class="Bold">Parameters</span> tab of the <span class="Bold">Define Tool</span> dialog box.</li>
+                                                        </ul>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>Plunge rates are only applied if your operation includes plunges, and your plunge cutting method and parameters are set correctly in the <span class="Bold">Plunge Cut Parameters</span> dialog box.</p>
+                                                        </div>
+                                                        <p class="Term">Spindle speed</p>
+                                                        <p>
+                                                            <MadCap:conditionalText data-mc-conditions="Product.Lathe,Product.Mill-Turn">Determines the rotation speed of the spindle in revolutions per minute (RPM) or constant surface speed (CSS)</MadCap:conditionalText>. <span class="mc-variable CNC_Product.Product variable">Mastercam</span> calculates a default value according to the settings in the machine group properties, but you can override this by entering in a new value here. </p>
+                                                        <p><span class="mc-variable CNC_Product.Product variable">Mastercam</span> warns you if either the default or the value you type in is outside the range set in the machine definition. <MadCap:conditionalText data-mc-conditions="Product.Lathe,Product.Mill-Turn">For lathe machines, you are only warned if you are in RPM mode, not CSS mode. </MadCap:conditionalText></p>
+                                                        <p class="Term">Maximum spindle speed</p>
+                                                        <p>Enter a value to determine the fastest speed that you will allow the part to turn. This value is always expressed in RPMs. For guidelines, refer to the documentation that came with your lathe machine.</p>
+                                                        <p class="Term">Force tool change</p>
+                                                        <p>When the same tool is used in successive operations, this option replaces the null tool change in the NCI file with a tool change code, so that an event can be triggered between the two operations. The tool collision avoidance function assumes that the tool will go to the home position immediately after an operation with this option selected, even if the next operation uses the same tool.</p>
+                                                        <p class="Term">Comment</p>
+                                                        <p>Enter a <span class="Bold">Comment</span> to help identify the operation in the Toolpaths Manager. These can be output in the NC file when you post if you select the proper option in your machine group properties. </p>
+                                                        <p class="Term" data-mc-conditions="Product.Lathe,Product.Mill-Turn">Axis combination/Spindle origin </p>
+                                                        <p data-mc-conditions="Product.Lathe,Product.Mill-Turn">Opens the <span class="Bold">Axis Combination/Spindle Origin</span> dialog box to select an axis combination that has been defined for your machine. You need to select an axis combination if your machine tool has multiple definitions for the same axis. Axis combinations typically include a tool turret, spindle, and chuck. You must define axis combinations in the machine definition before they can be selected here. Once you select an axis combination, its name displays on the button. </p>
+                                                        <p>If your machine tool does not have any axis combinations, the default will be selected and you do not have to do anything. </p>
+                                                        <p class="Term">Tool display</p>
+                                                        <p>Use these settings to tell Mastercam how the toolpath appears in the graphics window when it is first created or regenerated.  </p>
+                                                        <p>Once a toolpath has been created, use the Toolpaths Manager to toggle toolpath display on and off for individual toolpaths or groups of toolpaths.</p>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>These options do not affect <span class="mc-variable CNC_Product.Product variable">Mastercam</span>'s simulation and backplot features. </p>
+                                                        </div>
+                                                        <p class="Term">Stock update</p>
+                                                        <p>Access the Stock Update Parameters dialog box to regenerate subsequent operations, define the operation's tool clearance, or use the default tool clearance defined in Job Setup. You can choose to keep either the part boundary, the stock boundary, or both boundaries after the part is cut off.</p>
+                                                        <p class="Term">To batch</p>
+                                                        <p>Select to automatically tag the toolpath for batch processing and to add the toolpath to the Toolpaths Manager. An NCI file generates after the batch runs.</p>
+                                                        <p class="Term">Reference point</p>
+                                                        <p data-mc-conditions="Product.Mill,Product.Lathe,Product.Mill-Turn">Opens the <span class="Bold">Reference points</span> dialog box to set reference points. A reference point is a location that the tool moves to between the home position and the start of the toolpath (approach point), and another location that the tool moves to at the end of the toolpath before returning to the home position (retract point). </p>
+                                                        <p data-mc-conditions="Product.Lathe,Product.Mill-Turn"><span class="mc-variable CNC_Product.Product variable">Mastercam</span> lets you store separate reference points for ID and OD work, and will automatically select the proper ones. </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Right-click menu options </a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="Term">Create new tool</p>
+                                                        <p>Create a new tool instead 
+				 of selecting one from the list. The tool definition is stored in the current toolpath group unless you save 
+				 it to a library.</p>
+                                                        <p class="Term">Edit tool</p>
+                                                        <p>Edit the tool definition for the 
+				 selected tool. The changes you make are stored in 
+				 the toolpath group and will not affect future parts which 
+				 use the tool unless you save the changes to a library.</p>
+                                                        <p class="Term">Tool Manager</p>
+                                                        <p>Displays the name of the current tool library, and opens 
+				 the Tool Manager so that you can work with the library 
+				 and the tools stored in the current toolpath group.</p>
+                                                        <p class="Term">Load tool on machine</p>
+                                                        <p>Mill-Turn only. Create a tool component in the 
+				 machine definition based on the tool definition for the 
+				 selected tool. Mastercam uses the tool setup information 
+				 in tool spindle and tool locator components to properly 
+				 position and orient the tool for simulation.</p>
+                                                        <p class="Term">View</p>
+                                                        <p> Display the tools as large icons, list, or as a details 
+				 list.</p>
+                                                        <p class="Term">Arrange tools</p>
+                                                        <p>Sort the tools by tool number or tool name. Use these 
+				 options if you have the tools displayed as icons without 
+				 any column headers.</p>
+                                                        <p class="Term">Popup tool</p>
+                                                        <p>A larger picture of the tool will popup if you let the 
+				 mouse hover over an icon in the preview window. Use this 
+				 option to control how long the mouse needs to hover before 
+				 the larger picture pops up.</p>
+                                                        <p class="Term">Save parameters to default file</p>
+                                                        <p>Make the current toolpath settings 
+				 the default for future toolpaths of this type. The current 
+				 values are saved to the <span class="Filepath">.mcam-defaults</span> file specified 
+				 in the toolpath group properties.</p>
+                                                        <p class="Term">Reload parameters from default file</p>
+                                                        <p>Overwrite the current values with the values from your 
+				 defaults file. These will be read from the <span class="Filepath">.mcam-defaults</span> 
+				 file specified in the toolpath group properties.</p>
+                                                        <p class="Term">Re-initialize feeds and speeds</p>
+                                                        <p>Resets feeds and speeds based 
+				 on the tool settings definition in the tool library. This 
+				 function works even if <span class="Bold">Lock 
+				 feedrates</span> in the <span class="Bold">Toolpaths</span> 
+				 page of the <span class="Bold">System Configuration</span> dialog box is selected.</p>
+                                                    </div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li><a href="Creating_a_Mill-Turn_Toolpath.htm" class="MCXref xref">Creating a Mill-Turn Toolpath</a>
+                                                    </li>
+                                                    <li><a href="Working_With_Yaxis_Tools.htm" class="MCXref xref">Working with Y-axis Tools</a>
+                                                    </li>
+                                                    <li><a href="../../View/Performing_a_Mill-Turn_Job_Setup.htm" class="MCXref xref">Performing a Mill-Turn Job Setup</a>
+                                                    </li>
+                                                    <li><a href="Calculating_Feeds_and_Speeds_from_a_Material_Lathe.htm" class="MCXref xref">Calculating Feeds and Speeds from a Material: Lathe</a>
+                                                    </li>
+                                                    <li><a href="../../Machine/Tool_Control_Definition_Manager.htm" class="MCXref xref">Tool page: Control Definition Manager</a>
+                                                    </li>
+                                                    <li><a href="../../View/Tool_Settings_Machine_Group_Properties.htm" class="MCXref xref">Tool Settings tab: Machine Group Properties - Mill-Turn, Lathe</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

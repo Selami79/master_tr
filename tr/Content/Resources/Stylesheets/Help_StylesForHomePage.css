@@ -1,0 +1,733 @@
+/*<meta conditions="CNC_Primary.HelpOnly,CNC_Publish.Installation" />*/
+
+@import url('CNC_FontStylesheet.css');
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+/*===========================================================================================================================================================
+
+This stylesheet is specifically for the Home page for HTML5 outputs. 
+
+===========================================================================================================================================================*/
+
+/*============================================ General Styles ============================================*/
+
+body
+{
+	line-height: 1.5em;
+	font-family: 'Noto Sans';
+	background-color: #f1f1f1;
+}
+
+button.menu-icon	/* Hides the menu bar in mobile, tablet, and web */
+{
+	display: none !important;
+}
+
+#contentBody > .responsive-header
+{
+	background-color: transparent;
+}
+
+.height-container-sidenav	/*Removes the padding at the bottom of the homepage so the footer doesn't ride up */
+{
+	padding-bottom: 0px;
+}
+
+/*============================================ Generic Styles ============================================*/
+
+.Center	/* Used to center elements */
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+.inner-wrap .main-section > .outer-row	/* Used to expand the max width of the Home page topic past the limits set in the skin */
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+p
+{
+	color: #5a5a5a;
+	line-height: normal;
+	margin-bottom: 0.75em;
+	margin-top: 0px;
+	widows: 2;
+	orphans: 3;
+}
+
+span.mc-variable.Italic
+{
+	font-weight: normal;
+	font-style: italic;
+}
+
+span.mc-variable.Bold	/*Use when a variable needs to be bold when the surrounding text does not need to be */
+{
+	font-weight: bold;
+	color: #3c3c3c;
+}
+
+/*============================================ Link Styles ============================================*/
+
+a
+{
+	text-decoration: none;
+}
+
+a:link
+{
+	text-decoration: none;
+	color: #d11141;
+}
+
+a:visited
+{
+	text-decoration: none;
+	color: #8b008b;
+}
+
+MadCap|xref	/*Use as a link to other topics in a project. */
+{
+	color: #d11141;
+	text-decoration: none;
+	mc-format: '{paratext}';
+}
+
+/*============================================ MadCap Proxy Styles ============================================*/
+
+MadCap|searchBarProxy	/*Used to style the Search Bar Proxy */
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	float: none;
+	width: 50%;
+}
+
+/*============================================ Topic Hero  Styles ============================================*/
+/* Styles the large text on the home page */
+
+div.topic-hero
+{
+	padding-top: 20px;
+	height: auto;
+	padding-bottom: 40px;
+	padding-left: 10%;
+	padding-right: 10%;
+	background-repeat: repeat;
+}
+
+h1
+{
+	font-size: 4.6em;
+	margin-top: 1.11em;
+	margin-bottom: 0.5em;
+	line-height: 100%;
+	font-weight: normal;
+	color: #000000;
+}
+
+h2
+{
+	font-size: 2.2em;
+	font-weight: normal;
+	line-height: 100%;
+}
+
+.search,
+.search-bar
+{
+	margin: 0 auto;
+}
+
+/*============================================ Tile Styles ============================================*/
+/* The styles below are for the four tiles on the home page. It is a responsive layout. */
+
+div.home-tiles-container
+{
+	padding-bottom: 4.375em;
+}
+
+div.home-tiles
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.home-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #fff;
+	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 1%;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	overflow: hidden;
+	border: 1px solid #e0e0e0;
+}
+
+div.home-tiles > div:nth-child(1)
+{
+	width: 16.667%;
+	margin-left: 12.667%;
+	min-height: 17em;
+}
+
+div.home-tiles > div:nth-child(2)
+{
+	width: 16.667%;
+	margin-left: 2%;
+	min-height: 17em;
+}
+
+div.home-tiles > div:nth-child(3)
+{
+	width: 16.667%;
+	margin-left: 2%;
+	min-height: 17em;
+}
+
+div.home-tiles > div:nth-child(4)
+{
+	width: 16.667%;
+	margin-left: 2%;
+	min-height: 17em;
+}
+
+div.home-tiles > div:nth-child(1):hover,
+div.home-tiles > div:nth-child(2):hover,
+div.home-tiles > div:nth-child(3):hover,
+div.home-tiles > div:nth-child(4):hover
+{
+	box-shadow: 0 0 11px rgba(33,33,33,.2);
+	box-sizing: border-box;
+}
+
+p.tile-title	/* Used for the title text of a tile */
+{
+	padding: 5px;
+	margin-top: 0.5em;
+	margin-bottom: .5em;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #454545;
+}
+
+p.tile-content	/*Used for the content inside of a tile */
+{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+img.tileimage	/*Used to style the images in the tiles */
+{
+	max-width: 50%;
+	padding-top: 10px;
+}
+
+/* For call to action - the banner across the Home page */
+
+div.CallToActionContainer	/*Contains the call to action in a container */
+{
+	margin-bottom: 0;
+	border: 1px solid #e0e0e0;
+}
+
+div.CallToAction	/* The call to action across the Home page */
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+	text-align: center;
+}
+
+div.CallToAction::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.CallToAction::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.CallToAction > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.CallToAction > div:nth-child(1)
+{
+	width: 100%;
+	margin-left: 0%;
+	min-height: 8vh;
+	padding-top: 2em;
+}
+
+p.CTAHeading	/*Styles the text for the call to action */
+{
+	font-size: 1.25em;
+	color: #454545;
+}
+
+/*============================================ Span Styles ============================================*/
+
+span.Bold	/* Used to add a bold style to the selected text. */
+{
+	color: #3c3c3c;
+	font-weight: bold;
+}
+
+span.Filepath	/* Used for file paths and part files. */
+{
+	font-family: "Arial Narrow", Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1.05em;
+}
+
+span.Italic	/* Used for emphasis */
+{
+	font-style: italic;
+}
+
+/*========================================== Footer and Footer Copyright Responsive Layout Styles ============================================*/
+
+div.FooterWrapper
+{
+	background-color: #000;
+	padding: 30px 0 20px;
+}
+
+div.Footer
+{
+	background-color: #000;
+	max-width: 80em;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+div.Footer p
+{
+	color: #fff;
+	font-size: 0.9em;
+}
+
+div.Footer a
+{
+	color: #d11141;
+}
+
+div.Copyright a
+{
+	color: #fff;
+}
+
+div.Footer h2
+{
+	color: #fff;
+	mc-heading-level: 0;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+div.Copyright > div:nth-child(2) p
+{
+	text-align: right;
+}
+
+div.AboutContact
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	color: #fff;
+	margin: 20px 0;
+	padding: 0;
+}
+
+div.AboutContact::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.AboutContact::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.AboutContact > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.AboutContact > div:nth-child(1)
+{
+	width: 50%;
+	margin-left: 0%;
+	padding-right: 30px;
+}
+
+div.AboutContact > div:nth-child(2)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+div.Column12
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 20px 0;
+	padding: 0;
+	text-align: left;
+}
+
+div.Column12::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Column12::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Column12 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Column12 > div:nth-child(1)
+{
+	width: 100%;
+	margin-left: 0%;
+}
+
+.socialicons
+{
+	width: 32px;
+	margin-left: 10px;
+}
+
+.mainlogo
+{
+	margin-top: 32px;
+	margin-left: 0;
+	text-align: left;
+	width: 264px;
+}
+
+div.Copyright
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 24px 0 10px 0;
+}
+
+div.Copyright::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Copyright::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Copyright > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Copyright > div:nth-child(1)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+div.Copyright > div:nth-child(2)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+/*============================================ Tablet Medium Styles ============================================*/
+
+@media only screen and (max-width: 1279px)
+{
+	nav.title-bar	/* Changes the background color to white so it does not blend into the page */
+	{
+		background-color: white;
+	}
+
+	div.topic-hero
+	{
+		padding-top: 0px;
+		padding-bottom: 40px;
+	}
+
+	div.home-tiles > div
+	{
+		margin-bottom: 2%;
+	}
+
+	div.home-tiles-container
+	{
+		padding-bottom: 1.375em;
+	}
+
+	div.HomeHeroSection > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 40%;
+		margin-left: 7.5%;
+		min-height: 20em;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 40%;
+		margin-left: 5%;
+		min-height: 20em;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 40%;
+		margin-left: 7.5%;
+		min-height: 20em;
+	}
+
+	div.home-tiles > div:nth-child(4)
+	{
+		width: 40%;
+		margin-left: 5%;
+		min-height: 20em;
+	}
+
+	div.CallToAction > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		padding-top: 1em;
+	}
+
+	h1
+	{
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+
+	div.AboutContact > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.AboutContact > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.Column12 > div:nth-child(1)
+	{
+		width: 66.66667%;
+		margin-left: 0%;
+	}
+
+	div.Copyright > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.Copyright > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.Footer
+	{
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	nav.title-bar	/* Changes the background color to white so it does not blend into the page */
+	{
+		background-color: white;
+	}
+
+	h1
+	{
+		font-size: 2.4em;
+	}
+
+	h2
+	{
+		font-size: 1.2em;
+	}
+
+	div.topic-hero
+	{
+		padding-bottom: 20px;
+	}
+
+	div.home-tiles-container
+	{
+		padding-bottom: 0;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 80%;
+		margin-left: 10%;
+		margin-bottom: 8%;
+		margin-top: 2%;
+		min-height: 10vh;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 80%;
+		margin-left: 10%;
+		margin-bottom: 8%;
+		min-height: 10vh;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 80%;
+		margin-left: 10%;
+		margin-bottom: 8%;
+		min-height: 10vh;
+	}
+
+	div.home-tiles > div:nth-child(4)
+	{
+		width: 80%;
+		margin-left: 10%;
+		margin-bottom: 8%;
+		min-height: 10vh;
+	}
+
+	div.home-tiles > div
+	{
+		margin-bottom: 5%;
+	}
+
+	p.tile-title	/* Used for the title text of a tile */
+	{
+		font-size: 1em;
+	}
+
+	div.CallToAction > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	p.CTAHeading
+	{
+		font-size: 1em;
+	}
+
+	div.AboutContact > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.AboutContact > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Column12 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Copyright > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Copyright > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Footer
+	{
+		max-width: 100%;
+	}
+}
+
+span.uicontrol	/* [FUTURE USE]Apply to UI text. UI text should be exactly as displayed in the application. Bolds the selected text. */
+{
+	color: #3c3c3c;
+}
+

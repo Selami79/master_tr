@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Machine" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Machine Group Setup panel: Mill/Router</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="558x558" href="../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Machine Group Setup panel: Mill/Router</h1>
+                                                <p>The <span class="uicontrol">Machine Group Setup</span> function panel (accessed from the Toolpaths Manager) manages machine groups for Mill and Router machines. </p>
+                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                    <ul>
+                                                        <li>
+                                                            <p>While in the <span class="Bold">Machine Group Setup</span> function panel, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> creates a temporary viewsheet to show how your options affect the part, depending on the page you are currently on. Once  the <span class="Bold">Machine Group Setup</span> function panel is closed, the temporary viewsheet is deleted. </p>
+                                                        </li>
+                                                        <li>
+                                                            <p>The<span class="Bold"> Machine Group Setup</span> panel displays a status indicator next to the page icons. This can be helpful when there is an error, but you are unable to locate which page contains it or to determine if a page is active or not.</p>
+                                                        </li>
+                                                        <p>
+                                                            <img src="MachinePics/Machine_Group_Panel_Setup.png" alt="Machine Group Setup with staus icon" />
+                                                        </p>
+                                                    </ul>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />What is the general workflow?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p><span class="Bold">Machine Group Setup</span> features a top-down workflow, represented by the icons on the left side of the panel. You begin your setup with the <span class="Bold">Machine</span> page. </p>
+                                                        <h2>Setting up the machine </h2>
+                                                        <p>Separate sections in this page allow you to choose the files for the machine definition, default tool and operations libraries, and toolpath defaults. When you select a new machine, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> loads a copy of the machine definition in your part file. When you select <span class="Bold">Configure machine</span> to view or make changes to the machine definition, you are only changing the local copy stored in your part file, not the machine definition stored on your hard drive. Selecting a new machine definition updates the other paths and file names with the defaults in the new control definition.</p>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <ul>
+                                                                <li>
+                                                                    <p>The control and post are displayed as read-only for information purposes only. </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>If there are already operations in the machine group, be careful when selecting a different machine to ensure the new machine supports all the toolpath features that have been programmed.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>Refer to the <a href="../Toolpaths/Common/Working_with_Toolpath_Defaults.htm" class="MCXref xref">Working with Toolpath Defaults</a> Help topic for more information about toolpath defaults. </p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <h2>Setting up the master model </h2>
+                                                        <p class="LeadIn">Use the <span class="Bold">Master Model</span> page to define the final part after all of the machining is completed. This step is optional,  but having a master model can be useful when using Mastercam Simulator. The selected master model is defined as the <span class="Bold">Workpiece</span> when simulating, ensuring that you always have the correct finished part. </p>
+                                                        <p>
+                                                            <img src="MachinePics/mgs_MModel.png" class="MaxHeight" alt="The final, machined part." />
+                                                        </p>
+                                                        <p>The master model can be made up of multiple entities. You can choose between a number of different selection options, located under the <span class="Bold">Selection</span> list box. </p>
+                                                        <h2>Setting up the stock</h2>
+                                                        <p class="LeadIn">Use the <span class="Bold">Stock Setup</span> page to define the stock model. Stock models help you visualize your toolpaths more realistically in the graphics window. The stock model can also be displayed with the part geometry when viewing the file or toolpaths, or during Mastercam Simulator. </p>
+                                                        <p>
+                                                            <img src="MachinePics/MGS_Stock.png" class="MaxWidth" alt="A stock model. " />
+                                                        </p>
+                                                        <p>There are several methods to define your stock model. You can only have one selection as the stock model. The selection methods include the following:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p><span class="Bold">Bounding Box</span> function</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>From a file</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>A solid, a mesh or a stock model within the current part file</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>From two corners</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>From  rectangular stock</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>From cylindrical stock</p>
+                                                            </li>
+                                                        </ul>
+                                                        <p>If necessary, you can also set the stock plane. For more information, refer to the <a href="#How" class="MCXref xref">How do I set the stock plane and when should I do this?</a> drop-down.</p>
+                                                        <p>Click on a solid face to use the <span class="Bold">Push-Pull</span> function. Do this to extend the selected faces. You can set the mode to <span class="Bold">Absolute</span> or <span class="Bold">Incremental</span>. Additionally, you can select <span class="Bold">Both directions</span> to modify both sides of the stock.</p>
+                                                        <p>
+                                                            <img src="MachinePics/MachineSystems_PushPull.png" alt="Machine Group Setup push-pull options" />
+                                                        </p>
+                                                        <h2>Setting up workholding components</h2>
+                                                        <p class="LeadIn">Use the <span class="Bold">Workholding</span> page to place and align fixtures and other workholding components. These components are used by Mastercam Simulator as <span class="Bold">Fixtures</span> for collision checking. You can manipulate these components using the <span class="Bold">Align to Face</span> and <span class="Bold">Dynamic Transform</span> options. </p>
+                                                        <p>
+                                                            <img src="MachinePics/MGS_Fixtures.png" class="MaxHeight" alt="A part with fixtures. " />
+                                                        </p>
+                                                        <p>You can group your selections, analyze them, or remove them by using the right-click menu in the <span class="Bold">Selection</span> list. </p>
+                                                        <p>
+                                                            <img src="MachinePics/workholding_solid.png" alt="The &quot;Fixtures&quot; right-click menu. " />
+                                                        </p>
+                                                        <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> also allows you to select "Active" fixtures. By using the check boxes and the group creation capability you can have standard fixtures and activate ones you need. You can also leave non-active ones on the list. You are also able to rename Fixtures from the right-click menu.</p>
+                                                        <p>
+                                                            <img src="MachinePics/workholding_fixture.png" alt="This shows the &quot;Fixtures&quot; rename option." />
+                                                        </p>
+                                                        <h2>Setting up your tooling</h2>
+                                                        <p>Use the <span class="Bold">Tool</span> page to control how <span class="mc-variable CNC_Product.Product variable">Mastercam</span> assigns tools, tool offset numbers, and default values for feeds, speeds, coolant, and other toolpath parameters. </p>
+                                                        <p>if you would like to number tools sequentially by default for all of your machine groups, refer to the <a href="../Toolpaths/Common/Setting_a_Default_Tool_Numbering_Method.htm" class="MCXref xref">Setting a Default Tool Numbering Method</a> Help topic. You can also refer to the <a href="../Toolpaths/Common/Working_with_Tool_Numbers_and_Offsets.htm" class="MCXref xref">Working with Tool Numbers and Offsets</a> for more information about how <span class="mc-variable CNC_Product.Product variable">Mastercam</span> uses tools. </p>
+                                                        <h2>Setting up simulation options</h2>
+                                                        <p>Use the <span class="Bold">Simulation</span> page to modify  your <span class="mc-variable CNC_Product.Product variable">Mastercam</span> machine definition (<span class="Filepath">.mcam-mmd</span>) for use with Mastercam Simulator. You can position the stock on the machine using this page, eliminating the need to re-enter Mastercam Simulator and reposition the stock each time there is an issue.</p>
+                                                        <p>The default <span class="Bold">Machine</span> comes from the <span class="Bold">Simulation</span> tab of the <a href="Simulation_General_Machine_Parameters.htm">General Machine Parameters dialog box</a>. You can use the <span class="Bold">Post settings</span> option to set post options before running Mastercam Simulator. </p>
+                                                        <p> You can override the selected stock model when viewing operations in Mastercam Simulator. To do so, select your in-process stock model operation and subsequent toolpaths when entering Mastercam Simulator.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />What is the purpose of each page?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="LeadIn">The <span class="Bold">Machine Group Setup</span> function panel is made up of different pages.</p>
+                                                        <p>
+                                                            <img src="MachinePics/MachineGroupSetup_Pages.png" alt="The &quot;Machine Group Setup&quot; function panel. " />
+                                                        </p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p><span class="Bold">Machine</span>—Specifies the names and data paths of files needed by the operations in the machine group. This includes the machine definition and operation defaults. </p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p><span class="Bold">Master Model</span>—Defines the final part after all machining is complete. This page also includes engineering information, such as the material. </p>
+                                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                                    <p>You do not need to define a master model. However, defining a master model provides workpiece data for Mastercam Simulator, ensuring that you always have a workpiece defined. </p>
+                                                                </div>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p><span class="Bold">Stock Setup</span>—Defines the stock model. Stock models help you visualize your toolpaths more realistically in the graphics window. The stock model can also be displayed with the part geometry while viewing the file or toolpaths or during Mastercam Simulator. </p>
+                                                            </li>
+                                                            <li value="4">
+                                                                <p><span class="Bold">Workholding</span>—Defines workholding components, such as fixtures or vices. You can also manipulate entities using Model Prep functions to place and align fixtures and other workholding components with your master model and stock. </p>
+                                                            </li>
+                                                            <li value="5">
+                                                                <p><span class="Bold">Tools</span>—Controls how <span class="mc-variable CNC_Product.Product variable">Mastercam</span> assigns tool numbers, feeds, speeds, coolant, and other toolpath parameters.</p>
+                                                            </li>
+                                                            <li value="6">
+                                                                <p><span class="Bold">Simulation</span>—Allows you to modify your <span class="mc-variable CNC_Product.Product variable">Mastercam</span> machine definition (<span class="Filepath">*.mcam-mmd</span>) for use with Mastercam Simulator. </p>
+                                                            </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Why am I getting a warning message when deleting geometry?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>A warning message will appear if you attempt to remove geometry associated with a Toolpath, a Solid, or a Plane. Mastercam warns that if the geometry is deleted, it will permanently alter those operations. If you delete an entity, it will no longer be on the panel.</p>
+                                                    </div>
+                                                </div>
+                                                <h2>How do I...?</h2>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I replace a machine definition?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p><span class="mc-variable CNC_Product.Product variable">Mastercam</span> lets you 
+	 change the machine definition associated with the machine group. For 
+	 example, if you need to run a job on a different machine, you can 
+	 replace the machine definition instead of recreating your toolpaths. 
+	 <span class="mc-variable CNC_Product.Product variable">Mastercam</span> validates the existing operations against 
+	 the new machine definition. It also loads the post processor and 
+	 control definition settings for the new machine. This ensures that 
+	 when you post the operations, all of the tolerances and other NC settings 
+	 are appropriate for the new machine.</p>
+                                                        <p class="LeadIn" data-mc-conditions="Product.Mill,Product.Router">For Mill or Router machines, select <span class="Bold">File</span> under <span class="Bold">Properties</span> in the Toolpaths Manager. Then choose <span class="Bold">Select machine definition</span>. </p>
+                                                        <p data-mc-conditions="Product.Mill,Product.Router">
+                                                            <img src="../View/ViewPics/SelectMachineDefinition.png" alt="The &quot;Select machine definition&quot; button." />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I add group comments to operations?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p> To add a comment to every operation in the current machine group, select the <span class="Bold">Group comments</span> option on the <span class="Bold">Machine</span> page. The text entered in the <span class="Bold">Comment</span> field, also located on the <span class="Bold">Machine</span> page, is then added to all operations. </p>
+                                                        <p><span class="mc-variable CNC_Product.Product variable">Mastercam</span> also lets you record operation-specific comments. This is a comment that can be entered in every operation and can be different for each operation.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I create or edit toolpath default (*.mcam-defaults) files?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>When you create a new toolpath or other operation, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> 
+ populates the fields on each tab or properties page with default values. 
+ These values are stored in a file with a <span class="Filepath">.mcam-defaults</span> extension. These 
+ defaults are specific for each type of operation; for example, a contour 
+ toolpath, a facing toolpath, or a feature based drill operation.</p>
+                                                        <p>You can create new toolpath default files (known as <span class="Filepath">*.mcam-defaults</span>) or edit existing ones. For more information about working with toolpath default files, refer to the <a href="../Toolpaths/Common/Working_with_Toolpath_Defaults.htm" class="MCXref xref">Working with Toolpath Defaults</a> Help topic. </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I create or edit an operation defaults library (*.mcam-operations)?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Follow these steps to create a new operations library. This is a file 
+ with an <span class="Filepath">.mcam-operations</span> extension that contains commonly used toolpath 
+ operations that you can select and import into your current part file. Begin creating new operations files from a machine definition already loaded in the Toolpaths Manager.</p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>In the Toolpaths Manager, select <span class="Bold">Files</span> under <span class="Bold">Properties</span>.</p>
+                                                            </li>
+                                                            <li value="2" data-mc-conditions="Product.Mill,Product.Router">
+                                                                <p class="LeadIn">In the <span class="Bold">Machine</span> page, select <span class="Bold">Edit operation library</span>. </p>
+                                                                <p>
+                                                                    <img src="../Resources/Images/SnippetPics/Machining/Edit_Operation_Library.png" alt="The &quot;Edit operation library&quot; button. " />
+                                                                </p>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p class="LeadIn">Select <span class="Bold">Browse</span> to open the <span class="Bold">Select Operation Defaults File</span> dialog box. </p>
+                                                                <p>
+                                                                    <img src="../Toolpaths/ToolpathsPics/Browse_to_OPERATIONS.png" alt="&quot;Browse&quot; button in the &quot;Edit Operation Library&quot; dialog box." />
+                                                                </p>
+                                                            </li>
+                                                            <li value="4">
+                                                                <p>Right-click the operations file on which you want to base your new library, and choose <span class="Bold">Copy</span>. </p>
+                                                            </li>
+                                                            <li value="5">
+                                                                <p>Right-click in the window and choose <span class="Bold">Paste</span>.</p>
+                                                            </li>
+                                                            <li value="6">
+                                                                <p>Right-click the new copy of the operations file, choose <span class="Bold">Rename</span>, enter the new file name, and press [<span class="Bold">Enter</span>].</p>
+                                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                                    <p>When renaming your file, make sure not to change the file extension.</p>
+                                                                </div>
+                                                            </li>
+                                                            <li value="7">
+                                                                <p>Re-click the new file name. Make sure the new operations file name appears in the <span class="Bold">File</span> name field. </p>
+                                                            </li>
+                                                            <li value="8">
+                                                                <p>Click <span class="Bold">OK</span>.</p>
+                                                            </li>
+                                                            <li value="9">
+                                                                <p>If prompted to save changes to your operations library, click <span class="Bold">No</span>.</p>
+                                                            </li>
+                                                            <li value="10">
+                                                                <p>Edit the new operations library as necessary.</p>
+                                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                                    <p>You can also empty the new file and start with a blank file by choosing <span class="Bold">Delete all operations</span> from the toolbar.</p>
+                                                                </div>
+                                                            </li>
+                                                            <li value="11">
+                                                                <p>When finished, click <span class="Bold">OK</span> to save your changes and return to the Toolpaths Manager.</p>
+                                                            </li>
+                                                        </ol>
+                                                        <p>To edit an operations library, follow to step 4 and modify the operations in the list. You can do the following:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>Edit the default parameters for a specific operation in the list by clicking <span class="Bold">Parameters</span>.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Work in the operations list much like you can in the Toolpaths Manager. You can access many different options from the right-click menu, including adding, editing, and deleting operations. You can also perform other tasks similar to those in Toolpaths Manager such as selecting multiple operations, dragging and dropping operations within the list, and changing the names of operations.</p>
+                                                            </li>
+                                                        </ul>
+                                                        <p>Click <span class="Bold">OK</span> when you are done. The operations library you just worked on is set as the current library for that machine group.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="How"></a><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">How do I set the stock plane and when should I do this?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>You can select a stock plane to properly orient the stock model with respect to your part. This is usually done when creating toolpaths in a work coordinate system (WCS) other than Top and you want to align the stock model to your part. If you have several toolpaths in the machine group that use more than one WCS, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> will use the stock plane to keep the stock model constant when the WCS for each operation changes. <span class="mc-variable CNC_Product.Product variable">Mastercam</span> stores the stock plane with the stock definition, independent of the WCS.</p>
+                                                        <p>You can align the stock model to any plane saved in your part file. You can also create a new plane. When you choose a stock plane, the edges of the stock model will be parallel with the axes of the selected plane. These options are on the <span class="Bold">Stock Setup</span> page, under the <span class="Bold">Stock Plane Transformation</span> expander. </p>
+                                                        <p>After selecting your plane, use <span class="Bold">Select origin</span> to choose a point on the stock to use as the stock origin. The stock origin locates the stock relative to your part. </p>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>If you change the stock plane, you may need to reset the stock origin. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I simulate my machine group?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>If you wish to simulate your machine group and the operations within it, select <span class="Bold">Verify selected machine group</span> from the <span class="Bold">Verify selected operations</span> drop-down. Mastercam Simulator is then launched in <span class="Bold">Verify</span> mode with the selected machine group. </p>
+                                                        <p>
+                                                            <img src="MachinePics/Verify_Selected_Machine_Group.png" alt="The 'Verify Selected Operations&quot; drop-down. " />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I know what the current active stock is?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Mastercam lets you define multiple stock definitions, although only one at a time can be active. Initially, the first stock definition you create is active. To change the active stock definition, right-click a definition in the list, and choose<span class="Bold"> Set as active stock</span>. In the <span class="Bold">Stock Setup</span> page, a green check indicates the active stock definition.</p>
+                                                        <p>
+                                                            <img src="../Resources/Images/Active stock update.png" alt="" />
+                                                        </p>
+                                                        <p>&#160;</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I know what stock I have on my screen?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>When selected, the active stock defined on Stock panel will be displayed. If the Override is active it will be displayed instead.</p>
+                                                        <p>
+                                                            <img src="../Resources/Images/S98612_Stock.png" alt="Stock_Machine_Group_Setup" class="MaxWidth" />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I use the dynamic translation tool to move fixtures and stock to the proper location on the machine?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Mastercam lets you move fixtures and stock to the proper location on the machine. You must first have both <span class="Bold">Stock</span> and <span class="Bold">Fixtures</span> selected under <span class="Bold">Preview Settings</span>. </p>
+                                                        <p>You can move stock and/ or fixtures using the position location (X, Y, and Z) by manually entering values for X, Y, and Z which will update the new stock and/ or fixtures location. </p>
+                                                        <p>
+                                                            <img src="../Resources/Images/Machine_group_setup_XYZ.jpg" alt="Enter values of X, Y, and Z to move the stock manually " class="MaxWidth" />
+                                                        </p>
+                                                        <p>Additionally, you can move stock and/ or fixtures by selecting the gnomon. When selecting the gnomon, first select the stock and/ or fixtures you want to move and then select the location of where you want it to move.</p>
+                                                        <p>
+                                                            <img src="../Resources/Images/Machine_group_setup_sitmulation_gnomon.jpg" alt="Gnomon to manually move the stock" class="MaxWidth" />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I set up my material in the Master Model or Stock Setup?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody"><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> has several ways to select material. Follow these steps when working with Mill or Router machine groups:<ol style="list-style-type: decimal;"><li value="1"><p>Click <span class="Bold">Tool settings</span> 
+	 in the Toolpaths Manager.</p><p><img src="../Toolpaths/ToolpathsPics/click-tool-settings.png" alt="The &quot;Tool settings&quot; node in the Toolpaths Manager." /></p></li><li value="2">From the icons on the left side of the panel, click <span class="Bold">Master Model</span> or <span class="Bold">Stock Setup</span>. The <span class="Bold">Select material</span> 
+	 icon (see the following image) appears  in the <span class="Bold">Engineering Information</span> section under the currently selected material. 
+				
+				<p><img src="MachinePics/select_material_icon.png" alt="This image shows the &quot;Select Material&quot; icon." /></p></li><li value="3">Click <span class="Bold">Select material</span>.</li><li value="4">If the panel displays the material you want to use, select the material, and click <span class="Bold">OK</span>.</li><li value="5">If the panel does not display the material you want to use:<ol style="list-style-type: lower-alpha;"><li value="1">Select a source from the <span class="Bold">Source</span> list box.</li><li value="2">Choose the desired material, and click <span class="Bold">OK</span>.</li></ol></li><li value="6">If you want to define a new material:<ol style="list-style-type: lower-alpha;"><li value="1">Click the <span class="Bold">Add a material</span> button.</li><li value="2">Define the material in the fly-out panel, and click <span class="Bold">OK</span>.</li><li value="3">Select the new material from the list, and click <span class="Bold">OK</span>.</li></ol></li></ol><p>Use the <span class="Bold">Material</span> fly-out to select materials and manage the current list or the library. Right-click  on the material list box to see a menu of options. These will let you edit, create, or remove material.</p><p><img src="../Resources/Images/material_list.png" alt="This image shows the Material List." /></p><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Parameters            </a></span><div class="MCDropDownBody dropDownBody"><p class="Term"><span class="Bold">Add</span></p><p>Opens another material 
+			 fly-out so you can add a new material definition. 
+			 The new material will be saved in the current part file.</p><p class="Term"><span class="Bold">Edit</span></p><p>Opens another material 
+			 fly-out so you can make modifications to the material.</p><p class="Term"><span class="Bold">Remove</span></p><p>Removes the selected material from the list.</p></div></div></div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li>
+                                                        <p><a href="../Toolpaths/Common/Working_with_Toolpath_Defaults.htm" class="MCXref xref">Working with Toolpath Defaults</a>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        <p><a href="Selecting_a_Different_Post_Processor.htm" class="MCXref xref">Selecting a Different Post Processor</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="../View/Machine_Groups.htm" class="MCXref xref">Working with Machine Groups</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="../View/Machine_Group_Properties.htm" class="MCXref xref">Machine Group Properties dialog box: Wire, Lathe, Mill-Turn</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="../Simulator/Using_Mastercam_Simulator.htm" class="MCXref xref">Using Mastercam Simulator</a>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Toolpaths|Mill/Router|Common Mill/Router" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Associativity binds your entities and toolpaths together to make regeneration of toolpaths swift and simple." />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Associativity Overview</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Associativity Overview</h1>
+                                                <p>Associativity in <span class="mc-variable CNC_Product.Product variable">Mastercam</span>
+ refers to the relationship between entities and the toolpaths  
+ that are created from it. When you create a toolpath, Mastercam
+ links it to the entities.  This association can be broken only 
+ by deleting the operation. If you try to delete entities used in a toolpath, 
+ Mastercam warns you.</p>
+                                                <p>Associativity is what lets Mastercam regenerate a toolpath (without your having to recreate it from the beginning) when the geometry changes. 
+ When you change an operation's parameters, use the 
+ Toolpaths Manager to regenerate the operation. Only the toolpath that 
+ is directly affected by an edit is marked dirty. Other operations are not.</p>
+                                                <p>Mastercam uses the following terms to describe a toolpath and its current 
+ state of associativity:</p>
+                                                <ul>
+                                                    <li><span class="Bold">Clean</span>: Describes 
+	 an operation whose parameters match the associated geometry. This 
+	 condition applies to all newly created operations and to operations 
+	 that have been successfully regenerated. For 
+	 a toolpath or wirepath to be stable and current, its operations should 
+	 be clean.</li>
+                                                    <li><span class="Bold">Dirty</span>: Describes 
+	 an operation whose defining parameters or geometry have changed and 
+	 no longer match. These toolpaths must be regenerated. </li>
+                                                </ul>
+                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                    <p>You can use the Analyze Entity function on the <span class="Bold">Home</span> tab to check for associations to a solid, toolpath, plane, 3D annotation, or dimension. </p>
+                                                </div>
+                                                <h2>Solids Associativity </h2>
+                                                <p>Solids associativity is the dependent relationship between a solid, 
+ the operations that define it, and any geometry selected in its definition. 
+ When you perform a solid operation such as extrude, fillet, draft face, 
+ etc., Mastercam associates it with the solid that it creates or modifies. 
+ This association can be broken only by deleting the operation.</p>
+                                                <p>Because an operation is associated with the solid that it creates or 
+ modifies, you cannot copy operations or move them to a different solid. 
+ For example, when rechaining a fillet operation, all of the new edges 
+ that you select must be on the same solid where the operation was originally 
+ defined. To fillet edges on a different solid, you would need to create 
+ a new fillet operation on that solid.</p>
+                                                <p>Associativity eliminates the need to recreate a solid each time you 
+ modify it. After editing an operation's geometry and parameters, you can 
+ regenerate the solid to incorporate your changes. The following terms 
+ describe a solid operation and the current state of its associativity 
+:</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Clean</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>An operation whose 
+	 defining parameters and geometry match the associated solid. This 
+	 condition applies to all newly created operations and to operations 
+	 that have been successfully regenerated. For a solid to be stable 
+	 and current, its operations should be clean.</p>
+                                                        <p>Clean operations use the following 
+	 icon in the Solids Manager:</p>
+                                                        <p>
+                                                            <img src="../../Solids/SolidsPics/solid_symbol.png" alt="The &quot;Clean solids operation&quot; icon.">
+                                                            </img>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Dirty</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>An operation whose 
+	 defining parameters and/or geometry have changed and no longer match 
+	 the associated solid. Mastercam marks each dirty operation and its 
+	 associated solid with a red X in the Solids Manager. You can correct 
+	 dirty operations by regenerating them.</p>
+                                                        <p>Dirty operations use the following 
+	 icon in the Solids Manager:</p>
+                                                        <p>
+                                                            <img src="../../Solids/SolidsPics/dirty_operation_symbol.png" alt="The &quot;Dirty solids operation&quot; icon.">
+                                                            </img>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Invalid</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>An operation that 
+	 fails due to a problem in its geometry and/or parameters, which prevents 
+	 it from being regenerated. Deleting geometry that defines an operation 
+	 is a common cause of invalid operations. Mastercam marks each invalid 
+	 operation and its associated solid with a yellow question mark (?) 
+	 in the Solids Manager. You can try to correct an invalid operation 
+	 by making changes to the operation's parameters and/or geometry, then 
+	 regenerating the operation.</p>
+                                                        <p>Invalid operations use the following 
+	 icon in the Solids Manager: </p>
+                                                        <p>
+                                                            <img src="../../Solids/SolidsPics/invalid_operation_symbol.png" alt="The &quot;Invalid solids operation&quot; icon.">
+                                                            </img>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p>Associativity can also exist between some solid operations. For example, 
+ if a cut operation results in a new face and you fillet that face, the 
+ fillet operation is dependent on the cut operation. If you delete the 
+ cut operation, Mastercam deletes the fillet operation as well, because 
+ the edge that defined the fillet operation no longer exists. In the Solids 
+ Manager, a defining operation always precedes a dependent operation in 
+ the operation list.</p>
+                                                <p>Associativity does not exist between individual solids in a Mastercam 
+ file unless those solids are used in Boolean combinations. When you perform 
+ a Boolean operation, Mastercam associates the tool body with the target 
+ body if possible, unless you elect to perform a non-associative Boolean 
+ Remove or Common regions operation.</p>
+                                                <h2>Associating Drafting Entities with Geometry</h2>
+                                                <p>Mastercam can associate drafting entities (dimensions, labels, leaders, 
+ and witness lines) with geometric entities. If the geometry changes size 
+ or position, you can regenerate associated drafting entities to reflect 
+ the change. Regenerating associated drafting entities eliminates the need 
+ to recreate new drafting entities each time the geometry changes.</p>
+                                                <p>You use the <span class="Bold">Dimension 
+ Settings</span> property page to turn associativity on or off for the current 
+ drafting session only (<span class="Bold">Drafting 
+ Options</span> dialog box) or for the current session as well as all subsequent 
+ sessions (<span class="Bold">System 
+ Configuration</span> dialog box). You can specify regeneration parameters as well. To turn on automatic regeneration, select <span class="Bold">Automatic</span>. Clear the checkbox to turn it off. </p>
+                                                <p>
+            For most drafting applications, associated entities are desirable because 
+ of their labor-saving benefits. For preliminary drawings, you may prefer 
+ to work with non-associated drafting entities when:</p>
+                                                <ul>
+                                                    <li>Geometry is frequently changing.</li>
+                                                    <li>Parts are not drawn to scale.</li>
+                                                    <li>Precise or current dimensions are not essential.</li>
+                                                    <li>You want to lock original dimensions in 
+	 place.</li>
+                                                </ul>
+                                                <p>You can associate labels, freestanding leader lines and witness lines, 
+ and the following dimensions: horizontal, vertical, parallel, perpendicular, 
+ baseline, angular, circular (diameter, radius), ordinate (base only), 
+ tangent, and point. Chained dimensions cannot be associated with geometric entities. To be associated, a drafting entity must have been defined by a selected 
+ geometric entity  while <span class="Bold">
+ Associativity</span> is turned on. This means drafting entities will 
+ not be associated if:</p>
+                                                <ul>
+                                                    <li>They were created in Mastercam while the <span class="Bold">Associativity</span> parameter was off.</li>
+                                                    <li>They were created by entering screen points 
+	 rather than selecting a geometric entity or entering points relative 
+	 to an entity (midpoints, endpoints, center points, quadrant points, 
+	 etc.)</li>
+                                                </ul>
+                                                <p>Click the following drop-downs to learn more about associating drafting entities. </p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Associated drafting entity status</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>The status of an associated drafting entity might be clean or dirty depending 
+ on whether it matches its associated geometry.</p>
+                                                        <ul>
+                                                            <li><span class="Bold">Clean</span>: 
+	 The drafting entity's position and value (if a dimension) match the geometry. 
+	 This status applies to a newly created or regenerated dimension.</li>
+                                                            <li><span class="Bold">Dirty</span>: 
+	 The drafting entity's position and/or value do not match the geometry. 
+	 This status occurs if you move or resize an object without regenerating 
+	 associated dimension. Dirty dimensions are highlighted in red.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Changing associated drafting entities</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Once an associated drafting entity is created, you can make it non-associated 
+ by using the <span class="Bold">Multi-Edit</span> 
+ function to access the <span class="Bold">Dimension 
+ Settings</span> property page. To do this:</p>
+                                                        <ol style="list-style-type: decimal;">
+                                                            <li value="1">Choose <span class="Bold">Multi-Edit</span>, 
+	 from the <span class="Bold">Modify</span> group in the <span class="Bold">Drafting</span> tab, 
+	 before or after selecting one or more associated drafting entities.</li>
+                                                            <li value="2">From the <span class="Bold">Topics</span> list, select <span class="Bold">Dimension 
+	 Settings.</span></li>
+                                                            <li value="3">Clear the <span class="Bold">Associate dimension, 
+	 labels, leaders and witness lines with</span> checkbox, and then choose 
+	 <span class="Bold">OK</span>.</li>
+                                                        </ol>
+                                                        <p>If you attempt to delete geometry with an associated drafting entity, 
+ Mastercam prompts you to delete the associated entity or dissociate it.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I check if a drafting entity is associative?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>To check which of your drafting entities are associative with geometry, use the <span class="Bold">Associativity</span> function, which is located under <span class="Bold">Validate</span> on the <span class="Bold">Drafting</span> tab. </p>
+                                                        <p>After selecting <span class="Bold">Associativity</span>, select the drafting entities you wish to check and press [<span class="Bold">Enter</span>] or select <span class="Bold">End Selection</span>. Associative entities that  display with the <span class="Bold">Result color</span> (purple), and non-associative entities  display with the <span class="Bold">Group color</span> (red). </p>
+                                                        <p>
+                                                            <img src="../../Drafting/DraftingPics/DraftingAssociativity.png" alt="Part geometry with associative entities displayed in purple and non-associative entities displayed in red.">
+                                                            </img>
+                                                        </p>
+                                                        <p>Rolling your mouse over associative entities highlights the geometry it is associative to. The <span class="Bold">Associativity</span> function panel also displays how many of the selected dimensions are associative, and how many are not. </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Regenerating associated drafting entities</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>When you create associated drafting entities, changing the size or position 
+ of geometry changes the status 
+ of associated drafting entities from clean to dirty. Regenerating the drafting entity updates its position and/or value so 
+ that it matches the geometry. This is usually done after:</p>
+                                                        <ul>
+                                                            <li>Resizing an entity 
+	 to update the associated dimension’s value.</li>
+                                                            <li>Moving an entity to 
+	 also move the associated dimension.</li>
+                                                            <li>Modifying / trimming 
+	 an arc so that a dimensioned quadrant point is no longer valid. Mastercam 
+	 prompts you to convert the dimension to a radius/diameter format or 
+	 to disassociate it.</li>
+                                                        </ul>
+                                                        <p>You can also choose the following regenerate options from the <span class="Bold">Regenerate</span> 
+ group in the <span class="Bold">Drafting</span> tab.</p>
+                                                        <ul>
+                                                            <li><span class="Bold">Automatic</span>: 
+	 Regenerates associated drafting entities during the 
+	 current drafting session, whenever a change in geometry requires it.</li>
+                                                            <li><span class="Bold">Validate</span>: 
+	 Regenerates all drafting entities, associated and non-associated. 
+	 It runs each entity through the regeneration process, recreating or 
+	 reformatting the entity based on the <span class="Bold">Drafting Options</span> parameters used 
+	 in the current drafting session.</li>
+                                                            <li><span class="Bold">Select</span>: 
+	 Allows you to select the associated drafting entities you want to 
+	 regenerate.</li>
+                                                            <li><span class="Bold">All</span>: 
+	 Immediately regenerates all associated drafting entities.</li>
+                                                        </ul>
+                                                        <p>Only associated drafting entities can be regenerated. However, you can 
+ validate both associated and non-associated 
+ drafting entities.</p>
+                                                    </div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li><a href="../../View/Toolpaths_Manager.htm" class="MCXref xref">Toolpaths Manager</a>
+                                                    </li>
+                                                    <li><a href="../../Drafting/Associativity_Drafting.htm" class="MCXref xref">Associativity panel: Drafting</a>
+                                                    </li>
+                                                    <li><a href="../../Home/Using_the_Analyze_function.htm" class="MCXref xref">Using the Analyze Functions</a>
+                                                    </li>
+                                                    <li><a href="../../TopLevel/Designing_Part.htm" class="MCXref xref">Designing Your Part</a>
+                                                    </li>
+                                                    <li><a href="../../TopLevel/Managing_Workflow.htm" class="MCXref xref">Managing Your Workflow</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Toolpaths|Wire" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Learn how to create a wirepath toolpath for EDM machines." />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Creating a Wire Toolpath</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyleSheets/CNC_RegularTable.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Creating a Wire Toolpath</h1>
+                                                <p><span class="mc-variable CNC_Product.Product variable">Mastercam</span> includes toolpaths (referred to as wirepaths) for EDM machines. These wirepaths contain advanced tapering in both 2-axis and 4-axis, automatic corner filleting, synchronization, tab creation, and more. You must have a Wire product license to use these toolpaths and it also depends on the capabilities of the active machine definition. </p>
+                                                <p>
+                                                    <img src="../ToolpathsPics/Wire.png" alt="" />
+                                                </p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I create a Wire toolpath? </a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <ol style="list-style-type: decimal;">
+                                                            <li value="1">
+                                                                <p>Choose 
+		 a Wire machine definition from the <span class="Bold">Machine</span> tab.</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/WireMachine.png" alt="The &quot;Machine&quot; tab with the &quot;Wire&quot; drop-down highlighted. " class="MaxWidth" />
+                                                                </p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>From the <span class="Bold">Wire Wirepaths</span> contextual tab, select a toolpath. </p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/WireWirepaths.png" alt="The &quot;Wire Wirepaths&quot; contextual tab. " class="MaxWidth" />
+                                                                </p>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p>Mastercam 
+		 displays the <span class="Bold">Chaining</span> 
+		 dialog box or <span class="Bold">Toolpath Hole Definition</span> function panel depending on the type of wirepath selected.</p>
+                                                            </li>
+                                                            <li value="4">
+                                                                <p>Select one or more chains of entities in the 
+		 graphics window, based on the toolpath requirements. Then choose 
+		 <span class="Bold">OK</span> 
+		 to close the dialog box and continue.</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/Chaining_Wirepat.png" alt="A wirepath being chained. " />
+                                                                </p>
+                                                                <p>For more information about wire chaining, refer to the drop-downs in this topic or use the <a href="../../General/Chaining_Overview.htm" class="MCXref xref">Chaining Overview</a> Help topic to learn more about general chaining.</p>
+                                                            </li>
+                                                            <li value="5">
+                                                                <p>Use the additional properties pages to enter the toolpath parameters and complete the toolpath. </p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/Wirepath_Dialog.png" alt="The &quot;Taper&quot; page of the &quot;Wirepath - Contour&quot; dialog box. " />
+                                                                </p>
+                                                                <p>For more information about the page and its parameters, click the <span class="Bold">Help</span> button.</p>
+                                                            </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />What are the different wire power libraries?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p><span class="mc-variable CNC_Product.Product variable">Mastercam</span>
+		 uses two types of power settings libraries. These libraries have either a <span class="Filepath">*.power</span> or <span class="Filepath">*.tech</span> extension. Both libraries store the power settings (such as the wire diameter or condition code) values. </p>
+                                                        <ul>
+                                                            <li>The <span class="Filepath">*.power</span> libraries are legacy files that store the power setting values in a binary file. For more information on these libraries, refer to the <a href="Wire_Power_POWER.htm" class="MCXref xref">Wire/Power page: POWER</a> Help topic. </li>
+                                                            <li>The <span class="Filepath">*.tech</span> libraries are modern files that store the power setting values in a xml file. For more information on these libraries, refer to the <a href="Wire_Power_TECH.htm" class="MCXref xref">Wire/Power page: TECH</a> Help topic. </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />What is Agievision?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p><span class="mc-variable CNC_Product.Product variable">Mastercam</span> supports Agievision, which is a control system for ED machining. Agie machines require a different set of information. To accommodate that, when you are using an Agie machine definition, the <span class="mc-variable CNC_Product.Product variable">Mastercam</span> dialog boxes look similar to what you would see on their controls. </p>
+                                                        <p>Compared to regular wirepaths using the power or tech libraries, you specify the desired finish and the Agie control decides  the power settings and how many passes are needed to obtain that finish.</p>
+                                                        <table class="TableStyle-CNC_RegularTable" style="mc-table-style: url('../../Resources/TableStyleSheets/CNC_RegularTable.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-CNC_RegularTable-Head-Header1">
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadE-Column1-Header1">Contour Wirepath (Agie)</th>
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadD-Column1-Header1">Contour Wirepath (Generic) </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyB-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/ContourWirepath_Agie.png" alt="The tree-style menu for a Contour wirepath with an Agie machine definition. " />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyA-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/ContourWirepath_Generic.png" alt="The tree-style menu for a Contour wirepath with an generic Wire EDM machine definition. " />
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p> For more information about using Agievision, refer to the <a href="Agievision_Overview.htm" class="MCXref xref">Agievision Overview</a> Help topic. </p>
+                                                        <p><span class="mc-variable CNC_Product.Product variable">Mastercam</span> also includes the AgieReg Add-In, which provides a way to enter information for the Agievision control. For more information about AgieReg, refer to the <a href="AgieReg_C-Hook.htm" class="MCXref xref">AgieReg Add-In</a> Help topic. </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />What toolpaths are available?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <table class="TableStyle-CNC_RegularTable" style="mc-table-style: url('../../Resources/TableStyleSheets/CNC_RegularTable.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-CNC_RegularTable-Head-Header1">
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadE-Column1-Header1">Toolpath Name</th>
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadE-Column1-Header1">Gallery Image</th>
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadD-Column1-Header1">Description</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-pattern="4">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-RowGrouping" colspan="3">General</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="Contour_Wirepaths.htm">Contour</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/ContourWirepathIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Creates a toolpath with the same general shape in both the XY plane and UV plane. </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="4-axis_Wirepaths.htm">4-Axis</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/4AxisIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Creates a toolpath with geometry that is different in both the XY plane and the UV plane.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="No_Core_Wirepaths.htm">No Core</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/NoCoreIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Pockets out areas of material without producing a slug. </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="Point_Wirepaths_Overview.htm">Point</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/PointIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Creates rapid moves that can be used to avoid a clamp or fixture.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="Canned_Wirepaths.htm">Canned</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/CannedIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Select points and send them to the post processor with custom cycles. </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-pattern="4">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-RowGrouping" colspan="3">Agie</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1"><a href="Collar_Toolpaths.htm">Collar</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/CollarIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Creates a chamfer at the top, bottom, or both edges of the selected geometry.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-pattern="4">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-RowGrouping" colspan="3">Manual</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyB-Column1-Body1"><a href="../Common/Manual_Entry_Operations.htm">Manual Entry</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyB-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/ManualEntryIcon.png" alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyA-Column1-Body1">Directly inserts text, comments, or G-codes into your NC programs.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I chain Wire toolpaths? </a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Wirepath chaining differs slightly from chaining 
+ for Mill or Lathe toolpaths. When chaining a wirepath, you must establish 
+ thread and cut positions  before you chain the geometry. If you do 
+ not set these positions before chaining, you will receive a message as 
+ follows:</p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/Wire_thread_warning.png" alt="The &quot;Wire thread warning!&quot; dialog box." />
+                                                        </p>
+                                                        <p>If you create a wirepath using the <span class="Bold">Window</span> chaining 
+ method, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> sets the order of items to be chained. 
+ However, if you manually select items to be chained, you must select them 
+ in the following order:</p>
+                                                        <ol>
+                                                            <li value="1">Thread</li>
+                                                            <li value="2">Chain</li>
+                                                            <li value="3">Cut</li>
+                                                        </ol>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I chain a wirepath with multiple contours?</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p>A common method of setting up an operation to cut 
+ multiple contours requires that you set chaining options and create a 
+ point entity for the thread/cut point for each contour.</p>
+                                                                <ol>
+                                                                    <li value="1">Create the contours to be cut. Both closed 
+	 and open contours can be part of the same operation.</li>
+                                                                    <li value="2">Create a thread point inside or outside 
+	 of each contour. When window chaining contours, which you will do 
+	 later in this procedure, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> automatically uses each point 
+	 entity for the thread position for each contour.</li>
+                                                                    <li value="3">
+                                                                        <p>Select a wire toolpath from the <span class="Bold">Wire Wirepaths</span> contextual tab. </p>
+                                                                        <p>
+                                                                            <img src="../ToolpathsPics/WireWirepaths.png" alt="The &quot;Wire Wirepaths&quot; contextual tab. " />
+                                                                        </p>
+                                                                    </li>
+                                                                    <li value="4">The <span class="Bold">Chaining</span> dialog box displays. </li>
+                                                                    <li value="5">
+                                                                        <p>Select <span class="Bold">Options</span> in the <span class="Bold">Chaining</span> dialog box. </p>
+                                                                        <p>
+                                                                            <img src="../ToolpathsPics/ChainingOptions.png" alt="" />
+                                                                        </p>
+                                                                    </li>
+                                                                    <li value="6">
+                                                                        <p>Select the <span class="Bold">Break 
+	 closest entity to thread point</span> chaining option in the <span class="Bold">Chaining 
+	 Options</span> dialog box. </p>
+                                                                        <p>
+                                                                            <img src="../ToolpathsPics/Break_closest_entity_to_thread_point.png" alt="The &quot;Break closest entity to thread point&quot; parameter." />
+                                                                        </p>
+                                                                        <p>This is because the lead in should be perpendicular to the wirepath and <span class="mc-variable CNC_Product.Product variable">Mastercam</span> starts a wirepath only at an entity endpoint.  When you chain the contours, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> 
+	 automatically breaks the entity that is closest to the thread point 
+	 and creates a break that is perpendicular to the thread point. This 
+	 provides an entity endpoint for the start of contour that is perpendicular 
+	 to the lead in.</p>
+                                                                    </li>
+                                                                    <li value="7">Using the <span class="Bold">Window</span> chaining method, select 
+	 the contours and points, used for the thread points, in a single window.</li>
+                                                                    <li value="8">(Optional) You can change 
+					 the default search order (next closest) by choosing 
+					 different <span class="Bold">Nested chain</span> options  from 
+					 the <span class="Bold">Chaining Options</span> dialog box. <p><img src="../ToolpathsPics/Nested_chain_options.png" alt="The &quot;Nested chain&quot; options in the &quot;Chaining Options&quot; dialog box." /></p></li>
+                                                                    <li value="9">Make parameter selections for each of the 
+	 dialog box pages. The parameter selections are applied to all of the 
+	 contours in the operation.</li>
+                                                                    <li value="10">To have the point entity serve as both a 
+	 cut and thread point, use one of the following methods:<ul><li>Select <span class="Bold">Auto 
+				 position cut point</span> on the Leads
+				 page.</li><li>			Leave the <span class="Bold">Lead 
+				 distance</span> set to 0 (zero) on the <span class="Bold">Lead 
+				 Distance</span> page. Mastercam uses the point entity 
+				 as the thread position. Entering a value for thread distance 
+				 moves the thread points.</li></ul></li>
+                                                                    <li value="11">Choose <span class="Bold">OK</span> 
+	 to generate the wirepath.</li>
+                                                                </ol>
+                                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                                    <p> You can set 
+ non-vertical thread/cut positions for each contour of the operation on 
+ the <span class="Bold">Tapered 
+ Thread</span> page. <span class="mc-variable CNC_Product.Product variable">Mastercam</span> uses the thread/cut position of the first 
+ contour to set up a non-vertical thread/cut. It then uses the same non-vertical 
+ thread/cut for the remaining contours.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I chain geometry with relief cuts?</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p>
+            Mastercam supports <span class="Bold">Window</span> chaining of relief cuts 
+ in your material workpiece. Mastercam 
+ recognizes these single lines as relief cuts and chains them as such. 
+ The wire travels up those lines and back down and continues on around the 
+ closed geometry.</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/relief_cuts.png" alt="Chained relief cuts in the material workplace." />
+                                                                </p>
+                                                                <p>Several conditions must be met in order for <span class="mc-variable CNC_Product.Product variable">Mastercam</span>
+ to recognize these relief lines when window chaining:</p>
+                                                                <ul>
+                                                                    <li>
+                    The part must be a closed contour; open chains are not supported.
+                </li>
+                                                                    <li>
+                    You must create a Contour wirepath.
+                </li>
+                                                                    <li>
+                    The relief lines have to be single 
+		 line, arc, or spline entities placed at the endpoints of the entities 
+		 in the closed chain. If a single relief line is placed at a midpoint, 
+		 it will be recognized as a separate chain.
+                </li>
+                                                                </ul>
+                                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                                    <p> You should 
+ deselect <span class="Bold">Infinite look ahead</span> 
+ on the <span class="Bold">Compensation</span> 
+ page or the relief moves will be filtered out of the wirepath.</p>
+                                                                    <p>
+                                                                        <img src="../ToolpathsPics/Infinite_look_ahead_checkbox.png" alt="The &quot;Infinite look ahead&quot; parameter." />
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <ul>
+                                                                <li>The start positions default to the same 
+	 position as the thread position. To set the start position different 
+	 from the thread position, you must deselect <span class="Bold">Set 
+	 start position to thread point</span> on the <span class="Bold">Leads</span>
+	 page. You can then set the start position in the Start 
+	 Position page.</li>
+                                                                <li>If you set a thread position but not a separate 
+	 cut position, Mastercam automatically uses the thread position as 
+	 both the thread and cut positions. You can also select <span class="Bold">Auto 
+	 position cut point</span> on the <span class="Bold">Leads</span> page to have Mastercam 
+	 automatically set your cut positions to the most efficient cut point 
+	 for each contour.</li>
+                                                                <li>When chaining multiple contours, you can 
+	 set one start position, and then set thread and cut positions for 
+	 each contour. The start position can be the same as the thread point 
+	 on the first contour to be chained.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />More functionality</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p><span class="mc-variable CNC_Product.Product variable">Mastercam</span> includes several other operations available in the <span class="Bold">Utilities</span> group of the contextual tab that can be used to help machine your parts. </p>
+                                                        <ul>
+                                                            <li data-mc-conditions="Product.Mill,Product.Router,Product.Wire,Product.Lathe"><span class="Bold">Toolpath Transform</span>—Creates copies of operations in different orientations by transforming them, trimming them, or wrapping them around a cylinder with axis substitution. For more information, read the <a href="../Utilities/Transforming_Toolpaths.htm" class="MCXref xref">Transforming Toolpaths</a> Help topic.</li>
+                                                            <li data-mc-conditions="Product.Mill,Product.Router,Product.Wire"><span class="Bold">Nesting</span>—Efficiently spaces toolpaths to save time and material when machining. For more information, read the <a href="../Common/About_Toolpath_Nesting.htm" class="MCXref xref">About Toolpath Nesting</a> Help topic.</li>
+                                                            <li data-mc-conditions="Product.Mill,Product.Router,Product.Wire"><span class="Bold">Trim</span>—Trims selected toolpaths to one or more closed chains. For more information, read the <a href="../Utilities/Trimming_Toolpaths.htm" class="MCXref xref">Trimming Toolpaths</a> Help topic. </li>
+                                                            <li data-mc-conditions="Product.Wire"><span class="Bold">Autosync Rails</span>—Creates geometry to assist with  wirepaths on models. For more information, read the <a href="Creating_a_4-axis_Wirepath_from_a_Solid_Using_Autosync_Rails.htm" class="MCXref xref">Creating a 4-axis Wirepath From a Solid Using Autosync Rails</a> Help topic.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />What is the Generate toolpath option on the toolpath pages and tabs?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>The <span class="Bold">Generate toolpath</span> option automatically generates the toolpath when you click <span class="Bold">OK</span>. This option is on the pages and tabs of <span class="mc-variable CNC_Product.Product variable">Mastercam</span>'s toolpath dialog boxes, and is on by default for new and edited operations. By selecting this option, you no longer need to select <span class="Bold">Regenerate dirty operations</span> in the Toolpaths Manager after editing your toolpath. </p>
+                                                        <p>For more information on how this option functions, refer to the <a href="../Common/Generate_Toolpath.htm" class="MCXref xref">Accepting and Generating Toolpaths</a> Help topic. </p>
+                                                    </div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li><a href="../../TopLevel/Creating_Toolpaths.htm" class="MCXref xref">Creating Toolpaths</a>
+                                                    </li>
+                                                    <li><a href="../Common/Mill_Router_Toolpaths.htm" class="MCXref xref">Creating a Mill or Router Toolpath</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

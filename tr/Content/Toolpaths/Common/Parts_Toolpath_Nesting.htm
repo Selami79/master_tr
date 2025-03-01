@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Toolpaths|Common|Utilities" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Parts tab: Toolpath Nesting</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Parts tab: Toolpath Nesting</h1>
+                                                <p>Use this tab to 
+		 set up part parameters for toolpath nesting. </p>
+                                                <p>Follow these general steps for parts parameters. </p>
+                                                <ul>
+                                                    <li>Enter information about each part</li>
+                                                    <li>Enter the number of parts</li>
+                                                    <li>Increase the part yield</li>
+                                                </ul>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Parameters</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="Term">Part list</p>
+                                                        <p>Displays the parts included in the nesting session. Mastercam nests all of these parts on the
+sheets you specify in the Sheets tab. Right-click in the list box to add parts to the
+nesting session.</p>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Right-click 
+		 menu options</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="Term">Add operations</p>
+                                                                <p> Opens the Select Operations 
+				 dialog box so that you can pick operations from the current 
+				 file.</p>
+                                                                <p class="Term">Add operation 
+				 cluster</p>
+                                                                <p>Opens 
+				 the Select Operations dialog box with all operations from 
+				 the current file. These operations are treated as a single 
+				 part and nested as a unit.</p>
+                                                                <p class="Term">Add operations 
+				 from files/Add operation clusters from files</p>
+                                                                <p>Retrieves 
+				 operations from a part file.
+				 Mastercam nests the operations and places them in the Toolpaths Manager in their own toolpath 
+				 group with posting turned off.</p>
+                                                                <p class="Term">Add 
+				 operation clusters from folder/Add operations from folder</p>
+                                                                <p>Retrieves 
+				 operations from one or more part files by allowing 
+				 you to browse to and select an entire folder. When you select 
+				 a folder, Mastercam adds all supported files to the Parts list.</p>
+                                                                <p class="Term">Ignore holes when adding operations</p>
+                                                                <p> Nests only the outer boundaries of parts. Any geometry contained 
+		 within the boundary keeps its position within the outer boundary 
+		 and is copied and nested with it.</p>
+                                                                <p class="Term">Scan for notes </p>
+                                                                <p>Includes any note within the selected part's outer boundary. The note becomes part of the nested geometry. </p>
+                                                                <p class="Term">Classify 
+				 boundaries </p>
+                                                                <p>Allows you to reselect geometry 
+				 within the part and classify it as a profile, as a hole, 
+				 or have it ignored in the nesting session.</p>
+                                                                <p class="Term">Order of operations</p>
+                                                                <p>Select to open the Order of operation dialog box, allowing you to change the order of operations within an operation cluster and assign a machining index to each operation. </p>
+                                                                <p class="Term">Change operations</p>
+                                                                <p>Opens 
+				 the Select Operations dialog box so you can adjust which 
+				 operations are included in the nesting boundary. </p>
+                                                                <p class="Term">Delete all</p>
+                                                                <p>Removes 
+				 all parts from the list.</p>
+                                                                <p class="Term">Info</p>
+                                                                <p>Displays 
+				 additional information about the operation, including 
+				 the name and location of the file that contains 
+				 the operation.</p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="Term">Part preview</p>
+                                                        <p> Displays the part that is highlighted in the 
+		 <span class="Bold">Parts list</span>. 
+
+
+Shows the profile (outer boundaries), holes (inner boundaries), and any ignored chains (non-nestable geometry).
+Mastercam determines if any of the inner chains that it detects are 
+		 holes, and outlines them in red. Right-click in the Part list window, and select <span class="Bold">Add options</span>, <span class="Bold">Ignore 
+		 holes when adding parts</span> to change how Mastercam 
+		 assesses inner chains.</p>
+                                                        <p class="Term">Size</p>
+                                                        <p>
+
+
+Shows the overall length and width of the toolpath.</p>
+                                                        <p class="Term">Minimum Qty</p>
+                                                        <p>
+
+
+Enter the number of copies of the selected part. Nesting creates as many copies as
+it can up to the minimum quantity. To make extra copies beyond the minimum quantity,
+use the <span class="Bold">Fill all sheets</span> or <span class="Bold">Filler Qty</span> fields.
+</p>
+                                                        <p class="Term">Filler Quantity</p>
+                                                        <p>
+
+
+Enter the number of filler parts. Selecting this option limits filler parts to the
+area occupied by the nested minimum quantity.
+
+
+Nesting creates the minimum quantity of parts first, then creates filler parts starting
+with the part with the highest priority. If no priority is set, Nesting gives the
+largest part the highest priority and works down to the smallest part.
+</p>
+                                                        <p class="Term">Step angle</p>
+                                                        <p>
+
+
+Controls the degree of rotation Nesting can use when fitting parts on a sheet. For
+example, a 90 degree step angle allows Nesting to use 0, 90, 180, and 270 degree
+rotations. A <span class="Bold">Grain Direction</span> set to Horizontal or
+Vertical disables this option.
+</p>
+                                                        <p class="Term">Priority</p>
+                                                        <p>
+
+
+Sets the order in which the parts are nested. By default, Nesting starts with the
+largest part first. Use the priority setting to force the nesting of a smaller part
+before a larger part, by giving the smaller part Priority 1 and the larger part Priority
+2.
+
+
+
+</p>
+                                                        <p class="Term">Label</p>
+                                                        <p>
+
+
+Select <span class="Bold">Add part labels</span> to enable the label field. Enter the text to be placed on
+all instances of the part or toolpath. When you select an <span class="Bold">Automatic</span> label height, the text height defaults to 80% of the sheet-sheet
+distance.</p>
+                                                        <p class="Term">Material</p>
+                                                        <p>
+Enter a material in the field or click <span class="Bold">Material</span>  to select a material from a material library.
+</p>
+                                                        <p class="Term">Use bounding box</p>
+                                                        <p>
+
+
+Places a bounding box around the extents of the part, and uses the box as the part
+boundary for nesting.</p>
+                                                        <p class="Term">Grain direction</p>
+                                                        <p>
+
+
+Use when you are nesting parts on material with a noticeable surface direction. Set the grain
+direction to match the orientation of the grain on the sheet. Mastercam rotates and positions the parts to match the grain, and disables the part
+step angle. </p>
+                                                        <p>Grain Direction applies to all sheets in the nesting
+session. You cannot set it on a per sheet basis.</p>
+                                                        <p class="Term">Mirror
+
+
+</p>
+                                                        <p>Not available for toolpath nesting.</p>
+                                                        <p class="Term">Part-part distance</p>
+                                                        <p>
+
+
+Enter the amount of space between nested parts.  Mastercam uses this parameter and the <span class="Bold">Nest to Tool center/Tool diameter</span> selection from the Nesting Configuration dialog box to calculate the space between the nested parts.</p>
+                                                        <p class="Term">Optimize </p>
+                                                        <p>Applies the common edge optimization feature to nest the
+parts. Common edge optimization adjusts the part-to-part distance so adjacent parts
+can be cut at the same time (cutting both pieces with one pass of the cutting tool).
+This offers a significant and measurable benefit by saving time, material, and tool
+life.
+
+
+</p>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <ul>
+                                                                <li>
+
+
+To enable the Optimize checkbox, you must select <span class="Bold">Tool Center</span> in the Nesting Configuration dialog box prior to adding operations to the <span class="Bold">Part list</span>. </li>
+                                                                <li>
+
+ 
+
+
+When enabled, the value in the <span class="Bold">Part-part distance</span> field changes to 0 and the field is disabled. The tool diameter
+determines the part-to-part distance value.
+
+
+ 
+
+
+</li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="Term">Add part labels</p>
+                                                        <p>
+
+
+Enables the label field on this tab so that you can have text placed on each part.
+ Labels are placed
+on parts along the X axis in the part's original orientation. 
+
+
+
+</p>
+                                                        <ul>
+                                                            <li><span class="Bold">Height</span>:
+
+
+Enter the height for the label text. All labels generated in a nesting session have
+the same height.
+</li>
+                                                            <li><span class="Bold">Automatic</span>:
+
+
+Fits part labels to the part.
+When calculating the
+largest label size, Mastercam starts with the part dimension and works down until
+it finds the label extents that fit the part.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+</li>
+                                                        </ul>
+                                                        <p class="Term">Optimized pairs
+
+
+</p>
+                                                        <p>Creates close-fit pairs from parts in the nesting session. Once Mastercam creates
+the pair combination, it nests those parts in the pair combination. Optimized pairs
+is a method used to increase yield of parts on material.
+</p>
+                                                        <p class="Term">Fill all sheets</p>
+                                                        <p>
+
+
+Select to fill any unused material on all sheets in the nesting session. Nesting
+creates filler parts starting with the part with the highest priority. If no priority
+is set, Nesting gives the largest part the highest priority and works down to the
+smallest part.</p>
+                                                        <p>Selecting this option disables <span class="Bold">Filler Quantity</span>.
+
+
+
+
+</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Common Toolpath Nesting Controls</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="Term">New</p>
+                                                        <p> Starts a new nesting session. Mastercam reloads the nesting defaults file (DEFX)
+including the default sheet, if one exists.
+</p>
+                                                        <p class="Term">Open</p>
+                                                        <p>Select to open an .INI file. </p>
+                                                        <p class="Term">Save </p>
+                                                        <p> Saves sheets, parts, INI files, and any parameter settings to a nesting session file (NSTX).</p>
+                                                        <p class="Term">Save as </p>
+                                                        <p>Saves the nesting session file (NSTX) or .INI file to a new name.
+</p>
+                                                        <p class="Term">Restore </p>
+                                                        <p>Restores the defaults file and current nesting session to factory settings.
+</p>
+                                                        <p class="Term">Config </p>
+                                                        <p> Opens the Nesting Configuration dialog box. </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Right-click 
+		 menu - Dialog box</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="Term">Save defaults</p>
+                                                        <p> Saves 
+				 all settings in the Parts tab to the nesting defaults 
+				 file (Nesting.DEFX or Nesting-MM.DEFX)</p>
+                                                        <p class="Term">Load defaults</p>
+                                                        <p>Retrieves 
+				 Parts tab settings from the nesting defaults file.</p>
+                                                    </div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li><a href="../../Machine/About_Part_Clusters.htm" class="MCXref xref">About Part Clusters</a>
+                                                    </li>
+                                                    <li><a href="Nesting_Toolpaths_Using_Common_Edge_Optimization.htm" class="MCXref xref">Nesting Toolpaths Using Common Edge Optimization</a>
+                                                    </li>
+                                                    <li><a href="../../Transform/Labels_on_Nested_Parts.htm" class="MCXref xref">Labels on Nested Parts</a>
+                                                    </li>
+                                                    <li><a href="../../Transform/Nesting_Configuration.htm" class="MCXref xref">Nesting Configuration dialog box</a>
+                                                    </li>
+                                                    <li><a href="../Utilities/Selection_Nesting.htm" class="MCXref xref">Selection dialog box: Nesting</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

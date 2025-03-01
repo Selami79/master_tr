@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Toolpaths|Mill-Turn|Milling|3D" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Cut Parameters page: Dynamic OptiRough</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyleSheets/CNC_RegularTable.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Cut Parameters page: Dynamic OptiRough</h1>
+                                                <p>Use the <span class="Bold">Cut Parameters</span> page to 
+		 enter values for cutting parameters and compensation 
+		 options for Dynamic OptiRough toolpaths, a high speed roughing 
+		 toolpath capable of machining very large depths of cut.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Parameters</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Common toolpath dialog box controls</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <table class="TableStyle-CNC_RegularTable" style="mc-table-style: url('../../Resources/TableStyleSheets/CNC_RegularTable.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                                                                    <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                                    <col class="TableStyle-CNC_RegularTable-Column-BoldColumn" data-mc-pattern="5" />
+                                                                    <col class="TableStyle-CNC_RegularTable-Column-Column1" data-mc-pattern="0" />
+                                                                    <thead>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Head-Header1">
+                                                                            <th class="TableStyle-CNC_RegularTable-HeadE-Column1-Header1">Icon</th>
+                                                                            <th class="TableStyle-CNC_RegularTable-HeadE-BoldColumn-Header1">Name</th>
+                                                                            <th class="TableStyle-CNC_RegularTable-HeadD-Column1-Header1">Description</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                                <img src="../../Resources/Images/SnippetPics/Machining/Toolpath_Detect.png" alt="" />
+                                                                            </td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Detect (FBM Drill) </td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Analyzes the solid model and detects features based on the Feature Based Machining (FBM) operation's current
+parameters. View the results of all detected features and their machining information
+in the <span class="Bold">Features</span> page. For more information, please refer to <a href="Detection States and Modes in FBM.htm" class="MCXref xref">Detection States and Modes in FBM</a>.</td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                                <img src="../ToolpathsPics/NOSelectButton_WizHoles.png" alt="" />
+                                                                            </td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Reselection is not available</td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                                <p>Hole Wizard  features for a Wizard Holes operation can only be selected in Mastercam
+for SOLIDWORKS. 
+
+
+Contact your Reseller for more information.</p>
+                                                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                                                    <p>Mastercam for SOLIDWORKS is no longer supported starting with Mastercam 2024. </p>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                                <img src="../../Resources/Images/SnippetPics/Machining/Toolpath_Preview_FBM.png" alt="" />
+                                                                            </td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Preview toolpath operations (FBM Drill/Wizard Holes)</td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Opens the <span class="Bold">Toolpath Operations Preview</span> dialog box where you can view the list of operations
+FBM will generate using the current <span class="Bold">Features</span> page list.</td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                                <img src="../../Resources/Images/SnippetPics/Machining/Toolpath_Save_Defaults.png" alt="" />
+                                                                            </td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Save parameters to defaults file</td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Makes the current toolpath settings the default for future toolpaths of
+this type. Saves the current values in the toolpath properties pages to the <span class="Filepath">.mcam-defaults</span>
+file specified in the machine group properties.</td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                                <img src="../../Resources/Images/SnippetPics/Machining/Toolpath_Reload_Defaults.png" alt="" />
+                                                                            </td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Reload parameters from defaults file</td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Overwrites the current values in the toolpath properties pages with the toolpath's
+default parameters. These parameters are reloaded from the <span class="Filepath">.mcam-defaults</span> file specified
+in the machine group properties.</td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                                <img src="../ToolpathsPics/DisplayGraphicsPreviewObjects.png" alt="" />
+                                                                            </td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Display graphical elements</td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Enables the display of graphical elements, such as plane labels and geometry colors. In 2D or 3D toolpaths <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> also has <span class="Bold">Display only elements</span> and <span class="Bold">Simplified plane display</span> as options.</td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                                <img src="../../Resources/Images/SnippetPics/Machining/Toolpath_Hide_Dialog.png" alt="" />
+                                                                            </td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Hide dialog</td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Minimizes the dialog box so that you can use other Mastercam functions, like changing
+your shading settings or the graphics window view. When finished, press [<span class="Bold">Esc</span>] to
+maximize the dialog box.</td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                                <img src="../../Resources/Images/SnippetPics/Machining/Toolpath_Tool_Manager.png" alt="" />
+                                                                            </td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Tool Manager</td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Opens the Tool Manager. Use the Tool Manager to create and edit
+tool definitions and to work with tool libraries. When you close the Tool Manager,
+the toolpath dialog box will reappear just as you left it.</td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                                <img src="../../Resources/Images/SnippetPics/Machining/Toolpath_FeedSpeed.png" alt="" />
+                                                                            </td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Feed speed calculator</td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Opens the <span class="Bold">Feed &amp; Speed Calculator</span> dialog box where you can modify the calculated feed rate or
+spindle speed by adjusting the material and tool parameters.</td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                                <p>None</p>
+                                                                            </td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Page window</td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">This window displays all of the pages that are available to you, depending on the
+selected toolpath type. A green check mark indicates pages where data has changed
+in the current session.</td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">None</td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Quick View Settings</td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">This window summarizes key toolpath information from the <span class="Bold">Tool</span> page, <span class="Bold">Coolant</span> page,
+and <span class="Bold">Planes</span> page. It updates automatically as you make changes to the different pages
+and is always visible.</td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">None</td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Generate toolpath</td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">When selected,  automatically generates the toolpath when you click <span class="Bold">OK</span>. For more information, refer to <a href="../Common/Generate_Toolpath.htm" class="MCXref xref">Accepting and Generating Toolpaths</a>. </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                                <img src="../ToolpathsPics/OK_Button.png" alt="The &quot;OK&quot; button." />
+                                                                            </td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">OK</td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Generates the toolpath and closes the dialog box. If editing a toolpath, applies the changes and closes the dialog box. </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">
+                                                                                <img src="../ToolpathsPics/apply_button.png" alt="The &quot;Apply&quot; button." />
+                                                                            </td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1">Apply</td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Applies your changes to the toolpath without closing the dialog box. </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyB-Column1-Body1">
+                                                                                <img src="../ToolpathsPics/Cancel_Button.png" alt="The &quot;Cancel&quot; button. " />
+                                                                            </td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyB-BoldColumn-Body1">Cancel</td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyA-Column1-Body1">Closes the dialog box and cancels the toolpath creation. If editing a toolpath, any changes to the toolpath are discarded. </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <p class="Term">Cutting method </p>
+                                                        <p>Orients the cutting direction. Select one of the following options:</p>
+                                                        <ul>
+                                                            <li data-mc-conditions="Milling/3D HST Toolpaths.Area Roughing,Milling/3D HST Toolpaths.Dynamic OptiRough,Milling/3D HST Toolpaths.Waterline,Milling/3D HST Toolpaths.Horizontal Area,Milling/2D HST Toolpaths.Dynamic Mill,Milling/2D HST Toolpaths.Peel Mill"><span class="Bold">Climb</span>: Cuts in one direction with the tool rotating in the opposite direction of the tool motion.</li>
+                                                            <li data-mc-conditions="Milling/2D HST Toolpaths.Dynamic Mill,Milling/2D HST Toolpaths.Peel Mill,Milling/3D HST Toolpaths.Area Roughing,Milling/3D HST Toolpaths.Dynamic OptiRough,Milling/3D HST Toolpaths.Waterline,Milling/3D HST Toolpaths.Horizontal Area"><span class="Bold">Conventional</span>: Cuts in one direction with the tool rotating in the same direction as the tool motion.</li>
+                                                            <li data-mc-conditions="Milling/2D HST Toolpaths.Dynamic Mill,Milling/2D HST Toolpaths.Peel Mill,Milling/2D HST Toolpaths.Blend Mill,Milling/3D HST Toolpaths.Dynamic OptiRough,Milling/3D HST Toolpaths.Waterline,Milling/3D HST Toolpaths.Scallop,Milling/3D HST Toolpaths.Raster,Milling/3D HST Toolpaths.Pencil,Milling/3D HST Toolpaths.Spiral,Milling/3D HST Toolpaths.Radial,Milling/3D HST Toolpaths.Blend,Milling/Surface Finish Toolpaths.Leftover,Milling/Surface Finish Toolpaths.Blend,Milling/Surface Finish Toolpaths.Parallel,Milling/Surface Finish Toolpaths.Parallel steep,Milling/Surface Finish Toolpaths.Radial,Milling/Surface Finish Toolpaths.Shallow,Milling/Surface Rough Toolpaths.Parallel,Milling/Surface Rough Toolpaths.Radial,Milling/Surface Rough Toolpaths.Flowline,Milling/Surface Finish Toolpaths.Flowline,Milling/Surface Finish Toolpaths.Pencil,Milling/2D Standard Toolpaths.Face,Milling/Wireframe Toolpahs.Swept 2D"><span class="Bold">Zigzag</span>: Cuts each pass in the opposite direction to the previous pass. A short linking motion connects the two ends.</li>
+                                                        </ul>
+                                                        <p class="Term">Conventional feed rate</p>
+                                                        <p>Sets an alternate feed rate for the conventional motion of a zigzag cut. Enter a percentage of the programmed feed rate or a value. <MadCap:conditionalText data-mc-conditions="Milling/2D HST Toolpaths.Dynamic Mill,Milling/3D HST Toolpaths.Dynamic OptiRough">Only available when the <span class="Bold">Cutting method</span> is set to <span class="Bold">Zigzag</span>.</MadCap:conditionalText></p>
+                                                        <p class="Term">Tip compensation</p>
+                                                        <p>Select whether the compensation point will be the center of the tool or the tip. Compensating to the center of the tool is frequently used with ball cutters where compensation is applied at the control.</p>
+                                                        <p class="Term">Optimize stepups</p>
+                                                        <p>Defines the cut order Mastercam applies to different cutting passes in the toolpath.</p>
+                                                        <ul>
+                                                            <li><span class="Bold">By depth</span>: Mastercam machines all cut passes Z-level by Z-level.<p><img src="../ToolpathsPics/OptiRough-OpCtOr-OFF.png" alt="The toolpath created using the &quot;By depth&quot; cut order." /></p></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><span class="Bold">Next closest</span>: Mastercam moves to the closest cut from where it finished the previous cut. <p><img src="../ToolpathsPics/Optirough_next_closest.png" alt="The toolpath created using the &quot;Next closest&quot; cut order." /></p></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><span class="Bold">By pocket</span>: Mastercam first machines all the stepdowns, moving from pocket to pocket. After all
+stepdowns on a Z-level are machined to completion, Mastercam machines the stepups
+by next closest, in the safest cut order. <p><img src="../ToolpathsPics/OptiRough-OpCtOr-ON.png" alt="The toolpath created using the &quot;By pocket&quot; cut order." /></p></li>
+                                                        </ul>
+                                                        <p class="Term" data-mc-conditions="Milling/3D HST Toolpaths.Dynamic OptiRough">Optimize stepdowns</p>
+                                                        <p>Controls the cut order <span class="mc-variable CNC_Product.Product variable">Mastercam</span> applies to different cutting passes in the toolpath.
+When the tool finishes a machining pass, it must select a start point to resume.
+The start points can be set as the following. The images below show a toolpath with Classic Backplot to help show the differences between the options. The numbers indicate the order of machining to also help visualize the options. </p>
+                                                        <ul>
+                                                            <li>
+                                                                <p><span class="Bold">Material</span>: Set by default. Starts at the material that is closest to the entire tool. <span class="mc-variable CNC_Product.Product variable">Mastercam</span> attempts to do smaller pieces within a general area when pieces of material become isolated before moving on. </p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/CutOrder_Material.png" alt="An example of the &quot;Material&quot; option." />
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p><span class="Bold">None</span>: No optimization is applied to the cutting passes. </p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/CutOrder_None.png" alt="An example of the &quot;None&quot; option." />
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p><span class="Bold">Air</span>: Starts nearest to the tool. <span class="mc-variable CNC_Product.Product variable">Mastercam</span> attempts to create the shortest possible air moves between machining areas. </p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/CutOrder_Air.png" alt="An example of the &quot;Air&quot; option." />
+                                                                </p>
+                                                            </li>
+                                                        </ul>
+                                                        <p class="Term">Stepover </p>
+                                                        <p data-mc-conditions="Milling/2D HST Toolpaths.Dynamic Contour,Milling/2D HST Toolpaths.Dynamic Mill,Milling/3D HST Toolpaths.Dynamic OptiRough,Milling/2D HST Toolpaths.Peel Mill,Milling/2D Standard Toolpaths.Face">Sets the distance between cutting passes in the X and Y axes. Enter a percentage of the tool diameter, an absolute distance, or an angle. The value or percentage is limited to 95% of the tool's flat diameter in the <span class="Bold">Dynamic</span> cutting method. A larger value will automatically be reduced to the 95% limit after a warning message. Be aware when using a bullnose tool that the percentage is a calculation based on the tool's flat diameter.</p>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; " data-mc-conditions="Milling/3D HST Toolpaths.Dynamic OptiRough,Milling/2D HST Toolpaths.Dynamic Contour,Milling/2D HST Toolpaths.Dynamic Mill,Milling/2D HST Toolpaths.Peel Mill,Milling/2D Standard Toolpaths.Face"><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>The field becomes a drop-down selection when the following conditions exist:</p>
+                                                            <ul>
+                                                                <li>An ISCAR CHATTERFREE tool is selected</li>
+                                                                <li>The <span class="Bold">Iscar HEM</span> checkbox in the <span class="Bold">Tool</span> page is selected</li>
+                                                            </ul>
+                                                            <p>Your options then become <span class="Bold">5%</span>, <span class="Bold">7%</span>, and <span class="Bold">10%</span>.</p>
+                                                        </div>
+                                                        <p class="Term">Maximize engagement</p>
+                                                        <p>When enabled, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> produces more nominal chips and minimizes the number of small chips. Additionally, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> moves towards the entered <span class="Bold">Stepover</span> as quickly as possible. </p>
+                                                        <p class="Term" data-mc-conditions="Milling/3D HST Toolpaths.Dynamic OptiRough,Milling/3D HST Toolpaths.Waterline">Stepdown (Passes)</p>
+                                                        <p>Determines the Z spacing between adjacent cutting passes. </p>
+                                                        <p><span class="Bold">Uniform stepdowns</span>
+                                                        </p>
+                                                        <p>When this option is selected <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> creates equal steps when the <span class="Bold">Stepdown</span> value is not a perfect division.</p>
+                                                        <p class="Term">Stepup</p>
+                                                        <p>When this option is selected, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> calculates and adds stepup cutting passes (+Z) to the toolpath. Enter the stepup value to use between up cutting passes as either a percentage of tool diameter or an absolute distance.</p>
+                                                        <p> <span class="mc-variable CNC_Product.Product variable">Mastercam</span> also inserts extra cut passes when stepping up to clear all detected flat areas. Stepup cutting passes help remove material left behind between the stepdowns, for example, islands or large scallops on angled walls, using a dynamic rest motion. Deselect to disable stepup cutting for the toolpath. The toolpath then uses dynamic milling motion to remove material only on stepdowns, avoiding any islands.</p>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>When you set the <span class="Bold">Stepup</span> value equal to the <span class="Bold">Stepdown</span> value, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> calculates up cutting passes for only flat areas.</p>
+                                                        </div>
+                                                        <p class="Term">Mill vertical walls</p>
+                                                        <p>Select to always calculate a rest area for stepup cuts. This results in a waterline cut motion on vertical walls.
+
+Deselect to machine only the actual rest area Mastercam calculates from the stepup cuts.
+</p>
+                                                        <p class="Term">Minimum toolpath radius</p>
+                                                        <p>Enter the minimum toolpath radius to create in the operation. Enter the value as a percentage of the tool diameter or an absolute value. <span class="mc-variable CNC_Product.Product variable">Mastercam</span> uses the specified minimum toolpath radius in combination with the <span class="Bold">Microlift distance</span> and <span class="Bold">Back feed rate</span> parameters to calculate 3D arc moves between cut passes. The <span class="Bold">Minimum toolpath radius</span> value is beneficial when the following conditions are present:</p>
+                                                        <ul>
+                                                            <li><span class="Bold">Sharp corners in your machining chain</span>: If you machine a rectangular-shaped pocket, each of the four corners will have a radius. The <span class="Bold">Minimum toolpath radius</span> is the radius of those corners.</li>
+                                                            <li><span class="Bold">Arc on and off</span>: The arc motion on and off during toolpathing tries to target <span class="Bold">45%</span> of the tool's diameter for its size. However, if the percentage prevents the tool from going into a tight space, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> makes this value less than <span class="Bold">45%</span>, but never less than the <span class="Bold">Minimum toolpath radius</span> value.</li>
+                                                        </ul>
+                                                        <p class="Term" data-mc-conditions="Milling/3D HST Toolpaths.Dynamic OptiRough">Micro lift distance</p>
+                                                        <p data-mc-conditions="Milling/3D HST Toolpaths.Dynamic OptiRough">Enter the distance the tool lifts off of the part on back moves. Microlifts are slight lifts that help clear chips and minimize excessive tool heating.
+</p>
+                                                        <p data-mc-conditions="Milling/3D HST Toolpaths.Dynamic OptiRough">
+                                                            <img src="../ToolpathsPics/MicroLiftLength.png" alt="The micro lift distance highlighted in a toolpath. " />
+                                                        </p>
+                                                        <p class="Term" data-mc-conditions="Milling/3D HST Toolpaths.Dynamic OptiRough">Back feed rate</p>
+                                                        <p data-mc-conditions="Milling/3D HST Toolpaths.Dynamic OptiRough">Controls the speed (inches per minute or millimeters per minute) of the tool's backfeed movement. This allows 3D arcs between cuts to have a different feed rate than the rest of the toolpath, which can help reduce cycle time.</p>
+                                                    </div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li><a href="Dynamic_OptiRough_Toolpaths.htm" class="MCXref xref">Dynamic OptiRough Toolpaths</a>
+                                                    </li>
+                                                    <li><a href="Leaving_Stock_on_Drive_and_Check_Geometry.htm" class="MCXref xref">Leaving Stock on Machining and Avoidance Geometry</a>
+                                                    </li>
+                                                    <li><a href="3D_Mill_Router_Toolpaths.htm" class="MCXref xref">3D Mill and Router Toolpaths</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

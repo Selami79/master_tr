@@ -1,0 +1,1654 @@
+/*<meta conditions="CNC_Primary.HelpOnly,CNC_Publish.Installation" />*/
+
+@import url('CNC_FontStylesheet.css');
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+/* The items below are for the Default medium. The Default medium is meant for the HTML5/CHM output. All other mediums are blocked off so that you can see which one you are looking at based on the commented out text.
+
+Each style has a comment. If it does not, there may be a general comment above it that applies to more than one style or it may have already been described.*/
+
+/*============================================ General Styles ============================================*/
+
+body	/* Used as the base for many styles. Sets the font type and hyphenation. */
+{
+	font-family: 'Noto Sans', Verdana, sans-serif;
+	mc-hyphenate: never;
+	margin: 0.625em;
+	line-height: 1.5em;
+	color: #333;
+}
+
+button.menu-icon	/* Hides the Hamburger menu when doing mobile and tablet outputs */
+{
+	display: none !important;
+}
+
+#contentBody > .responsive-header	/* Used to make the header responsive */
+{
+	background-color: transparent;
+}
+
+caption	/* Used for table captions */
+{
+	font-weight: bold;
+	font-size: .85em;
+	text-align: center;
+}
+
+/*==Elements for the left side of Master Page layout==*/
+
+div.side-menu	/*This is the div that the menu proxy is contained in*/
+{
+	padding-left: 10px;
+	margin-top: 15px;
+}
+
+/*Responsive layout for the HTML topics*/
+
+div.topic-layout
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.topic-layout::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.topic-layout::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.topic-layout > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.topic-layout > div:nth-child(1)	/*Menu Proxy container*/
+{
+	width: 73%;
+	margin-left: 2%;
+	border-right: 1px solid #d3d3d3;
+}
+
+div.topic-layout > div:nth-child(2)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.WhiteBackground	/* Adds a white background for setupsheet topics */
+{
+	background-color: white;
+	padding: 1.875em;
+}
+
+div.MCBreadcrumbsBox_navigation_0	/* Styles the breacrumbs background */
+{
+	border-bottom-color: #d3d3d3;
+}
+
+/*============================================ Generic Styles ============================================*/
+
+.main-section	/* Used to color the background for HTML5 outputs. */
+{
+	background-color: #f1f1f1;
+}
+
+/*============================================ List/Complex List Selector Styles ============================================*/
+/* All of these styles are used to change how lists, unordered, and orders lists look.  */
+
+li
+{
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+	padding-left: 0px;
+}
+
+ol
+{
+	list-style-type: decimal;
+	font-size: inherit;
+}
+
+ul
+{
+	margin-bottom: 1em;
+	list-style-type: disc;
+	margin-top: 0.5em;
+}
+
+li.Chevron	/*A list style for secondary landing pages. Replaces bullet with a chevron */
+{
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+	padding-left: 0px;
+	list-style-image: url('../Images/HTML5/CNC_ArrowRight.png');
+}
+
+ul ul,
+ol ul
+{
+	padding-left: 1.75em;
+}
+
+ol ol,
+ul ol
+{
+	list-style-type: lower-alpha;
+	padding-left: 1.75em;
+}
+
+ol ol ol,
+ul ol ol,
+ul ul ol,
+ol ul ol
+{
+	list-style-type: lower-roman;
+}
+
+ul li:last-of-type,
+ol li:last-of-type
+{
+	margin-bottom: 1.125em;
+}
+
+ol ol li:last-of-type,
+ul ol li:last-of-type
+{
+	margin-bottom: 0pt;
+}
+
+ol ul li:last-of-type,
+ul ul li:last-of-type
+{
+	margin-bottom: 0pt;
+}
+
+li p	/*paragraph element within a list*/
+{
+	margin-bottom: 0.667em;
+	margin-top: 0.667em;
+	padding-left: 0em;
+}
+
+li::marker
+{
+	font-weight: bold;
+}
+
+li.PageBreakBefore	/*A list style used for adding a page break in a list */
+{
+	page-break-before: always;
+}
+
+/*============================================ Link Styles ============================================*/
+
+a	/* Used to style the overall look of links */
+{
+	color: #2273C9;
+	text-decoration: none;
+}
+
+a:link	/* Used to style how active links look */
+{
+	text-decoration: none;
+	color: #2273C9;
+}
+
+a:visited	/* Used to style how visited links look */
+{
+	color: #8b008b;
+}
+
+/*============================================ Heading Styles ============================================*/
+
+h1	/*Use for the first heading in a chapter includes a forced page break before the text. Also used as the heading for Help pages.*/
+{
+	font-weight: normal;
+	font-size: 1.75em;
+	column-break-after: avoid;
+	page-break-after: avoid;
+	page-break-before: always;
+	page-break-inside: avoid;
+	line-height: normal;
+	color: #333333;
+}
+
+h1.TOCHeading	/*Use for the Table of Contents heading so that it will not appear in the TOC. This is used for printed outputs.*/
+{
+	mc-heading-level: 0;
+}
+
+h1.Questions	/*Use for the Show Us What You Learned Project Based Learning topics. */
+{
+	mc-heading-level: 2;
+	page-break-before: always;
+}
+
+h2	/*Use for second-level headings. Use title case.*/
+{
+	color: #404040;
+	font-size: 1.5em;
+	font-weight: normal;
+	page-break-after: avoid;
+}
+
+h3	/*Use for third-level heading. Use sentence case.*/
+{
+	font-size: 1.25em;
+	font-weight: normal;
+	color: #404040;
+}
+
+h3.RelatedTopics	/*Use for Learn more in the Help. You do not need to add anything else. */
+{
+	mc-auto-number-format: 'Learn more';
+	margin: 1.25em 0px 0px;
+}
+
+h4	/*Use for fourth-level headings. Use sentence case. */
+{
+	font-size: 1.125em;
+	color: #000000;
+	font-weight: normal;
+}
+
+h5	/* Used for fifth-level headings. Use sentence case. Try to avoid using if necessary */
+{
+	font-size: 1.05em;
+	font-weight: normal;
+}
+
+/*============================================ Span Styles ============================================*/
+
+span.Bold	/* Used to add a bold style to the selected text. */
+{
+	color: #3c3c3c;
+	font-weight: bold;
+}
+
+span.Filepath	/* Used for file paths and part files. */
+{
+	font-family: "Arial Narrow", Helvetica, sans-serif;
+	font-size: 1.063em;
+}
+
+span.Italic	/* Used for emphasis */
+{
+	font-style: italic;
+}
+
+/*============================================ Paragraph Styles ============================================*/
+
+p	/* Normal paragraph style */
+{
+	orphans: 5;
+	widows: 2;
+	color: #333;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	text-align: left;
+}
+
+p.BackCover	/*Used for Printed outputs only. The style of the BackCover snippet on the back page of PDFs. */
+{
+	color: #ffffff;
+	font-size: 17pt;
+	font-weight: bold;
+	background-color: #d11141;
+	text-align: center;
+	padding: 14.5pt;
+	border-radius: 18.75pt;
+}
+
+p.FrontMatterHeading	/*Use on copyright page for name of document. This style is not in the TOC.*/
+{
+	color: #d11141;
+	font-size: 19pt;
+	text-align: center;
+	margin: 0pt 0pt 9pt;
+}
+
+p.FrontMatterSubheading	/*Use on copyright page for second-level headings, which are not included in the TOC.*/
+{
+	font-size: 15pt;
+	text-align: center;
+	margin: 18pt 0pt 9pt;
+}
+
+p.Header	/* Used to style the header in print targets */
+{
+	font-size: 8pt;
+	margin: 0em 0;
+}
+
+p.LeadIn	/*Use for body text or list text that precedes a list or figure to avoid a page break after the paragraph.*/
+{
+	page-break-after: avoid;
+}
+
+p.Subtitle	/*Use on title page for document subtitle.*/
+{
+	font-size: 14pt;
+	text-align: right;
+	margin: 6pt 0pt 0pt;
+	font-weight: 700;
+}
+
+p.Term	/*Used for parameters under Parameter drop-downs to set off parameters from its description */
+{
+	font-weight: bold;
+	margin: 0em 0em;
+}
+
+p.Title	/* Used for tutorial and printed outputs, used for the title of the tutorial or guide. It displays on the cover of a PDF. */
+{
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 28pt;
+	text-align: right;
+	line-height: 0pt;
+	font-weight: 600;
+}
+
+p.PageNumber	/* Used to style page numbers for print outputs */
+{
+	font-size: 8pt;
+	text-align: center;
+	color: #d11141;
+}
+
+/*============================================ DIV Styles ============================================*/
+
+div.Note	/*Use to emphasize a point, remind a reader, or indicate possible minor issue.*/
+{
+	mc-auto-number-format: '{b}NOTE{/b} ';
+	overflow: hidden;
+	color: #1d5059;
+	background-color: #d1ecf1;
+	background-image: url(../Images/HTML5/CNC_Note.svg);
+	background-position: 8px 5px;
+	background-repeat: no-repeat;
+	background-size: 3%;
+	mc-auto-number-position: inside-head;
+	mc-auto-number-offset: 0.75em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	padding: 15px 10px 15px 55px;
+	page-break-inside: avoid;
+}
+
+div.Warning	/*Use to warn of possible injury to self or others.*/
+{
+	mc-auto-number-format: '{b}WARNING{/b} ';
+	overflow: hidden;
+	color: #721c24;
+	background-color: #fceded;
+	background-image: url(../Images/HTML5/CNC_Warning.svg);
+	background-position: 8px 5px;
+	background-repeat: no-repeat;
+	background-size: 3%;
+	mc-auto-number-position: inside-head;
+	mc-auto-number-offset: 0.75em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	padding: 15px 10px 15px 55px;
+	page-break-inside: avoid;
+}
+
+div.InstructorText	/*Use to distinguish discussion points for the tutorial instructor. It also has the Instructor Condition tag on it. */
+{
+	mc-auto-number-format: '{b}DISCUSSION{/b} ';
+	overflow: hidden;
+	background-color: #d4edda;
+	color: #13301a;
+	background-image: url(../Images/HTML5/CNC_Discussion.svg);
+	background-position: 8px 5px;
+	background-repeat: no-repeat;
+	background-size: 3%;
+	mc-auto-number-position: inside-head;
+	mc-auto-number-offset: 0.75em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	padding: 15px 10px 15px 55px;
+	page-break-inside: avoid;
+}
+
+div.Caution	/*Used to warn of possible damage or malfunction of equipment or data.*/
+{
+	mc-auto-number-format: '{b}CAUTION{/b} ';
+	overflow: hidden;
+	color: #4b3903;
+	background-color: #fff4d1;
+	background-image: url(../Images/HTML5/CNC_Caution.svg);
+	background-position: 8px 5px;
+	background-repeat: no-repeat;
+	background-size: 3%;
+	mc-auto-number-position: inside-head;
+	mc-auto-number-offset: 0.75em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	padding: 15px 10px 15px 55px;
+	page-break-inside: avoid;
+}
+
+div.Note p	/*Styles the p tags inside a Div.Note*/
+{
+	margin-top: 4px;
+	margin-bottom: 4px;
+	color: #1d5059;
+}
+
+div.Note span.Bold	/* Styles the span.Bold to match the color of the note title. */
+{
+	color: #1d5059;
+	font-weight: bold;
+}
+
+div.Caution p	/*Styles the p tags inside a Div.Note*/
+{
+	margin-top: 4px;
+	margin-bottom: 4px;
+	color: #4b3903;
+}
+
+div.Caution span.Bold	/* Styles the span.Bold to match the color of the note title. */
+{
+	color: #4b3903;
+	font-weight: bold;
+}
+
+div.Warning p	/*Styles the p tags inside a Div.Note*/
+{
+	margin-top: 4px;
+	margin-bottom: 4px;
+	color: #721c24;
+}
+
+div.Warning span.Bold	/* Styles the span.Bold to match the color of the note title. */
+{
+	color: #721c24;
+	font-weight: bold;
+}
+
+div.InstructorText p	/*Styles the p tags inside a Div.Note*/
+{
+	margin-top: 4px;
+	margin-bottom: 4px;
+	color: #13301a;
+}
+
+div.InstructorText span.Bold	/* Styles the span.Bold to match the color of the note title. */
+{
+	color: #13301a;
+	font-weight: bold;
+}
+
+div.Content-container	/* Used to contain the topics so that it has a different background color */
+{
+	background-color: #ffffff;
+	padding: 1.875em;
+	min-height: 95vh;
+	position: relative;
+	margin-right: 0em;
+}
+
+div.Search-container	/* Used for HTML5 search output */
+{
+	margin: 0 auto;
+}
+
+div.Side-content	/* Used to contain the Side Menu and Toolbar proxy */
+{
+	float: right;
+	margin-left: 1em;
+	width: 13.33%;
+}
+
+/*============================================ Landing Page Styles ============================================*/
+
+div.LandingPageTiles-Container	/* Container for the landing page tiles  */
+{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+div.LandingPageTiles	/*The lading page tiles */
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.LandingPageTiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.LandingPageTiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.LandingPageTiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #e0e0e0;
+	padding: 10px;
+	padding-left: 10.5px;
+	padding-right: 10.5px;
+	margin: 1%;
+}
+
+div.LandingPageTiles > div:nth-child(1)
+{
+	width: 32%;
+	margin-left: 0%;
+	min-height: 12em;
+}
+
+div.LandingPageTiles > div:nth-child(2)
+{
+	width: 32%;
+	margin-left: 0%;
+	min-height: 12em;
+}
+
+div.LandingPageTiles > div:nth-child(3)
+{
+	width: 32%;
+	margin-left: 0%;
+	min-height: 12em;
+}
+
+div.LandingPageTiles > div:nth-child(1):hover,
+div.LandingPageTiles > div:nth-child(2):hover,
+div.LandingPageTiles > div:nth-child(3):hover	/* Adds a hover affect to the tiles */
+{
+	box-shadow: 0 0 11px rgba(33,33,33,.2);
+	box-sizing: border-box;
+}
+
+p.LandingPageTile-Title	/* Styles the titles in the Landing Page tile */
+{
+	font-weight: bold;
+	color: #d11141;
+}
+
+div.CTALandingPages-Container	/* Contains the call to action on the landing pages */
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: -27.75%;
+	margin-right: -27.75%;
+}
+
+div.CTALandingPages	/* The call to action on landing pages */
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f1f1f1;
+	text-align: center;
+	max-width: 75%;
+}
+
+div.CTALandingPages::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.CTALandingPages::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.CTALandingPages > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.CTALandingPages > div:nth-child(1)
+{
+	width: 100%;
+	margin-left: 0%;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+p.CTAHeading	/* The heading of the call to action */
+{
+	font-size: 1.5em;
+}
+
+div.CTAButton-Container	/*Contains the button in the call to action */
+{
+	text-align: center;
+}
+
+.CTAButton	/* The button in the call to action */
+{
+	background-color: #d11141;
+	border: none;
+	color: white;
+	padding: 15px 45px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+div.SecondaryLanding-Container	/* Contains the responsive layout on the secondary landing pages */
+{
+	margin: 10px;
+}
+
+div.SecondaryLanding	/* Used to style the responsive layout on secondary landing pages */
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.SecondaryLanding::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.SecondaryLanding::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.SecondaryLanding > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.SecondaryLanding > div:nth-child(1)
+{
+	width: 33.3%;
+	margin-left: 0%;
+	padding: 10px;
+}
+
+div.SecondaryLanding > div:nth-child(2)
+{
+	width: 66.7%;
+	margin-left: 0%;
+}
+
+div.SecondaryLanding > div:nth-child(2) p
+{
+	text-align: center;
+}
+
+/*============================================ MadCap Styles ============================================*/
+
+MadCap|tocProxy	/* Use to style the table of contents madcap proxy */
+{
+	border-top: solid 0px #000000;
+}
+
+MadCap|xref	/*Use as a link to other topics in a project. */
+{
+	color: #2273C9;
+	text-decoration: none;
+	mc-format: '{paratext}';
+}
+
+MadCap|xref:hover	/*Use as a link to other topics in a project. */
+{
+	font-weight: bold;
+}
+
+MadCap|xref.Gray	/*Use as a link to other topics in a project. */
+{
+	color: #404040;
+	text-decoration: none;
+	mc-format: '{paratext}';
+}
+
+MadCap|xref.Gray:hover	/*Use as a link to other topics in a project. */
+{
+	font-weight: bold;
+}
+
+MadCap|dropDownHotspot	/*Used to style the actual drop-down text of the MadCap drop-down. */
+{
+	cursor: hand;
+	text-decoration: none;
+	border-bottom: none;
+	color: #d11141;
+	font-weight: bold;
+	font-size: 13pt;
+}
+
+MadCap|dropDownBody	/*Used to style the body of a MadCap Drop-down. */
+{
+	margin-left: 18px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: none 2px #000000;
+}
+
+MadCap|dropDown	/*Used to store information under a drop-down. This style is for the general MadCap Drop-down.*/
+{
+	mc-image-position: left;
+	mc-image-spacing: 5px;
+	padding: 2px 0px;
+	mc-closed-image: url('../Images/HTML5/CNC_ArrowRight.png');
+	mc-open-image: url('../Images/HTML5/CNC_ArrowDown.png');
+}
+
+.MCDropDown_Open	/* Adds a bottom border to an open drop-down. */
+{
+	border-bottom: solid 1px #523859;
+	margin-bottom: 5px;
+}
+
+span.mc-variable.Bold	/*Use when a variable needs to be bold when the surrounding text does not need to be */
+{
+	font-weight: bold;
+	color: #3c3c3c;
+}
+
+span.mc-variable.Italic	/*Use when a variable needs to be italic when the surrounding text does not need to be */
+{
+	font-weight: normal;
+	font-style: italic;
+}
+
+MadCap|xref.PageNumber	/* This is used for printed outputs to display the page number of a cross-reference */
+{
+	mc-format: '{paratext}';
+}
+
+span.SearchHighlight	/* Colors a searched term in the output for visibility */
+{
+	background-color: #66ff66;
+}
+
+/* These styles are used to style the mini TOC proxy. Currently, only used in HTML5 outputs for What's New*/
+
+div.MCMiniTocBox_0
+{
+	padding-top: 0px;
+}
+
+MadCap|miniTocProxy
+{
+	border-top: none 0px #000000;
+}
+
+p.MiniTOC1
+{
+	font-weight: normal;
+	color: #2d82dc;
+}
+
+table#Sortable	/* Makes the table sortable. Applied on a table-by-table basis */
+{
+	
+}
+
+MadCap|codeSnippetBody
+{
+	
+}
+
+MadCap|codeSnippet
+{
+	font-size: 10pt;
+}
+
+MadCap|codeSnippetCaption
+{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 11pt;
+}
+
+MadCap|codeSnippetCopyButton
+{
+	mc-label: 'Copy';
+}
+
+/*============================================ Image Styles ============================================*/
+
+img	/* Generic image style, no need to apply */
+{
+	mc-thumbnail: none;
+	border: none 0px #000000;
+}
+
+img.Thumbnail	/* Use for large images for HTML5 */
+{
+	mc-thumbnail: popup;
+	mc-thumbnail-max-height: 300px;
+	mc-thumbnail-max-width: 500px;
+}
+
+img.FloatRight	/* Use to float images to the right */
+{
+	float: right;
+	padding: 2%;
+}
+
+img.MaxWidth	/* Use for images that have a large width to keep them constrained */
+{
+	max-height: auto;
+	max-width: 100%;
+}
+
+img.SecondaryLandingImage	/* Use for images that have a large width to keep them constrained within the SecondaryLanding div */
+{
+	max-height: auto;
+	max-width: 100%;
+}
+
+img.MaxHeight	/* Use for images that have a large height to keep them constrained */
+{
+	max-width: auto;
+	max-height: 100%;
+}
+
+img.MediumWidth	/* Not quit max width of the page, but close. */
+{
+	max-width: 65%;
+	max-height: auto;
+}
+
+/* Complex seletors for how to style images after a paragraph tag, a list tag, table, or a combination of them */
+
+p > img
+{
+	padding-left: .75em;
+}
+
+p > img.MaxHeight
+{
+	padding-left: .75em;
+}
+
+p > img.MaxWidth
+{
+	padding-left: .75em;
+}
+
+p > img.Banner
+{
+	padding-left: 0em;
+}
+
+li > p > img
+{
+	padding-left: 0em;
+}
+
+li > p > img.MaxHeight
+{
+	padding-left: 0em;
+}
+
+li > p > img.MaxWidth
+{
+	padding-left: 0em;
+}
+
+td > img
+{
+	padding-left: 0em;
+}
+
+td > img.MaxHeight
+{
+	padding-left: 0em;
+}
+
+td > img.MaxWidth
+{
+	padding-left: 0em;
+}
+
+/*============================================ Code Styles ============================================*/
+
+code,
+pre	/* Use for styling code */
+{
+	font-family: Consolas, "Courier New", monospace;
+	font-size: 1.0em;
+}
+
+/*========================================== Footer and Footer Copyright Responsive Layout Styles ============================================*/
+
+div.FooterWrapper	/* Wraps all the footer containers - one level above div.Footer*/
+{
+	background-color: #000;
+	padding: 30px 0 20px;
+}
+
+div.Footer	/* Wraps all of the footer */
+{
+	background-color: #000;
+	max-width: 80em;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+div.Footer p
+{
+	color: #fff;
+	font-size: 0.9em;
+}
+
+div.Footer a
+{
+	color: #d11141;
+}
+
+div.Footer h2
+{
+	color: #fff;
+	mc-heading-level: 0;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+div.AboutContact	/* Contains the About Us and Contact Us information in the Footer */
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	color: #fff;
+	margin: 20px 0;
+	padding: 0;
+}
+
+div.AboutContact::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.AboutContact::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.AboutContact > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.AboutContact > div:nth-child(1)
+{
+	width: 50%;
+	margin-left: 0%;
+	padding-right: 30px;
+}
+
+div.AboutContact > div:nth-child(2)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+div.Column12	/*Contains the Mastercam logo in the footer */
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 20px 0;
+	padding: 0;
+	text-align: left;
+}
+
+div.Column12::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Column12::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Column12 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Column12 > div:nth-child(1)
+{
+	width: 100%;
+	margin-left: 0%;
+}
+
+.socialicons	/* Styles the social icons in the footer */
+{
+	width: 32px;
+	margin-left: 10px;
+}
+
+.mainlogo	/* Styles the Mastercam logo in the footer */
+{
+	margin-top: 32px;
+	margin-left: 0;
+	text-align: left;
+	width: 264px;
+}
+
+div.Copyright	/* Contains the copyright information in the footer */
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 24px 0 10px 0;
+}
+
+div.Copyright::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Copyright::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Copyright > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Copyright > div:nth-child(1)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+div.Copyright > div:nth-child(2)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+div.Copyright > div:nth-child(2) p
+{
+	text-align: right;
+}
+
+div.Copyright a
+{
+	color: #fff;
+}
+
+MadCap|breadcrumbsProxy
+{
+	mc-breadcrumbs-count: 7;
+}
+
+/*============================================ To-Be Deprecated Styles ============================================*/
+
+MadCap|toggler	/* Use as a drop-down to store information. These should be replaced by MadCap drop-downs whenever possible */
+{
+	mc-image-position: left;
+	mc-image-spacing: 5px;
+	padding: 10px 0;
+	color: #d11411;
+	font-weight: bold;
+	font-size: 13pt;
+	mc-closed-image: url('../Images/HTML5/CNC_ArrowRight.png');
+	mc-open-image: url('../Images/HTML5/CNC_ArrowDown.png');
+}
+
+div.Indent	/*Used to indent grouped content (div tag) used in a toggler 25 pixels. Should be phased out with the use of drop-downs */
+{
+	margin-left: 1.5em;
+	padding-left: 1.5em;
+}
+
+/*============================================ Print Medium Styles ============================================*/
+
+@media print
+{
+	/*============================================ General Styles ============================================*/
+
+	body
+	{
+		font-size: 10pt;
+		margin: 7.5pt;
+	}
+
+	/*============================================ Heading Styles ============================================*/
+
+	h1
+	{
+		color: #d11141;
+		font-size: 19pt;
+		text-align: center;
+		padding: 15pt;
+	}
+
+	h2
+	{
+		color: #000000;
+		margin-bottom: 6pt;
+		font-size: 16pt;
+	}
+
+	h3
+	{
+		color: #d11141;
+		margin-bottom: 4.5pt;
+		margin-top: 9pt;
+		font-size: 15pt;
+	}
+
+	h4
+	{
+		font-size: 14pt;
+	}
+
+	h5
+	{
+		font-size: 13pt;
+	}
+
+	/*============================================ Image Styles ============================================*/
+
+	img.MaxHeight
+	{
+		max-height: 4.9in;
+		max-width: auto;
+	}
+
+	img.MaxWidth
+	{
+		max-height: auto;
+		max-width: 6.9in;
+	}
+
+	img.MediumWidth
+	{
+		max-width: 5.75in;
+		max-height: auto;
+	}
+
+	img.FloatRight
+	{
+		padding: 5pt;
+	}
+
+	div.InstructorText img.MaxWidth
+	{
+		max-height: auto;
+		max-width: 5.95in;
+	}
+
+	div.Note img.MaxWidth
+	{
+		max-height: auto;
+		max-width: 5.95in;
+	}
+
+	div.Caution img.MaxWidth
+	{
+		max-height: auto;
+		max-width: 5.95in;
+	}
+
+	div.Warning img.MaxWidth
+	{
+		max-height: auto;
+		max-width: 5.95in;
+	}
+
+	div.InstructorText img.MediumWidth
+	{
+		max-height: auto;
+		max-width: 4.95in;
+	}
+
+	div.Note img.MediumWidth
+	{
+		max-height: auto;
+		max-width: 4.95in;
+	}
+
+	div.Caution img.MediumWidth
+	{
+		max-height: auto;
+		max-width: 4.95in;
+	}
+
+	div.Warning img.MediumWidth
+	{
+		max-height: auto;
+		max-width: 4.95in;
+	}
+
+	/*============================================ Paragraph Styles ============================================*/
+
+	p
+	{
+		font-size: 10pt;
+		margin: 0px 0px 9pt;
+	}
+
+	/*============================================ List/Complex List Selector Styles ============================================*/
+
+	li
+	{
+		margin-bottom: 6pt;
+		margin-top: 6pt;
+		padding-left: 0px;
+	}
+
+	ol
+	{
+		list-style-type: decimal;
+		font-size: inherit;
+	}
+
+	ul
+	{
+		margin-bottom: 12pt;
+		list-style-type: disc;
+		margin-top: 6pt;
+	}
+
+	ol ol
+	{
+		margin-left: 24pt;
+		list-style-type: lower-alpha;
+	}
+
+	ol ul
+	{
+		margin-left: 24pt;
+	}
+
+	ul ol
+	{
+		margin-left: 24pt;
+	}
+
+	ul ul
+	{
+		margin-left: 24pt;
+	}
+
+	li p
+	{
+		margin-bottom: 6pt;
+		margin-top: 6pt;
+		padding-left: 0px;
+	}
+
+	/*============================================ MadCap Styles ============================================*/
+
+	MadCap|xref
+	{
+		mc-format: '{quote}{paratext}{quote} {pageref}';
+	}
+
+	MadCap|xref.PageNumber
+	{
+		mc-format: 'page {page}';
+	}
+
+	MadCap|xref.ExerciseNumber
+	{
+		mc-format: '{paranumonly} {pageref}';
+	}
+
+	/*============================================ Misc Styles ============================================*/
+
+	span.Filepath
+	{
+		font-size: 11.5pt;
+	}
+
+	pre
+	{
+		margin: 0px 0px 8pt;
+	}
+
+	div.Note	/*Use to emphasize a point, remind a reader, or indicate possible minor issue.*/
+	{
+		background-image: url(../Images/HTML5/CNC_Note.png);
+		background-size: 32px 32px;
+		background-position: 4px 6px;
+		padding: 15px 10px 15px 45px;
+	}
+
+	div.Caution	/*Use to emphasize a point, remind a reader, or indicate possible minor issue.*/
+	{
+		background-image: url(../Images/HTML5/CNC_Caution.png);
+		background-size: 32px 32px;
+		background-position: 4px 6px;
+		padding: 15px 10px 15px 45px;
+	}
+
+	div.Warning	/*Use to emphasize a point, remind a reader, or indicate possible minor issue.*/
+	{
+		background-image: url(../Images/HTML5/CNC_Warning.png);
+		background-size: 32px 32px;
+		background-position: 4px 6px;
+		padding: 15px 10px 15px 45px;
+	}
+
+	div.InstructorText	/*Use to emphasize a point, remind a reader, or indicate possible minor issue.*/
+	{
+		background-image: url(../Images/HTML5/CNC_Discussion.png);
+		background-size: 32px 32px;
+		background-position: 4px 6px;
+		padding: 15px 10px 15px 45px;
+	}
+
+	p.BackCover
+	{
+		
+	}
+}
+
+/*============================================ Tablet Medium Styles ============================================*/
+
+@media only screen and (max-width: 1279px)
+{
+	div.Content-container
+	{
+		padding: 0.5em;
+	}
+
+	h1
+	{
+		margin: 0.5em 0;
+		line-height: normal;
+	}
+
+	div.AboutContact > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.AboutContact > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.Column12 > div:nth-child(1)
+	{
+		width: 66.66667%;
+		margin-left: 0%;
+	}
+
+	div.Copyright > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.Copyright > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.Footer
+	{
+		max-width: 100%;
+	}
+
+	div.LandingPageTiles > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.LandingPageTiles > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.LandingPageTiles > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.CTALandingPages
+	{
+		max-width: 100%;
+	}
+
+	div.CTALandingPages > div:nth-child(1)
+	{
+		padding: 5px 0px 5px 0px;
+	}
+
+	div.CTALandingPages-Container
+	{
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+
+	div.SecondaryLanding > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.SecondaryLanding > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+}
+
+/*============================================ Mobile Medium Styles ============================================*/
+
+@media only screen and (max-width: 767px)
+{
+	.main-section > .outer-row	/* Removes the padding around the body proxy in mobile */
+	{
+		padding: 0;
+	}
+
+	h1
+	{
+		margin: 0.5em 0;
+		line-height: normal;
+	}
+
+	div.Content-container	/* Used to contain the topics so that it has a different background color */
+	{
+		padding: 0.5em;
+	}
+
+	div.AboutContact > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.AboutContact > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Column12 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Copyright > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Copyright > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Footer
+	{
+		max-width: 100%;
+	}
+
+	div.InstructorText	/*Use to emphasize a point, remind a reader, or indicate possible minor issue.*/
+	{
+		background-size: 7%;
+	}
+
+	div.Note	/*Use to emphasize a point, remind a reader, or indicate possible minor issue.*/
+	{
+		background-size: 7%;
+	}
+
+	div.Caution	/*Use to emphasize a point, remind a reader, or indicate possible minor issue.*/
+	{
+		background-size: 7%;
+	}
+
+	div.Warning	/*Use to emphasize a point, remind a reader, or indicate possible minor issue.*/
+	{
+		background-size: 7%;
+	}
+
+	pre
+	{
+		width: 100%;
+		display: block;
+		clear: both;
+		margin-left: 0.25em;
+		margin-right: 0.25em;
+		white-space: pre-wrap;
+		/* css-3 */
+		white-space: -moz-pre-wrap;
+		/* Mozilla, since 1999 */
+		white-space: -pre-wrap;
+		/* Opera 4-6 */
+		white-space: -o-pre-wrap;
+		/* Opera 7 */
+		word-wrap: break-word;
+		/* Internet Explorer 5.5+ */
+	}
+
+	span.SearchHighlight
+	{
+		background-color: transparent;
+	}
+
+	div.LandingPageTiles > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.LandingPageTiles > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.LandingPageTiles > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.CTALandingPages
+	{
+		max-width: 100%;
+	}
+
+	div.CTALandingPages > div:nth-child(1)
+	{
+		padding: 5px 0px 5px 0px;
+	}
+
+	div.CTALandingPages-Container
+	{
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+
+	div.SecondaryLanding > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.SecondaryLanding > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.SecondaryLanding-Container
+	{
+		margin: 0px;
+	}
+}
+
+span.uicontrol	/* [FUTURE USE]Apply to UI text. UI text should be exactly as displayed in the application. Bolds the selected text. */
+{
+	color: #3c3c3c;
+}
+

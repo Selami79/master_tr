@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Machine|Post|Mastercam Code Expert" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Working with Post Text</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyleSheets/CNC_NoOutline.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Resources/TableStyleSheets/CNC_RegularTable.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Working with Post Text</h1>
+                                                <p>“Post text” refers to the collection of strings or labels that Mastercam uses to customize its interface for specific post processors. These include:</p>
+                                                <ul>
+                                                    <li>Names and default values for miscellaneous integers and reals.</li>
+                                                    <li>Names of drill cycles.</li>
+                                                    <li>Names of the individual parameters and settings for each drill cycle.</li>
+                                                    <li>Names of custom parameters and settings for each drill cycles.</li>
+                                                    <li>Custom integer and real settings for each lathe part-handling operation.</li>
+                                                    <li>Custom integer and real settings for each transform operation.</li>
+                                                    <li>Names of canned text options.</li>
+                                                    <li>Fields and button labels for the <span class="Bold">Tool parameters</span> page/dialog box.</li>
+                                                    <li>Bitmaps used to illustrate individual drill cycles.</li>
+                                                </ul>
+                                                <p>Post text entries are organized in sheets under the <span class="Bold">Text</span> topic in the Control Definition Manager:</p>
+                                                <p>
+                                                    <img src="MachinePics/post-text-1.png" title="List of post text pages." alt="&quot;Post text&quot; sheets under the &quot;Text&quot; topic." />
+                                                </p>
+                                                <p>Each sheet is organized into different categories, and then individual “cells” within each category:</p>
+                                                <p>
+                                                    <img src="MachinePics/post-text-2.png" title="Organizing post text on each page." alt="A sheet with its spreadsheet-like cells displayed." />
+                                                </p>
+                                                <p>Post text is encoded in the .pst file as XML data. Each post can have multiple sections of post text. This lets one post support multiple control definitions. Each section is identified by a tag which specifies the type of post and the name of the control definition:</p>
+                                                <p>
+                                                    <img src="MachinePics/post-text-4.png" title="Sample post text header." alt="The XML data of the post text." />
+                                                </p>
+                                                <p>It is important to understand that even though you use the Control Definition Manager to work with post text, Mastercam stores post text in the .pst file, not in the .mcam-control file with the rest of the control definition.</p>
+                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                    <p>The best practice is to always use the Control Definition Manager to work with and edit post text. Do not use Code Expert or another editor to edit the entries directly in the .pst file. Using the Control Definition Manager ensures that your post text headers are properly created and that the integrity of your post text structure is maintained.</p>
+                                                </div>
+                                                <h2>Understanding the format of post text strings</h2>
+                                                <p>Each cell in a post text sheet can have one of three types of strings. The picture shows you how these appear when you are working in the <span class="Bold">Text</span> page.</p>
+                                                <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyleSheets/CNC_NoOutline.css');" class="TableStyle-CNC_NoOutline" cellspacing="1">
+                                                    <col class="TableStyle-CNC_NoOutline-Column-Column1" />
+                                                    <col class="TableStyle-CNC_NoOutline-Column-Column1" />
+                                                    <tbody>
+                                                        <tr class="TableStyle-CNC_NoOutline-Body-Body1">
+                                                            <td class="TableStyle-CNC_NoOutline-BodyE-Column1-Body1">
+                                                                <p>&#160;</p>
+                                                                <p>Any text string</p>
+                                                                <p>&#160;</p>
+                                                            </td>
+                                                            <td rowspan="3" class="TableStyle-CNC_NoOutline-BodyD-Column1-Body1">
+                                                                <img src="MachinePics/text-3-types.png" title="The three different types of post text strings." alt="The three different types of post text strings." />
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-CNC_NoOutline-Body-Body1">
+                                                            <td class="TableStyle-CNC_NoOutline-BodyE-Column1-Body1">
+                                                                <p>Empty cell</p>
+                                                                <p>&#160;</p>
+                                                                <p>&#160;</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-CNC_NoOutline-Body-Body1">
+                                                            <td class="TableStyle-CNC_NoOutline-BodyB-Column1-Body1">
+                                                                <p>Pair of double quotes  ""
+with no spaces between them</p>
+                                                                <p>&#160;</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>The type of string controls how Mastercam displays the field that is associated with the post text entry.</p>
+                                                <table style="mc-table-style: url('../Resources/TableStyleSheets/CNC_RegularTable.css');margin-left: 0;margin-right: auto;width: 90%;" class="TableStyle-CNC_RegularTable" cellspacing="0">
+                                                    <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                    <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                    <thead>
+                                                        <tr class="TableStyle-CNC_RegularTable-Head-Header1">
+                                                            <th class="TableStyle-CNC_RegularTable-HeadE-Column1-Header1">Type of string</th>
+                                                            <th class="TableStyle-CNC_RegularTable-HeadD-Column1-Header1">What Mastercam does</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                            <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Any text string</td>
+                                                            <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                <p>If the post text entry contains any text string—even just a single space—the associated data entry field in Mastercam is enabled. In addition:</p>
+                                                                <ul>
+                                                                    <li>Mastercam uses the string as the field label. This replaces the system default text label.</li>
+                                                                    <li>The string is written to the post text section of your post.</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                            <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Empty cell</td>
+                                                            <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">
+                                                                <p>If the post text entry is blank, the associated data entry field in Mastercam is enabled. However:</p>
+                                                                <ul>
+                                                                    <li>Mastercam uses system default text—for example, <span class="Bold">Misc. Integer [5]</span>—as the field label.</li>
+                                                                    <li>Nothing is written to the post text section of your post.</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                            <td class="TableStyle-CNC_RegularTable-BodyB-Column1-Body1">
+                                                                <p>Pair of double quotes ""</p>
+                                                            </td>
+                                                            <td class="TableStyle-CNC_RegularTable-BodyA-Column1-Body1">
+                                                                <p>If the post text entry is a pair of double-quotes, the data entry field in Mastercam is disabled.</p>
+                                                                <ul>
+                                                                    <li>"" is written to the post text section of your post.</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Post text before Mastercam 2018</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>In Mastercam versions 2017 and earlier, a header key in brackets identifies the post text section of your .pst file. For example, the following header</p><pre>[CTRL_MILL|GENERIC HAAS VF-TR_SERIES 5X MILL]</pre>
+                                                        <p>indicates that the post text which follows it is for a Mill control definition, where the text is saved in the file <span class="Filepath">Generic Haas VF-TR 5X Mill.pst</span>.</p>
+                                                        <p>Sections of the post text—individual sheets and categories—are marked by additional headers enclosed by [ ]:</p>
+                                                        <p>
+                                                            <img src="MachinePics/post-text-3.png" title="Post text before Mastercam 2018." alt="Bracketed headers in the post text." />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Understanding the &lt;language&gt; key</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Beginning with Mastercam 2018, all post text sections include a <code>&lt;language&gt;</code> key that corresponds with the Language Culture Name in use on the Mastercam workstation—for example, <code>en-US</code> for United States English, or <code>pt-BR</code> for Brazilian Portuguese. This means that each control definition can include multiple post sections for different languages. When a user selects a machine definition and Mastercam loads the associated post, Mastercam searches the post for a post text section whose <code>&lt;language&gt;</code> key matches the Mastercam workstation, and displays the post text for that language.</p>
+                                                        <p>You can see the different sections whenever you are asked to select a post text section in Mastercam:</p>
+                                                        <p>
+                                                            <img src="MachinePics/lots-of-language-keys.png" title="Post text organized with language keys." alt="&quot;Post text&quot; control keys organized by language." />
+                                                        </p>
+                                                        <p>In this example, a single control definition includes post text that has been localized into four target languages: English (US), Chinese, French, and German. All are stored in the same .pst file. In addition, this post includes a section of default entries in US English.</p>
+                                                        <p>When you select the machine definition and Mastercam loads the associated control definition, it looks for the post text section with the proper <code>&lt;language&gt;</code> key. If Mastercam does not find a section with the proper key, it tries to find the best solution.  Mastercam searches for post text in this order:</p>
+                                                        <ol>
+                                                            <li value="1">A post text section that matches the current control definition name and the Language Culture Name from the Mastercam workstation.</li>
+                                                            <li value="2">A <code>DEFAULT</code> post text section of proper product type, with the proper Language Culture Name.</li>
+                                                            <li value="3">An <code>en-US</code> post text section.</li>
+                                                            <li value="4">The first post text section of any language.</li>
+                                                            <li value="5">System post text.</li>
+                                                        </ol>
+                                                        <p>If your post contains customized post text entries, your users do not see those entries unless the post text section has a <code>&lt;language&gt;</code> key that matches their workstation.</p>
+                                                        <p>Note that this can even affect other English-language users if they live in countries other than the United States, since there are different ISO-standard Language Culture Names for other English-speaking countries like Canada, UK, and Australia (among others).</p>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>If you have sections of post text with default post text entries, these also have a <code>&lt;language&gt;</code> key. This means that your default post text will not be used or applied as expected unless its <code>&lt;language&gt;</code> key matches your system’s. If you are a post developer or other post distributor, make sure that the default post text sections in your .pst file also have the proper <code>&lt;language&gt;</code> key.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>Text for miscellaneous integer and real variables is more 
+	 complicated because that text can also encapsulate default values. See <a href="Post_Text_for_Miscellaneous_Values.htm" class="MCXref xref">Post Text for Miscellaneous Values</a>.
+</p>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li><a href="../Toolpaths/Common/Miscellaneous_Values.htm" class="MCXref xref">Miscellaneous Values dialog box</a>
+                                                    </li>
+                                                    <li><a href="../Toolpaths/Common/Canned_Text_Overview.htm" class="MCXref xref">Canned Text Overview</a>
+                                                    </li>
+                                                    <li><a href="Adding_a_Post_to_the_Machine_Definition.htm" class="MCXref xref">Adding a Post to the Machine Definition</a>
+                                                    </li>
+                                                    <li><a href="Importing_Post_Text.htm" class="MCXref xref">Importing Post Text</a>
+                                                    </li>
+                                                    <li><a href="Control_Definitions_and_Post_Processors.htm" class="MCXref xref">Control Definitions and Post Processors</a>
+                                                    </li>
+                                                    <li><a href="Text_Control_Definition_Manager.htm" class="MCXref xref">Text page: Control Definition Manager</a>
+                                                    </li>
+                                                    <li><a href="../TopLevel/Posting_Toolpaths.htm" class="MCXref xref">Posting Your Toolpaths</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

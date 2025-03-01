@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Machine|Job Setup|Machine Definition" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Parameters tab: Machine Component Manager (Linear Axis)</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="558x558" href="../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Parameters tab: Machine Component Manager (Linear Axis)</h1>
+                                                <p>Use the <span class="Bold">Parameters</span> tab to configure a linear axis component—typically, 
+		 X, Y, or Z. Depending on your post processor and level of Mastercam, 
+		 you might not need to enter all of the information.</p>
+                                                <ul>
+                                                    <li>The <span class="Bold">Machine 
+			 coordinate</span> and <span class="Bold">Positive 
+			 axis direction</span> are required for all machine definitions. 
+			 All users should enter this information.</li>
+                                                    <li>Travel limits and rapid traverse 
+			 rate limits are only necessary if your post explicitly requires them.</li>
+                                                </ul>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Axis 
+		 direction and orientation</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <ul>
+                                                            <li>The <span class="Bold">Positive 
+				 axis direction</span> is expressed in world coordinates. 
+				 It maps the <span class="Bold">Machine coordinate</span> 
+				 to the physical layout of your machine tool. For a typical 
+				 vertical Mill or VMC, the axis orientation will match 
+				 the <span class="Bold">Machine coordinate</span>. 
+				 For a horizontal Mill or most Lathes, they will be different.</li>
+                                                            <li>Most horizontal Mills will map 
+				 <span class="Bold">Machine coordinate=Z</span> 
+				 to <span class="Bold">Y+</span>. </li>
+                                                            <li>
+                                                                <p>A typical Lathe will map <span class="Bold">Machine coordinate=Z</span> to 
+				 <span class="Bold">X+</span> for a left spindle, 
+				 or <span class="Bold">X-</span> for a right 
+				 spindle.</p>
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            <img src="MachinePics/lathe_axis_world coord_axis.png" alt="The labeled coordinate systems." style="border: none;" border="0" />
+                                                        </p>
+                                                        <ol>
+                                                            <li value="1">Coordinate system for horizontal turret Lathe.</li>
+                                                            <li value="2">World coordinate system in machine definition. </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Tilt 
+		 angle</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>If the linear 
+			 axis is positioned at an angle relative to another axis in 
+			 the machine, choose <span class="Bold">Tilt Angle</span> 
+			 to define the angle.</p>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>You may need to create an axis combination to make use 
+			 of this axis and pair it with the correct tooling. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Physical 
+		 motion vs. programmed motion</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>For some axis 
+			 components, the physical motion of the component differs from 
+			 the programmed motion. This typically occurs when the axis 
+			 component is mounted at a non-orthogonal angle to another 
+			 axis component. In this case, both axis components need to 
+			 move and the programmed move is interpolated from both components. </p>
+                                                        <p> For these components, follow 
+			 these steps:</p>
+                                                        <ol>
+                                                            <li value="1">Deselect the <span class="Bold">Programmed 
+					 axis motion = Physical axis motion</span> option.</li>
+                                                            <li value="2">Select <span class="Bold">Physical 
+					 axis</span>.</li>
+                                                            <li value="3">Enter values for the following 
+					 settings: 
+					<ul><li>Positive axis direction</li><li>Tilt angle</li><li>Defined axis position</li><li>Travel limits</li></ul></li>
+                                                            <li value="4">Select <span class="Bold">Programmed 
+					 axis</span>.</li>
+                                                            <li value="5">Enter another set of values 
+					 for the following settings: 
+					<ul><li>Positive axis direction</li><li>Tilt angle</li><li>Defined axis position</li><li>Travel limits</li></ul></li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Travel 
+		 Limits/Defined Axis Position</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>These fields 
+			 are usually only used with Mastercam Mill-Turn.</p>
+                                                        <p>Use these fields 
+			 to identify the travel limits of the axis relative to the 
+			 solid model of the component. Use the <span class="Bold">Defined 
+			 position</span> to identify the location of a reference point 
+			 on the component. Then enter the <span class="Bold">Minimum</span> 
+			 and <span class="Bold">Maximum limits</span> of 
+			 this point along the axis of travel.</p>
+                                                        <p>Because the 
+			 values that you enter in these fields depend on where your 
+			 model is drawn, you should follow this sequence:</p>
+                                                        <ol>
+                                                            <li value="1">Draw the model and enter 
+					 its properties on the <span class="Bold">Geometry</span> 
+					 tab.</li>
+                                                            <li value="2">If necessary, make any position 
+					 adjustments on the <span class="Bold">Position/Orientation On Machine</span> 
+					 tab.</li>
+                                                            <li value="3">Enter the <span class="Bold">Defined 
+					 position</span> and travel limits on this tab.</li>
+                                                        </ol>
+                                                        <p>You need to 
+			 enter both an U.S. and metric set of values. Use <span class="Bold">Convert</span> to enter 
+			 one set of values and automatically convert them to the other.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Rapid 
+		 Traverse Rate</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Use these fields 
+			 to set the motion used for rapid moves. You can set this value 
+			 two ways:</p>
+                                                        <ul>
+                                                            <li>Individually 
+				 for each linear axis by entering the values here.</li>
+                                                            <li>Globally for 
+				 all linear axes. In this case, use the <span class="Bold">Axis traverse rate limits</span> 
+				 tab of the <span class="Bold">General machine 
+				 parameters</span> dialog box.</li>
+                                                        </ul>
+                                                        <p>You should enter 
+			 both an U.S. and metric value. Use <span class="Bold">Convert</span> to enter one value and automatically convert it to 
+			 the other.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Parameters</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="Term">Name
+
+
+</p>
+                                                        <p>Enter the name that will be used for the component in the machine definition component
+tree.</p>
+                                                        <p class="Term">Machine coordinate
+
+
+</p>
+                                                        <p>Select the coordinate label that is associated with this axis.
+
+
+Identifies the axis associated with this component. This is typically the axis referred
+to when programming parts and operations. Select from X, Y, Z, or A, B, C. The <span class="Bold">Macro</span> option is not currently supported.</p>
+                                                        <p class="Term">Output lathe X or Y coordinate as a diameter
+
+
+</p>
+                                                        <p>Allows you to output diameter instead of radius for the X or Y. Enabled
+only for lathes.</p>
+                                                        <p class="Term">Define macro-driven axis feed rate in axis motion events
+
+
+</p>
+                                                        <p>This option is not currently supported. </p>
+                                                        <p class="Term">Axis label: absolute, incremental coordinates
+</p>
+                                                        <p>
+
+Identifies the coordinate label that will be output in the NC code. Most Mastercam users should select the same coordinate as the <span class="Bold">Machine
+coordinate</span>. Separate fields let you select different axis labels for absolute and
+incremental output.</p>
+                                                        <p class="Term">Programmed axis motion = Physical axis motion
+
+
+</p>
+                                                        <p>You can enter and save two different sets of axis motion settings. Most of the time,
+you only need to enter one set of values. In this case, select this option to disable
+the second set of settings.
+
+
+Deselect this option to activate both sets of settings. Then select <span class="Bold">Physical axis</span>
+and <span class="Bold">Programmed axis</span> in turn and enter the proper values for each.
+
+
+Use two sets of values when two linear axis components do not travel along orthogonal
+paths. The most common use is for Y-axis components on certain Mill-Turn machines.
+In this case, the Y-axis component is mounted on the X-axis component at an angle
+other than 90 degrees. Therefore, in order to create tool motion along the Y-axis
+that is properly perpendicular to tool motion along the X-axis, when a Y-axis move
+is programmed both X- and Y-axis components must move together so that the interpolated
+result is the programmed distance.</p>
+                                                        <p class="Term">Physical axis
+
+
+</p>
+                                                        <p>After selecting this option, enter the defined position, travel limits, and tilt
+angle of the axis. These numbers should reflect the position and orientation of the
+component as it is physically mounted on the machine - in other words, along the
+ball screw of the linear axis.</p>
+                                                        <p class="Term">Programmed axis
+
+
+</p>
+                                                        <p>After selecting this option, enter the defined position, travel limits, and tilt
+angle of the axis. These numbers should reflect the position and orientation of the
+component's programmed motion. In other words, these values should reflect the programmed
+positions and orientation of the tool, not the axis ball screw.</p>
+                                                        <p class="Term">Positive axis direction (world coordinate system)
+
+
+</p>
+                                                        <p>Click the graphic to select the linear axis positive direction in world coordinates.
+Allows you to set up a machine matrix to map the world coordinates to. For example,
+when creating a horizontal milling machine and defining the machine Y axis, you would
+select Y for the <span class="Bold">Machine coordinate</span>, and Z+ for the <span class="Bold">Positive axis direction (world
+coordinate system)</span>.</p>
+                                                        <p class="Term">Tilt angle
+
+
+</p>
+                                                        <p>Select to apply a tilt angle to the axis, for example, the X axis on a slant-bed
+lathe.</p>
+                                                        <p class="Term">Convert to mm, Convert to in</p>
+                                                        <p>
+
+
+Use these buttons to automatically enter a millimeter equivalent for a inch value, or
+vice versa. For example, if you click <span class="Bold">Convert to mm</span>, the inch value will be converted
+to millimeter and automatically copied to the metric field.</p>
+                                                        <p class="Term">Minimum, Maximum limit
+
+
+</p>
+                                                        <p>Enter the minimum and maximum travel limits of the axis. Use your machine tool documentation
+as a guide. The numbers entered here represent the location along the axis of a specific
+reference point when the component is at its limits. This should be the same reference
+point used for the <span class="Bold">Defined position</span>. This information is typically only used by Mastercam Mill-Turn.</p>
+                                                        <p class="Term">Defined position
+
+
+</p>
+                                                        <p>Use this value to indicate where the solid model of the component has been drawn.
+This number indicates a position along its axis of travel, and should be chosen to
+represent a specific, known reference point on the component. The minimum and maximum
+travel limits can then be entered for this same point.
+
+
+For example, if you are entering values for an X-axis component, and the coordinates
+of the reference point on the component are (12,20,15), then you would enter 12 for
+the <span class="Bold">Defined position</span>.
+This information is typically only used by Mastercam Mill-Turn.</p>
+                                                        <p class="Term">From machine
+
+
+</p>
+                                                        <p>Copies the value from the <span class="Bold">Axis feed rate limits</span> tab of the <span class="Bold">General Machine Parameters</span>
+dialog box.</p>
+                                                        <p class="Term">Rapid traverse rate
+</p>
+                                                        <p>
+
+Enter the speed at which rapid moves will take place along this axis. Use the left
+field for inches per minute, and the right field millimeters per minute.
+
+
+
+
+If you see the message <span class="Bold">Set from machine general parameters</span>, then the values for the
+axis are set in the <span class="Bold">General Machine Properties</span> dialog box and locked. </p>
+                                                    </div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li><a href="Tilt_Angle_Linear_Axis.htm" class="MCXref xref">Tilt Angle (Linear Axis) dialog box</a>
+                                                    </li>
+                                                    <li><a href="Machine_Axis_Combinations_Machine_Definition_Manager.htm" class="MCXref xref">Machine Axis Combinations dialog box: Machine Definition Manager</a>
+                                                    </li>
+                                                    <li><a href="Machine_Definition_Manager.htm" class="MCXref xref">Machine Definition Manager</a>
+                                                    </li>
+                                                    <li><a href="Physical_Motion_vs_Programmed_Motion.htm" class="MCXref xref">Physical Motion vs. Programmed Motion</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

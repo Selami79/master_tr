@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Toolpaths|Common|Utilities" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Type and Methods tab: Transform Operation Parameters</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Type and Methods tab: Transform Operation Parameters</h1>
+                                                <p>Use the <span class="Bold">Type and Methods</span> tab in the <span class="Bold">Transform Operation Parameters</span> dialog 
+		 box to create or edit a Transform operation. Here you select the 
+		 source operations and the type of transform. You also define how 
+		 Mastercam creates the transformed operations.</p>
+                                                <p>After you select the type of transformation, choose the remaining 
+		 dialog box tab to complete the operation. For example, if you choose a rotate transformation type, only 
+		 the <span class="Bold">Rotate</span> tab 
+		 is available, the <span class="Bold">Translate</span>
+	and <span class="Bold">Mirror</span> tabs 
+		 do not display.</p>
+                                                <p>Click on a drop-down below to learn more about using this tab.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Selecting the operations to transform</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Use the large window in the center of the dialog box to select the operations to transform. You can choose only operations in the active machine group (the machine group is activated by the position of the red arrow in the Toolpaths Manager).</p>
+                                                        <p>Use standard Windows techniques to select operations in the list—single click, [<span class="Bold">Ctrl</span>+<span class="Bold">Click</span>], and [<span class="Bold">Shift</span>+<span class="Bold">Click</span>]. Mastercam creates the transformed operations in the active machine group.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Choosing the type of transformation</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>The <span class="Bold">Type</span> and <span class="Bold">Method</span> sections tell Mastercam how to transform the selected operations.</p>
+                                                        <p>Select a transformation type:</p>
+                                                        <ul>
+                                                            <li><span class="Bold">Translate</span> runs the operations at a new location; for example, cutting multiple copies of the same part at different fixtures on the table. Select this option to also run the same operation in a different plane; for example, cutting a contour on each side of a block.</li>
+                                                            <li><span class="Bold">Rotate</span> runs the operations at an angle to the original operation. You can choose to rotate the operation in the same plane as the original operation, or through a different plane.</li>
+                                                            <li><span class="Bold">Mirror</span> creates a mirror image of the selected operations. Like <span class="Bold">Rotate</span>, you can mirror the operation in the same plane or in a different one.</li>
+                                                        </ul>
+                                                        <p>Choose the transformation method:</p>
+                                                        <ul>
+                                                            <li><span class="Bold">Tool plane</span> transforms the selected operations in a different orientation than the original and transforms the tool axis with the operation. An operation's tool plane contains both an origin and a plane. You can choose to change the origin along with the plane or keep the origin stationary when Mastercam transforms/copies the tool plane. If you keep the origin stationary, Mastercam transforms only the tool plane. The <span class="Bold">Tool plane</span> option also activates the <span class="Bold">Work offset numbering</span> parameters so that you can output a different work offset with each new tool plane.</li>
+                                                            <li><span class="Bold">Coordinate</span> computes new coordinates for the transformed operation in the same tool plane as the original operation.
+</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Creating transformed operations</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Choose the operation types to create. You can create Transform operations, new toolpath operations, or both. In general, transform operations maintain associativity with the original operations. The new toolpath operations option lets you edit each individual toolpath that Mastercam creates from the Transform operation. In addition, this option copies the toolpath geometry to each transform location.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Associating work offsets with transformed operations</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>You can associate 
+			 different work offsets with each transformed operation. Choose 
+			 one of the following <span class="Bold">Work offset numbering</span> 
+			 options:</p>
+                                                        <ul>
+                                                            <li><span class="Bold">Automatic</span>  automatically assigns a matching work offset 
+					 number (if one exists), or the next available number 
+					 if no matching work offset number is found. </li>
+                                                            <li><span class="Bold">Maintain 
+					 source operation's</span> uses the same offset as 
+					 the original toolpath.</li>
+                                                            <li><span class="Bold">Assign 
+					 new</span> creates a different offset for each new 
+					 operation based on the specified values. Enter a start 
+					 value, increment, and select <span class="Bold">By 
+					 instance</span> or <span class="Bold">By tool plane</span>. 
+					 If you select <span class="Bold">Match existing offsets</span>, 
+					 Mastercam checks for an existing offset that matches 
+					 a particular Transform. If a matching offset exists, 
+					 Mastercam uses it instead of creating a new one.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Parameters</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="Term">Remove comments</p>
+                                                        <p>Removes comments that exist in the selected source operations from the transformed
+operations. Deselect to copy comments from the source operations to the transformed operations.</p>
+                                                        <p class="Term">Source operations</p>
+                                                        <p>Select the operations to transform from the current machine group.</p>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <ul>
+                                                                <li>With the exception of Manual operations, operations that do not contain NCI code
+are excluded from the selection list—for example, trimmed operations, or FBM Drill
+and FBM Mill parent operations.</li>
+                                                                <li>Operations that already reference a Transform operation are also excluded from the
+list. This includes any sub-programs referenced by another Transform operation.</li>
+                                                                <li>You can select operations based on solid models. If you also activate <span class="Bold">Create new
+operations and geometry</span>, Mastercam saves the geometric entities it generates from
+the solid to create the transformed operations. These entity types include surfaces,
+chains, and points. Mastercam does not copy the solid model.</li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="Term">Comment</p>
+                                                        <p>Enter a text comment for the operation.</p>
+                                                        <p class="Term">Translate</p>
+                                                        <p>Copies toolpaths to a new location. This option activates the <span class="Bold">Translate</span> tab, where you can set
+the location, plane (if desired) and number of copies.</p>
+                                                        <p class="Term">Rotate</p>
+                                                        <p>Revolves toolpaths about a specified point in a plane. This option activates the <span class="Bold">Rotate</span> tab, where
+you can set the rotation point, plane of rotation, and number of copies.</p>
+                                                        <p class="Term">Mirror</p>
+                                                        <p>Replicates toolpaths about the X axis, the Y axis, or a specified entity. This option activates
+the <span class="Bold">Mirror</span> tab, so you can specify the orientation and toolpath direction.</p>
+                                                        <p class="Term">Tool plane</p>
+                                                        <p>Creates a new tool plane (Tplane) for the transformed toolpath. This activates the
+work offset options so that you can assign new work offsets to each copy of the toolpath.</p>
+                                                        <p class="Term">Include origin</p>
+                                                        <p>Available only for the <span class="Bold">Tool plane</span> transform method. An operation's tool plane contains
+both an origin and a plane. Transforms the operation's tool plane and its origin. Deselect to transform only the tool plane, keeping the origin stationary.</p>
+                                                        <p class="Term">Include WCS</p>
+                                                        <p>Creates a new WCS plane when transforming a toolpath by tool plane.</p>
+                                                        <p class="Term">Save planes</p>
+                                                        <p>Saves the new tool plane Mastercam creates during the operation transformation.
+This option automatically activates when <span class="Bold">Create new operations and geometry</span> is
+selected. Mastercam names the first plane TRANSFORM PLANE #1 and increments the
+number by one for each new plane it creates.</p>
+                                                        <p class="Term">Coordinate</p>
+                                                        <p>Creates new coordinate positions for the new toolpaths in the original tool plane.</p>
+                                                        <p class="Term">NCI</p>
+                                                        <p>Copies and transforms only the source operation's NCI lines to the transformed operations.</p>
+                                                        <p class="Term">Geometry</p>
+                                                        <p>Copies and transforms the geometry needed for toolpath creation from the source operations.
+This method generates new NCI for the transformed operations.</p>
+                                                        <p class="Term">Operation order</p>
+                                                        <p>Sorts the transformed operations by the order they were selected. For example, if
+you select a Pocket and a Contour operation and then transform them, Mastercam executes them in that order (Pocket, Contour, Pocket, Contour, etc.)</p>
+                                                        <p class="Term">Unique subprograms</p>
+                                                        <p>Creates subprograms for each source operation separately instead of making subprograms
+for a selected block of operations.</p>
+                                                        <p class="Term">Operation type</p>
+                                                        <p>Groups the transformed operations by the operation type. For example, if you select
+a Pocket and a Contour operation, all transformations of the pocket operation are executed together, as are all transformations of the contour operation (Pocket,
+Pocket, Contour, Contour, etc.)</p>
+                                                        <p class="Term">Create new operations and geometry</p>
+                                                        <p>Copies geometry from the original operation to each transform location and applies
+the parameters from the original operation to each new toolpath. This method creates
+several new independent operations with the same geometry and parameters instead
+of a single transform operation.</p>
+                                                        <p class="Term">Keep this transform operation</p>
+                                                        <p>Keeps the transform operation in addition to the new operations and geometry. This
+allows you to regenerate all of the resulting operations quickly by regenerating
+the transform operation. Only available if <span class="Bold">Create new operations and
+geometry</span> is enabled.</p>
+                                                        <p class="Term">Copy source operations</p>
+                                                        <p>Creates a duplicate operation directly above the source operation.</p>
+                                                        <p class="Term">Disable posting in selected source operations</p>
+                                                        <p>Prevents source operations from being posted twice by disabling posting for the source
+operation. Only available if  <span class="Bold">Copy source operations</span> is enabled.</p>
+                                                        <p class="Term">Subprogram</p>
+                                                        <p>Sets values in the subprogram lines in the NCI file to indicate a section of the
+operation that is repeated at a different location (for example, a drill cycle or
+depth cut). This information is then passed to the post processor. The control definition
+must be set to support subprograms for this function to work.</p>
+                                                        <p class="Term">Absolute</p>
+                                                        <p>Tells the post processor to output absolute coordinates in the NC subprogram. An absolute subprogram contains absolute coordinate values; in other words, the same
+points are machined every time the subprogram executes. Typically an absolute subprogram has a G90 code.</p>
+                                                        <p class="Term">Incremental</p>
+                                                        <p>Tells the post processor to output incremental coordinates in the NC subprogram. With an incremental subprogram,
+the points machined are relative to the tool's location when the subprogram
+is called. Typically an incremental subprogram has a G91 code.</p>
+                                                        <p class="Term">Automatic</p>
+                                                        <p>Automatically assigns a matching work offset number (if one exists), or the next
+available number if no matching work offset number is found. Work offsets can exist
+assigned to planes, in a toolpath operation's Tplane, and in a transform operation's
+NCI. Mastercam searches for existing work offset numbers in that order. 
+
+
+The value for <span class="Bold">Automatic</span> is <span class="Bold">-1</span>.</p>
+                                                        <p class="Term">Maintain source operation</p>
+                                                        <p>Uses the work offset settings from the source operation for each transformation.
+Only available for Translate and Rotate toolpaths using the tool plane method.</p>
+                                                        <p class="Term">Assign new</p>
+                                                        <p>Creates new work offset numbers for each translation.
+
+
+The work offset numbers begin with the specified <span class="Bold">Start</span> number and increase by the
+<span class="Bold">Increment</span> number with each new translation.</p>
+                                                        <p class="Term">By instance</p>
+                                                        <p>Assigns a new work offset numbers based on operation instance. Each instance
+is given a new work offset number regardless of tool plane.</p>
+                                                        <p class="Term">By tool plane</p>
+                                                        <p>Assign new work offset numbers based on tool plane. Each change in tool
+plane is given a new work offset number.</p>
+                                                        <p class="Term">Match existing offsets stored in planes</p>
+                                                        <p>Checks to see if any of the work offset planes that are created when the toolpath
+is posted match any existing or predefined planes. If the planes match, then the existing plane is used. If the planes do not match, a new work offset plane is created.</p>
+                                                        <p class="Term">Custom Parameters</p>
+                                                        <p>Applies the values for any custom parameters that have been defined
+for the transformed operation. Click <span class="Bold">Custom Parameters</span> to see the list of custom parameters or to
+edit the values. Use the corresponding <span class="Bold">Text</span> page in the Control Definition Manager to define the custom
+variables.</p>
+                                                    </div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li><a href="Transforming_Toolpaths.htm" class="MCXref xref">Transforming Toolpaths</a>
+                                                    </li>
+                                                    <li><a href="Organizing_Transform_Operations.htm" class="MCXref xref">Organizing Transform Operations</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

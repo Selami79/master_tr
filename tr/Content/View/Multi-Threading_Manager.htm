@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="View|Managers" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Multi-Threading Manager</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyleSheets/CNC_RegularTable.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Multi-Threading Manager</h1>
+                                                <p>Use the Multi-Threading Manager (MTM) to view the toolpath processing threads created every time 
+		 <span class="mc-variable CNC_Product.Product variable">Mastercam</span> generates or regenerates toolpaths that support multi-threaded 
+		 processing. To display the MTM, click the <span class="Bold">View</span> tab in Mastercam and toggle <span class="Bold">Multi-Threading</span> on or off in the <span class="Bold">Managers</span> group. All existing threads display in the MTM, along with their current states, 
+		 progress bar indicators, and processing status.</p>
+                                                <p>Multi-threading is a special form of program that allows 
+ a single program to execute portions of itself concurrently, as opposed 
+ to a single-threaded program which executes in a linear mode. A <span class="Italic">thread</span> 
+ is an independent "thread of execution" within a program's 
+ code that is managed by the computer's operating system and CPU (central 
+ processing unit). Programs that are multi-threaded can process more quickly, 
+ and more efficiently. Even more importantly, threads (particularly computational 
+ threads) can be queued and processed in background mode, allowing 
+ you to start new programs and tasks without waiting for others to finish.</p>
+                                                <p>This processing mode allows <span class="mc-variable CNC_Product.Product variable">Mastercam</span> to split the programs that regenerate 
+ its largest, most complex toolpaths into smaller and separate program 
+ threads that execute simultaneously.</p>
+                                                <p>
+            When you activate multi-threaded processing for your <span class="mc-variable CNC_Product.Product variable">Mastercam</span> configuration, 
+ whenever you generate/regenerate multi-threaded toolpath types, you can 
+ continue working in <span class="mc-variable CNC_Product.Product variable">Mastercam</span> once the toolpaths have been sent to the 
+ <span class="Bold">Multi-Threading Manager</span> 
+ dialog box. You do not have to wait for the toolpath regeneration 
+ to complete before starting another Mastercam function. Mastercam continues 
+ to process these toolpath files "in the background".</p>
+                                                <p>If multi-threading 
+		 is not enabled for your <span class="mc-variable CNC_Product.Product variable">Mastercam</span> configuration, the title 
+		 bar displays a message informing you that it is disabled. To enable the MTM, go to the
+		  
+		 <span class="Bold">Toolpaths</span> page of the <span class="Bold">System Configuration</span> dialog box. Select <span class="Bold">Enable Multi-threading</span> on that page to enable the feature. Activate multi-threading for only the current <span class="mc-variable CNC_Product.Product variable">Mastercam</span>
+		 session or save the setting 
+		 to your configuration file. </p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Display options</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>The Multi-Threading Manager displays on top of all 
+		 other windows, Mastercam or any other program. This characteristic 
+		 allows it to be thread safe in a manner similar to 
+		 the Windows Task Manager. The MTM runs independently from Mastercam.</p>
+                                                        <p>To reorder any column, drag 
+				 and drop the column heading to a new position.</p>
+                                                        <p>To resize a column, select and 
+				 drag the vertical divider to the left or right.</p>
+                                                        <p>To display or 
+			 hide a column—other 
+			 than the <span class="Bold">Process Name</span> 
+			 which is set to always display—right-click 
+			 in the column heading row and select/deselect a column title.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Multi-Threading Manager parameters</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="Term">Stop</p>
+                                                        <p>Cancels the regeneration of the toolpath operation associated with the selected thread. <span class="mc-variable CNC_Product.Product variable">Mastercam</span> does not regenerate this toolpath when processing the remaining threads.</p>
+                                                        <p>
+
+If one or more toolpaths are dependent on the toolpath you stopped (for example, a stock model operation), the dependent toolpaths are also not regenerated.
+
+When the regeneration is complete, all toolpaths affected by the cancellation are removed from the Multi-Threading Manager, and marked "dirty" in the Toolpaths Manager.
+</p>
+                                                        <p class="Term">Pause</p>
+                                                        <p>Suspends the toolpath thread until you choose <span class="Bold">Play</span> to resume processing.
+
+If one or more toolpaths are dependent on the toolpath you paused (for example, a rest toolpath), the dependent toolpaths are not regenerated until their parent toolpath is processed completely.
+
+</p>
+                                                        <p>When the regeneration of all other multi-threaded toolpaths is complete, paused toolpaths remain in the Multi-Threading Manager.</p>
+                                                        <ul>
+                                                            <li>The <span class="Bold">Progress</span> column displays a yellow progress bar for the toolpath threads that are paused.
+
+</li>
+                                                            <li>Paused threads are still considered "active" and contribute to the maximum number of threads configured for the Multi-Threading Manager.
+</li>
+                                                        </ul>
+                                                        <p class="Term">Play</p>
+                                                        <p>Resumes processing of a toolpath thread that was previously paused in the Multi-Threading Manager.
+
+</p>
+                                                        <p class="Term">Settings</p>
+                                                        <p>Opens the <span class="Bold">Multi-Thread Settings</span> dialog box.</p>
+                                                        <p class="Term">Process name</p>
+                                                        <p>Displays the toolpath number and name defined in the Toolpaths Manager for each  thread created by the toolpath regeneration process.</p>
+                                                        <p class="Term">State</p>
+                                                        <p>Displays one of the following states to indicate the toolpath thread's processing status.
+
+</p>
+                                                        <ul>
+                                                            <li><span class="Bold">Paused</span>: The thread was manually paused. To release it for processing, press <span class="Bold">Play</span> .</li>
+                                                            <li><span class="Bold">Stopped</span>: The thread was manually stopped (cancelled). Mastercam does not regenerate this toolpath when processing the remaining threads. When the regeneration is complete, the toolpath thread is removed from the MTM and marked "dirty" in the Toolpaths Manager.</li>
+                                                            <li><span class="Bold">Pre-translate</span>: The thread is active and the MTM is waiting to translate its binary NCI data.
+
+</li>
+                                                            <li><span class="Bold">Translating</span>: The MTM is currently translating binary NCI data for the toolpath thread.
+
+</li>
+                                                            <li><span class="Bold">Processing</span>: The MTM is processing toolpath computations for the thread.
+</li>
+                                                            <li><span class="Bold">Queued</span>: The thread is waiting in the queue because the MTM is already processing the maximum number of threads allowed; it must wait for one to complete before starting another.</li>
+                                                        </ul>
+                                                        <p>States also display in the <span class="Bold">Progress</span> column as color-coded progress bars.</p>
+                                                        <p class="Term">Progress</p>
+                                                        <p>Displays a color coded progress bar that shows the current <span class="Bold">State</span> of processing each toolpath thread.</p>
+                                                        <ul>
+                                                            <li><span class="Bold">Yellow</span>: Paused</li>
+                                                            <li><span class="Bold">Green</span>: Processing</li>
+                                                            <li><span class="Bold">Red</span>: Stopped/Stopping</li>
+                                                            <li><span class="Bold">Blue</span>: Pre-translate</li>
+                                                            <li><span class="Bold">Magenta</span>: Translating</li>
+                                                        </ul>
+                                                        <p class="Term">Status</p>
+                                                        <p>Displays informational messages about the toolpath's processing status.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Thread processing options</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p><span class="mc-variable CNC_Product.Product variable">Mastercam</span> processes toolpath threads when generating toolpaths 
+		 without requiring user intervention. However, when necessary, 
+		 you can use the buttons at the top of this dialog box 
+		 to stop, pause, and play (resume) one or more selected threads. 
+		 Other options let you reassign the priority of a thread.</p>
+                                                        <p>To apply the same option to multiple 
+			 threads, use standard Windows selection methods to choose 
+			 threads in the list. Then right-click and select an option.</p>
+                                                        <p>Right-click 
+			 on any toolpath thread to <span class="Bold">Stop</span>, 
+			 <span class="Bold">Pause</span> or <span class="Bold">Play</span> 
+			 (resume) processing. Pausing a thread suspends its processing; 
+			 however it remains included in the number of threads in-process. 
+			 Stopping a thread removes it from the queue.</p>
+                                                        <p>
+                                                            <img src="ViewPics/MTM_RC_Processing_Menu.png" alt="The right-click menu of the Multi-Threading Manager." border="0" class="MaxWidth" />
+                                                        </p>
+                                                        <p>Additional options 
+			 let you set a processing priority in the queue, subject to 
+			 any dependencies between toolpath threads. Changing the priority of a thread can make it 
+			 run faster or slower (depending on whether you raise or lower 
+			 the priority), but it can also adversely affect the performance 
+			 of other threads. Choose from 
+			 the following options:</p>
+                                                        <ul type="square">
+                                                            <li>Realtime</li>
+                                                            <li>High</li>
+                                                            <li>AboveNormal</li>
+                                                            <li>Normal (default)</li>
+                                                            <li>BelowNormal</li>
+                                                            <li>Low</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Multi-Thread Settings dialog box parameters</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>The <span class="Bold">Configure</span> button opens the <span class="Bold">Multi-Thread Settings</span> dialog box. You set the following options:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p><span class="Bold">Maximum number of threads</span>: Sets the maximum number of independent toolpaths <span class="mc-variable CNC_Product.Product variable">Mastercam</span> is allowed to process simultaneously.  Threads are not affected by the number of cores that your system has. However, it is recommended that the number of threads match the number of cores since a thread can utilize a fully single CPU core. </p>
+                                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                                    <p>Some toolpaths, such as 3D high speed toolpaths, will attempt to use all available CPU cores to process, regardless of the set <span class="Bold">Maximum number of threads</span>. </p>
+                                                                </div>
+                                                            </li>
+                                                            <li><span class="Bold">Default priority</span>: Sets the CPU priority of the threads. The higher the priority, the more CPU slice time the threads launched by <span class="mc-variable CNC_Product.Product variable">Mastercam</span> get by the operating system. </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Which toolpaths are supported by  multi-threaded processing?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>These toolpaths are available for multi-threading:				</p>
+                                                        <table class="TableStyle-CNC_RegularTable" style="mc-table-style: url('../Resources/TableStyleSheets/CNC_RegularTable.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                                                            <col class="TableStyle-CNC_RegularTable-Column-BoldColumn" data-mc-pattern="5" data-mc-conditions="" />
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" style="width: ;" data-mc-conditions="" />
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" data-mc-conditions="" />
+                                                            <thead>
+                                                                <tr class="TableStyle-CNC_RegularTable-Head-Header1">
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadE-BoldColumn-Header1">Toolpath Name</th>
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadE-Column1-Header1">Background Thread</th>
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadD-Column1-Header1">Multiple Cores</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-pattern="4">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-BoldColumn-RowGrouping" colspan="3">
+                                                                        <p colspan="3">2D High Speed Milling/Routing Toolpaths </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Toolpaths/Milling/Dynamic_Contour_Toolpaths.htm">Dynamic Contour</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">No</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Toolpaths/Milling/Dynamic_Mill_Toolpaths.htm">Dynamic Mill</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">No</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Toolpaths/Milling/Peel_Mill_Toolpaths.htm">Peel Mill</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">No</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Toolpaths/Milling/Area_Mill_Toolpaths.htm">Area Mill</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">No</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Toolpaths/Milling/Blend_Toolpaths.htm">Blend Mill</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">No</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">No</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-pattern="4" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-BoldColumn-RowGrouping" colspan="3">3D High Speed Milling/Routing Toolpaths</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Toolpaths/Milling/Dynamic_OptiRough_Toolpaths.htm">Dynamic OptiRough </a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Yes</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Toolpaths/Milling/Area_Roughing_Toolpaths.htm">Area Roughing</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Yes</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Toolpaths/Milling/Scallop_Toolpaths.htm">Equal Scallop</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Yes</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Toolpaths/Milling/Hybrid_Toolpaths.htm">Hybrid</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Yes</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Toolpaths/Milling/Pencil_Toolpaths.htm">Pencil</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Yes</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Toolpaths/Milling/Blend_Toolpaths.htm">Blend </a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Yes</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Toolpaths/Milling/Horizontal_Area_Toolpaths.htm">Horizontal Area</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Yes</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Toolpaths/Milling/Scallop_Toolpaths.htm">Scallop</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Yes</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Toolpaths/Milling/ZBased_Projection_Toolpaths.htm">Project </a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Yes</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Toolpaths/Milling/ZBased_Projection_Toolpaths.htm">Raster</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Yes</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Toolpaths/Milling/ZBased_Projection_Toolpaths.htm">Spiral</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Yes</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-BoldColumn-Body1"><a href="../Toolpaths/Milling/ZBased_Projection_Toolpaths.htm">Radial</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyE-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-Column1-Body1">Yes</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-RowGrouping" data-mc-pattern="4" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyD-BoldColumn-RowGrouping" colspan="3">Utilities</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyB-BoldColumn-Body1"><a href="../Toolpaths/Utilities/Working_with_Stock_Model_Operations.htm">Stock Model Operations</a>
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyB-Column1-Body1">Yes</td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyA-Column1-Body1">Yes</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p>Any toolpath that can compute across multiple cores can also process background threads. Mastercam optimizes the processing order and priority.</p>
+                                                    </div>
+                                                </div>
+                                                <h2>Notes</h2>
+                                                <ul>
+                                                    <li>You can enable/disable 
+	 multi-threaded toolpath processing as part of your Mastercam configuration (<span class="Bold">File</span>, 
+	 <span class="Bold">Configuration</span>, 
+	 <span class="Bold">Toolpaths</span> 
+	 page). Or, you can use <span class="Bold">Toggle 
+	 Multi-Threading</span>, a command available through the <span class="Bold">Command Finder</span>, to turn it on or off for the current Mastercam 
+	 session.</li>
+                                                    <li>If you attempt to make 
+	 changes to the parameters, tools, geometry, or the NCI of a toolpath 
+	 that is currently processing, a warning will display stating that 
+	 you cannot change or delete the operation while it is processing.</li>
+                                                    <li>You can still view 
+	 the parameters or geometry, however the toolpath dialog box will be 
+	 read-only. </li>
+                                                    <li>The Mastercam 
+	 Event Logger, located in your system tray during 
+	 an open Mastercam session, keeps a log of Mastercam error and warning 
+	 messages, and program processes. This log includes information on 
+	 the toolpath operations that are multi-threaded and the time it takes 
+	 to process each thread, as well as the total processing time for an 
+	 entire multi-threaded regeneration. This information can help you 
+	 compare the processing time of a set of toolpaths using single-threaded 
+	 and multi-threaded modes.</li>
+                                                    <li>When processing toolpaths 
+	 in multi-threaded mode, the Toolpaths Manager displays three icons to 
+	 indicate that toolpaths are being processed as threads in the Multi-Threading 
+	 Manager. The icons are green, yellow, or red spools of thread.<ul><li><p>Green icons indicate 
+	 threads that are being processed in the MTM. </p><p><img src="ViewPics/MTM_TPMan_Processing_icon.png" alt="Green &quot;Processing threads&quot; icon. " style="border: none;" border="0" /></p></li><li><p>Yellow icons are assigned 
+	 to dependent toolpath threads (for example, rest toolpaths). Dependent 
+	 threads require data from prior "parent" toolpath threads. 
+	 Dependent threads cannot begin processing until the MTM completely 
+	 finishes processing the parent thread (including translation of the 
+	 binary NCI data). </p><p><img src="ViewPics/MTM_TPMan_Waiting_to_Process_icon.png" alt="Yellow &quot;Dependent toolpath&quot; icon. " style="border: none;" border="0" /></p></li><li><p>Red icons indicate that an error occurred during the multi-thread process.</p><p><img src="ViewPics/MTM_TPMan_Error_icon.png" alt="The red &quot;error occurred&quot; icon. " /></p></li></ul></li>
+                                                </ul>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul type="square">
+                                                    <li><a href="../File/Toolpaths_System_Configuration.htm" class="MCXref xref">Toolpaths page: System Configuration</a>
+                                                    </li>
+                                                    <li><a href="../SettingConfiguring/Configuration_Customization.htm" class="MCXref xref">Configuring and Customizing Mastercam</a>
+                                                    </li>
+                                                    <li><a href="../General/Mastercam_Event_Logs.htm" class="MCXref xref">Mastercam Event Logs</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

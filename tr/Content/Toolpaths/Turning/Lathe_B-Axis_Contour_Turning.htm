@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Toolpaths|Lathe|Turning|General" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>A-Axis, B-Axis Contour Turning panel</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyleSheets/CNC_RegularTable.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>A-Axis, B-Axis Contour Turning panel</h1>
+                                                <p>Use this function panel to create a rotary contour turning toolpath. This is a finishing toolpath that follows the contour of the chained geometry while simultaneously allowing for A-axis or B-axis rotation. You can:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>Use automatic mode to compute the optimal tool angles for all points along the toolpath.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Define the tool axis vectors manually from tool axis control lines that you select in the graphics window.</p>
+                                                    </li>
+                                                </ul>
+                                                <p>The following pictures show some examples of B-axis contour toolpaths. </p>
+                                                <p>&#160;</p>
+                                                <p>
+                                                    <img src="../ToolpathsPics/B-Axis_Turning_example.png" alt="A tool and part shown twice to display two different tool angles. " />
+                                                </p>
+                                                <p>The following picture shows an A-axis contour toolpath using a Y-axis tool. Mastercam automatically creates the necessary planes to orient the tool properly.</p>
+                                                <p>
+                                                    <img src="../ToolpathsPics/A-axis-operation.png" alt="" />
+                                                </p>
+                                                <p>&#160;</p>
+                                                <p>Each page in the function panel contributes to a top-down structured workflow for programming a rotary contour turning operation. </p>
+                                                <ul>
+                                                    <li>Work through them from top to bottom, but you can return to any page at any time.</li>
+                                                    <li>Click on a topic below to learn more about how to apply the settings on each page.</li>
+                                                </ul>
+                                                <p>Each topic applies to both A-axis and B-axis operations; any differences are noted.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Tooling requirements</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>A-axis contour toolpaths require that you use Y-axis tools. Before you can use a tool to create an A-axis turning operation, the Y-axis option must be selected in the tool assembly/holder settings:</p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/tool-designer-y-axis-option.png" alt="The new Y-axis option for tool holders" />
+                                                        </p>
+                                                        <p>B-axis contour toolpaths can be created with either 2D or 3D tools. However, A-axis contour toolpaths require 3D tools. </p>
+                                                        <p>For either type of operation, the tool must be set to center compensation. </p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>For 3D tools, set the compensation on the <span class="Bold">Compensation</span> page of <span class="Bold">Tool Assembly</span> in the <span class="Bold">3D Tool Designer</span> function panel. </p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/3D_Center_Comp.png" alt="The &quot;Method&quot; group highlighted on the &quot;Compensation&quot; page of the &quot;3D Tool Designer&quot; function panel. " />
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>For 2D tools, set the compensation on the <span class="Bold">Parameters</span> page of the <span class="Bold">Define Tool - Machine Group</span> dialog box. </p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/2D_Center_Comp.png" alt="The &quot;Define Tool - Machine Group&quot; dialog box with the &quot;Compensation&quot; field highlighted. " />
+                                                                </p>
+                                                                <p>See <a href="Working_With_Yaxis_Tools.htm" class="MCXref xref">Working with Y-axis Tools</a> to learn more about creating tools for A-axis contour turning.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Tool page</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>
+			 Select tools for the operation in one of three ways:</p>
+                                                        <ul>
+                                                            <li>Mastercam displays 
+				 all of the available tools in the 
+				 current toolpath group. Select <span class="Bold">Show 
+				 library tools</span> to also display tools from the tool 
+				 library. Click a tool to use it in the operation.</li>
+                                                            <li>If the tool you want to use 
+				 is not displayed, click <span class="Bold">Select library 
+				 tool</span>. This lets you choose tools from different 
+				 tool libraries.</li>
+                                                            <li>Create an entirely new tool. The new tool definition will 
+				 be stored in the current toolpath group unless you choose 
+				 to save it to a tool library. Depending on the type of toolpath, either right-click in the tool display window or use the buttons below the tool list.</li>
+                                                        </ul>
+                                                        <p>Mastercam uses a distinctive icon to identify Y-axis tools:</p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/y-axis-icon-2.png" alt="The icon used to identify Y-axis tools in the function panel toolpath interface." />
+                                                        </p>
+                                                        <p>When you select a tool, the other fields on the tab update 
+			 with default values. Override any of them by just 
+			 typing in the desired values. Default parameters come from 
+			 the tool definition, machine or control definition, or operation 
+			 defaults. The machine group properties tell Mastercam where 
+			 to get the default values.</p>
+                                                        <ul>
+                                                            <li>If you select a Y-axis tool, Mastercam automatically filters the list of available planes and spindle origins. </li>
+                                                            <li>If you are creating an A-axis contour toolpath, Mastercam only displays Y-axis tools in the list. </li>
+                                                        </ul>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Feeds and speeds</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p>As soon as you select a tool, Mastercam inputs default feed 
+			 rates and spindle speed. To prevent this behavior for completed 
+			 toolpaths, select the <span class="Bold">Lock 
+			 feedrates</span> option in the <span class="Bold">Toolpaths</span> 
+			 page of the <span class="Bold">System Configuration</span> dialog box. You can calculate 
+			 the defaults in either of two ways:</p>
+                                                                <ul>
+                                                                    <li>Read them directly from the 
+			tool definition.</li>
+                                                                    <li>Dynamically 
+				calculate them from the material, operation type, 
+			and tool characteristics.</li>
+                                                                </ul>
+                                                                <p>Use the machine group properties to tell Mastercam which 
+			type of default you prefer. You can override any of 
+		the defaults by entering different values.</p>
+                                                                <p>Mastercam validates your feeds and speeds against the maximum 
+			and minimum values set in the machine definition, and 
+		warns you if you try to enter a value outside these limits.</p>
+                                                                <p>If you later select a different machine for the toolpath 
+			group or import the operation into a file with a different 
+			machine, Mastercam validates the programmed values against 
+			the values in the new machine definition. If the programmed 
+			values are out of range, they  display in italics 
+		until you edit them.</p>
+                                                                <ul>
+                                                                    <li>The feed rate and spindle speed that you enter here are 
+			typically in effect for the entire operation. However, you 
+			can use <span class="Bold">Change 
+			at Point</span> to change them for specific 
+		moves.</li>
+                                                                    <li>Use the <span class="Bold">Feed</span> 
+			page in the control definition to configure the feed 
+		rate units, inverse feed rates, or other advanced options.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Machine page</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Use 
+		 these settings to select an axis combination and spindle origin. Together, these define the coordinate system for your turning operation.</p>
+                                                        <ul>
+                                                            <li>The axis combination represents the specific spindle/turret combination that you will use for a machining job. This defines 
+		 which machine axes will be used to represent the part coordinate 
+		 system. The axis combinations that are available to you come from the machine definition.</li>
+                                                            <li>The spindle origin defines the origin for the part coordinate system and the work offset that is associated with it. The spindle origins that are available to you come from the set of planes that are defined in the current part file. You can define a new origin in this dialog box if you wish. Each spindle origin corresponds to a specific tool plane that you can see in the Planes Manager.</li>
+                                                        </ul>
+                                                        <p>Click on the desired axis combination to select it, then select the desired spindle origin. Mastercam filters the list of spindle origins to eliminate ones that make no sense for the selected axis combination. </p>
+                                                        <p>For each spindle origin, Mastercam displays the coordinates and associated work offset. A green check mark in front of the <span class="Bold">Name</span> means that the origin is already used by one or more operations in the part file. See <a href="../Common/Work_Offset_Numbers.htm" class="MCXref xref">Work Offset Numbers</a> to learn more about work offset numbering.</p>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>If you are creating a B-axis contour toolpath, use the <span class="Bold">Tool Orientation on Machine</span> settings to set the A-axis orientation of the tool. These settings are not relevant for A-axis contour toolpaths and so are not displayed.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Operation page</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Use these settings to define reference points and several post processing settings.</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>Mill-Turn toolpaths begin and end with a reference <em>position</em>. You select this location in the Sync Manager; it typically corresponds to the <code>G28</code> home position. Use reference <em>points</em> to define an intermediate location between the first/last point in the toolpath and the reference position. For example, if you are performing ID work, you can use a reference point to define a clear location from which the tool can approach the part.</p>
+                                                                <p>Each reference point is optional. Select the checkbox for each approach and retract reference point to enable it and enter its coordinates. Select each axis that will be included in the reference point. For example, if you select the X axis but not Z, Mastercam will output only an X coordinate in your NC file.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Select <span class="Bold">Force tool change</span> to force a tool change to be output in your NC file instead of a null tool change when the same tool is used in consecutive operations.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Select <span class="Bold">To batch</span> to include this operation in a batch post processing job. See <a href="../../Machine/Batch_Processing_Toolpath_Operations.htm" class="MCXref xref">Batch Processing Toolpath Operations</a> to learn more.</p>
+                                                            </li>
+                                                        </ul>
+                                                        <p>Enter a <span class="Bold">Comment</span> to help identify the operation in the Toolpaths Manager. These can be output in the NC file when you post if you select the proper option in your machine group properties. </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Geometry page</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Use this page to review or edit the chained geometry for this operation. </p>
+                                                        <ul>
+                                                            <li>Click the <span class="Bold">Chain Manager</span> button to edit the chained geometry or select new geometry. See <a href="../../General/Chaining_Overview.htm" class="MCXref xref">Chaining Overview</a> to learn more. </li>
+                                                            <li>Click the <span class="Bold">Change at point</span> button to edit the toolpath—such as the feed rate or spindle speed—at a specific point. See <a href="../Common/Change_at_Point.htm" class="MCXref xref">Change at Point dialog box</a> to learn more.</li>
+                                                        </ul>
+                                                        <p>The chained geometry can include splines.</p>
+                                                        <p>Choose the compensation direction and enter the amount of any stock to leave. The compensation direction is relative to the chain direction.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Lead In, Lead Out pages</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Use these settings to control how the tool approaches or retracts from the part 
+		 for each pass in the toolpath. This eliminates the need to create 
+		 extra geometry for this purpose. You can also combine different 
+		 types of moves. For example, you can extend a contour and lead 
+		 in to it with a tangent arc.</p>
+                                                        <p>Separate <span class="Bold">Lead In</span> and <span class="Bold">Lead Out</span> settings  let you set different values for 
+		 entry and exit moves.</p>
+                                                        <ul>
+                                                            <li>Select the <span class="Bold">Entry Vector</span> or <span class="Bold">Exit Vector</span> checkbox to enable that move. Then, enter the distance and angle of the move. You can also use the angle dial to set the angle. </li>
+                                                            <li>
+                                                                <p>
+
+You can create lead in/out moves by extending or shortening the beginning
+or end of the chained geometry. Select the checkbox to enable the move and specify the adjustment distance.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Basic Motion Control page </a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Use these settings to control how the tool axis vectors are created throughout the course of the toolpath. You can choose to have Mastercam calculate the tool axis vectors or you can determine them manually.</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p><span class="Bold">Automatic</span>  mode creates safe A- or B-axis angles for all positions along the chained contour based on the  shape of your tool insert and holder. The <span class="Bold">Tool Angle Limits</span> define the range of angles (degrees) that <span class="mc-variable CNC_Product.Product variable">Mastercam</span> is allowed to assign to the tool along the contour.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p><span class="Bold">Manual</span> mode allows you to select lines to define the tool axis vectors along the contour. Enter a <span class="Bold">Tool Offset Angle</span> to offset the tool axis vector from the selected lines. The <span class="Bold">Tool Offset Angle</span> makes geometry creation easier by allowing you flexibility in how you draw the tool axis control lines. 
+                                </p>
+                                                            </li>
+                                                        </ul>
+                                                        <p>Click on a topic to learn more about using the other settings on this page.</p>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Editing the toolpath vectors</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p>If you have manually defined the tool axis vectors, Mastercam lets you edit them after they have been created. Do this to fine-tune the resulting toolpath without editing or creating additional geometry.</p>
+                                                                <p>To do this, select <span class="Bold">Modified</span>, and then click the <span class="Bold">Edit vectors</span> button.</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/b-axis-edit-vectors-0.png" alt="Selecting the &quot;Modified&quot; option and &quot;Edit vectors&quot; button." />
+                                                                </p>
+                                                                <p>Mastercam displays the current tool axis vectors in the graphics window. Click on a vector and use the angle dial to rotate it to the desired orientation. Press the [<span class="Bold">Shift</span>] key to display an outline of the tool along with the vector.</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/b-axis-edit-vectors-2.png" alt="Using the rotary dial to edit the tool axis vector" />
+                                                                </p>
+                                                                <p>Double-click anywhere on the contour to add additional tool axis vectors. Sections of the contour where the tool cannot contact the part are highlighted in red; if you double-click in a non-contact area, Mastercam will add the new tool axis vector at the closest possible location. </p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/b-axis-edit-vectors-3.png" alt="Non-contact areas highlighted in red" />
+                                                                </p>
+                                                                <p>Press [<span class="Bold">Enter</span>] to return to the function panel. Mastercam does not edit the original wireframe geometry that was used to create the initial tool axis vector.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Tool angle controls </a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p>Tool angle controls let you specify either a leading or trailing angle for the insert. Select the <span class="Bold" uifiletitle=" " uiresourcetype=" " uiresourceid=" " uistringid=" " uitext=" " uiversion=" ">Tool Angle Control</span> option to activate the feature and enter either a leading or trailing angle. </p>
+                                                                <p>Mastercam will maintain the desired angle  with respect to the chained contour. This example shows a trailing angle of 25 degrees:</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/lag-angle.png" alt="Illustration of a trailing angle applied to an insert." />
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Fanning distance</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p>The fanning distance lets you better control changes in the tool axis as the tool moves around a sharp corner. This can create large changes in the tool axis angle in a very small linear distance. The fanning option lets you specify a distance before and after the corner where the tool axis can transition in a smoother and more controlled manner. </p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/fan-distance.png" alt="" />
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Advanced Motion Control page </a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>The settings on this page give you greater control over your tool and toolpath. These settings include:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p><span class="Bold">Cut tolerance</span>: Adjust the maximum value by which the  toolpath is allowed to deviate from the chained contour. A smaller <span class="Bold">Cut Tolerance</span> value leads to a more accurate toolpath, but too small of a value will increase toolpath generation time. </p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/B-axis_Cut_Tolerance.png" alt="A line showing the distance between the chained contour and the B-Axis Contour Turning toolpath. " />
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p><span class="Bold">Maximum distance between points</span>: The maximum distance allowed between the points from which the toolpath is made and which occur in the posted code. Not all points will be the same distance apart; rather, no points will be farther apart than the distance specified in this field. To display the points in Classic Backplot, enable <span class="Bold">Show end points</span>.</p>
+                                                                <p>
+                                                                    <img src="../ToolpathsPics/B-axis_end_point.png" alt="Points along the B-axis Contour Turning toolpath. " />
+                                                                </p>
+                                                            </li>
+                                                            <li><span class="Bold">Maximum angle step</span>: The maximum angle by which B-axis rotation may change between two points. If there is a need for a greater angle change between two points, Mastercam will add an intermediate point so that the <span class="Bold">Maximum angle step</span> value is respected.</li>
+                                                            <li>
+                                                                <p><span class="Bold">Holder clearance</span>: The value by which the holder boundary is offset, prior to Mastercam computing the toolpath, to create a gap between the holder and the stock.</p>
+                                                                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyleSheets/CNC_RegularTable.css');margin-left: 0;margin-right: auto;" class="TableStyle-CNC_RegularTable" cellspacing="0">
+                                                                    <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                                    <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                                    <thead>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Head-Header1">
+                                                                            <th class="TableStyle-CNC_RegularTable-HeadE-Column1-Header1">Holder clearance of 0.0</th>
+                                                                            <th class="TableStyle-CNC_RegularTable-HeadD-Column1-Header1">Holder clearance of 1.0</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyB-Column1-Body1">
+                                                                                <img src="../ToolpathsPics/Holder_clearance_example_2.png" alt="A grooving/parting tool with a 0.0 holder clearance." />
+                                                                            </td>
+                                                                            <td class="TableStyle-CNC_RegularTable-BodyA-Column1-Body1">
+                                                                                <img src="../ToolpathsPics/Holder_clearance_example_1.png" alt="A grooving/parting tool with a 1.0 holder clearance." />
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                                    <p>If the <span class="Bold">Holder Clearance</span> value is less than double the <span class="Bold">Cut Tolerance</span>, Mastercam will use double the <span class="Bold">Cut Tolerance</span>  as the <span class="Bold">Holder Clearance</span> value to keep the holder from contacting the contour.</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <p>
+                                                                    <p><span class="Bold">Maximum Insert Depth</span>: This value controls the maximum amount of the insert allowed to contact the contour.  </p>
+                                                                    <ul style="list-style-type: circle;">
+                                                                        <li>
+                                                                            <p>Select <span class="Bold">Depth</span> to enter the value directly. The value is measured in inches or millimeters, depending on the units that you are using. Enter a value of zero to use any exposed portion of the tool insert. </p>
+                                                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Applying the Depth value to different types of tools</a></span>
+                                                                                <div class="MCDropDownBody dropDownBody">
+                                                                                    <p>The <span class="Bold">Depth</span> is applied differently depending on the tool type. </p>
+                                                                                    <p>
+                                                                                        <img src="../ToolpathsPics/b-axis-max-insert-depth.png" alt="Entering a Maximum insert depth value" />
+                                                                                    </p>
+                                                                                    <p>Grooving/parting tools apply the <span class="Bold">Depth</span> value from a line along the plunge direction, at the distance the user has entered. The resulting portion of the insert is allowed to contact the contour.</p>
+                                                                                    <table style="width: 100%;mc-table-style: url('../../Resources/TableStyleSheets/CNC_RegularTable.css');margin-left: 0;margin-right: auto;" class="TableStyle-CNC_RegularTable" cellspacing="0">
+                                                                                        <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                                                        <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                                                        <thead>
+                                                                                            <tr class="TableStyle-CNC_RegularTable-Head-Header1">
+                                                                                                <th class="TableStyle-CNC_RegularTable-HeadE-Column1-Header1">Grooving/parting tools:&#160;Maximum insert depth of 0.0</th>
+                                                                                                <th class="TableStyle-CNC_RegularTable-HeadD-Column1-Header1">Grooving/parting tools:&#160;Maximum insert depth of 2.0</th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+                                                                                            <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                                                <td class="TableStyle-CNC_RegularTable-BodyB-Column1-Body1">
+                                                                                                    <img src="../ToolpathsPics/Grooving_tool_max_insert_depth_0.png" alt="A grooving tool with an insert depth of 0. " />
+                                                                                                </td>
+                                                                                                <td class="TableStyle-CNC_RegularTable-BodyA-Column1-Body1">
+                                                                                                    <img src="../ToolpathsPics/Grooving_tool_max_insert_depth_2.png" alt="A grooving tool with an insert depth of 2.0." />
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                    <p>Boring bars, general turning, and custom tools use the <span class="Bold">Depth</span> value as follows:</p>
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <p>For a <span class="Bold">Depth</span> value that is less than the tool nose radius, Mastercam applies the same method as is applied for grooving/parting tools.</p>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <p>For a <span class="Bold">Depth</span> value that is greater than the tool nose radius, Mastercam computes the allowable contact portion of the insert by creating a circle with a radius that is the <span class="Bold">Depth</span> value and with a center point at the center of the tool nose radius. Any portion of the insert contained within the circle will be used for cutting. Any portion of the insert outside of the circle will act as part of the holder. </p>
+                                                                                            <p>
+                                                                                                <img src="../ToolpathsPics/Lathe_tool_radial_method_with_circle.png" alt="An insert bisected by a wireframe circle with two arrows indicating the intersection points. " />
+                                                                                            </p>
+                                                                                            <table style="width: 100%;mc-table-style: url('../../Resources/TableStyleSheets/CNC_RegularTable.css');margin-left: 0;margin-right: auto;" class="TableStyle-CNC_RegularTable" cellspacing="0">
+                                                                                                <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                                                                <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                                                                <thead>
+                                                                                                    <tr class="TableStyle-CNC_RegularTable-Head-Header1">
+                                                                                                        <th class="TableStyle-CNC_RegularTable-HeadE-Column1-Header1">Boring bars, general turning, and custom tools: Maximum insert depth of 1.5</th>
+                                                                                                        <th class="TableStyle-CNC_RegularTable-HeadD-Column1-Header1">Boring bars, general turning, and custom tools: Maximum insert depth of 0.25</th>
+                                                                                                    </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                    <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                                                        <td class="TableStyle-CNC_RegularTable-BodyB-Column1-Body1">
+                                                                                                            <img src="../ToolpathsPics/Radial_method_insert_depth_1.png" alt="A turning tool with an insert depth of 1.5" />
+                                                                                                        </td>
+                                                                                                        <td class="TableStyle-CNC_RegularTable-BodyA-Column1-Body1">
+                                                                                                            <img src="../ToolpathsPics/Lathe_tool_radial_method.png" alt="A turning tool with an insert depth of 0.25." />
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p>Select <span class="Bold">Manual</span> to define the usable portion visually in the graphics window.</p>
+                                                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Manually defining the usable portion of the insert</a></span>
+                                                                                <div class="MCDropDownBody dropDownBody">
+                                                                                    <p>Mastercam also lets you define the allowable portion of the insert manually. Do this when you would rather define it visually instead of entering a dimension, or when you wish to define a usable insert area that is irregular or non-symmetrical. Follow these steps:</p>
+                                                                                    <ol style="list-style-type: lower-alpha;">
+                                                                                        <li value="1">
+                                                                                            <p>Select <span class="Bold">Manual</span> and click the <span class="Bold">Edit depth</span> button. </p>
+                                                                                            <p>
+                                                                                                <img src="../ToolpathsPics/b-axis-max-insert-depth-manual.png" alt="Choosing to define the maximum insert depth manually" />
+                                                                                            </p>
+                                                                                            <p>Mastercam returns you to the graphics window where you can edit the boundaries of the usable portion.</p>
+                                                                                        </li>
+                                                                                        <li value="2">
+                                                                                            <p>Drag each colored ball to the desired location on the insert boundary. Click and release each ball to drag it; do not drag it while holding down the mouse key.</p>
+                                                                                            <p>
+                                                                                                <img src="../ToolpathsPics/b-axis-max-insert-depth-manual-1.png" alt="Two colored balls identify the corners of the machinable region." />
+                                                                                            </p>
+                                                                                        </li>
+                                                                                        <li value="3">
+                                                                                            <p>Click the mouse again to release the ball.</p>
+                                                                                            <p>
+                                                                                                <img src="../ToolpathsPics/b-axis-max-insert-depth-manual-2.png" alt="The machinable region after dragging the ball." />
+                                                                                            </p>
+                                                                                        </li>
+                                                                                        <li value="4">
+                                                                                            <p>Repeat for the other ball until you are satisfied with the shape.</p>
+                                                                                        </li>
+                                                                                        <li value="5">
+                                                                                            <p>Press [<span class="Bold">Enter</span>] to return to the function panel.</p>
+                                                                                        </li>
+                                                                                    </ol>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p>Click <span class="Bold">Preview</span> to see the updated insert boundaries in the graphics window.
+                             </p>
+                                                                    <ul style="list-style-type: circle;">
+                                                                        <li>
+                                                                            <p>Mastercam displays the insert with the proper insert-up or insert-down colors.</p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p>The picture also incorporates the <span class="Bold">Holder clearance</span> value. </p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p>For collision-checking purposes, the unused portion of the insert is treated like it is part of the holder.</p>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p>
+                                                                        <img src="../ToolpathsPics/b-axis-max-insert-depth-preview.png" alt="Previewing the tool with the current settings." />
+                                                                    </p>
+                                                                </p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Stock page</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Use these settings to control how <span class="mc-variable CNC_Product.Product variable">Mastercam</span> updates the stock definition between operations. </p>
+                                                        <p>Click <span class="Bold">Adjust stock</span> to edit the stock model at the beginning and end of the toolpath. Do this to control how the tool enters and exits the stock.</p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/b-axis-adjust-stock-0.png" alt="The &quot;Adjust stock&quot; button on the Stock page" />
+                                                        </p>
+                                                        <p>When you click the button, Mastercam displays the existing remaining stock model relative to the chained geometry. A green ball indicates the beginning of the chain, and a red ball indicates the end. The gray dashed line indicates the current stock boundary.</p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/b-axis-adjust-stock-1.png" alt="The stock model as initially displayed." />
+                                                        </p>
+                                                        <p>Click and release one of the balls to edit the stock model at either end of the chain. Drag the ball to the desired location on the stock boundary, and then press [<span class="Bold">Enter</span>]. Click-and-release each ball to drag it; do not drag it while holding down the mouse key. </p>
+                                                        <p>White dots indicate up to three locations to which the cursor will snap:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>The location perpendicular to the direction of the cut</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>The location parallel to the direction of the cut</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>The location parallel to the direction of the chain</p>
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/b-axis-adjust-stock-2.png" alt="Displaying the &quot;snap&quot; points" />
+                                                        </p>
+                                                        <p>(In these pictures, the white dots are displayed in red for sake of clarity.)</p>
+                                                        <p>For example, you can drag the ball to the stock margin to extend the stock to the face of the part, or drag it down to create a chamfer.</p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/b-axis-adjust-stock-3.png" alt="Dragging the ball to the margin to extend the stock." />
+                                                        </p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/b-axis-adjust-stock-4.png" alt="Editing the stock model to create a chamfer" />
+                                                        </p>
+                                                        <p>When you are done, click [<span class="Bold">Enter</span>] to return to the function panel. Click <span class="Bold">Reset</span> to undo the changes and restore the original stock. </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Settings page </a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Select the checkbox to adjust the <span class="Bold">Tool Display</span> settings. </p>
+                                                        <p>Use these settings to tell Mastercam how the toolpath appears in the graphics window when it is first created or regenerated.  </p>
+                                                        <p>Once a toolpath has been created, use the Toolpaths Manager to toggle toolpath display on and off for individual toolpaths or groups of toolpaths.</p>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>These options do not affect <span class="mc-variable CNC_Product.Product variable">Mastercam</span>'s simulation and backplot features. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li><a href="Creating_a_Mill-Turn_Toolpath.htm" class="MCXref xref">Creating a Mill-Turn Toolpath</a>
+                                                    </li>
+                                                    <li><a href="Working_With_Yaxis_Tools.htm" class="MCXref xref">Working with Y-axis Tools</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

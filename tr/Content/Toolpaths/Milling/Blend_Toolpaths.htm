@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Toolpaths|Lathe|Milling|Common Mill" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Blend Toolpaths</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyleSheets/CNC_RegularTable.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Blend Toolpaths</h1>
+                                                <p>Mastercam's 2D Blend Mill, Surface Finish Blend, and 3D high speed Blend toolpaths use the input chains and optional model data to create a smooth machining pattern. When creating a Blend toolpath, you choose between <span class="Bold">2D</span> or <span class="Bold">3D</span> projection mode. </p>
+                                                <p><span class="Bold">2D</span> mode is a Z-based projection. <span class="mc-variable CNC_Product.Product variable">Mastercam</span> generates a flat pattern by blending the shape of the first chain to the shape of the second chain at a defined <span class="Bold">Stepover</span> and projects the pattern down the Z axis of the tool plane onto the model. </p>
+                                                <p><span class="Bold">3D</span> mode is an on-surface 3D offset calculation. <span class="mc-variable CNC_Product.Product variable">Mastercam</span> first projects the selected chains down the Z axis of the tool plane onto the model to establish the chain location. Then, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> calculates the offset passes from the first projected chain to the second projected chain, measuring the distance between the offset passes along the topology of the model. </p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Toolpath Guidelines</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Before creating a Blend toolpath, consider the following:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>Blend toolpaths are finishing toolpaths. In most cases, it is best practice to use them after roughing operations are complete. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>2D Blend Mill allows you to select machining geometry, but not avoidance geometry. Surface Finish Blend and 3D Blend allow you to select machining and avoidance geometry. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Blend operations require certain geometry selections for toolpath generation. </p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p>Blend Mill requires at least two selected <span class="Bold">Machining region</span> chains.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Surface Finish Blend requires at least two selected <span class="Bold">Blend</span> chains. </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>3D Blend requires at least two selected <span class="Bold">Curves</span>. </p>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Types of Blend operations</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Mastercam offers three types of Blend toolpaths: 3D HST Blend, Surface Finish Blend, and 2D Blend Mill. </p>
+                                                        <p>Blend is a 3D high speed toolpath. This type of toolpath has machining strategies specially designed to produce the most efficient tool motion when machining surface models or solid faces. Surface Finish Blend is a surface finish/rough toolpath, typically designed to finish a part down to the drive geometry or the specified stock amount. The outcome of both toolpaths is typically similar, as shown below. </p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/3DBlend_Toolpath.png" class="MaxWidth" alt="An example of a 3D high speed Blend toolpath." />
+                                                        </p>
+                                                        <p>Blend Mill is a 2D high speed toolpath. This type of toolpath is a simple, but powerful and effective toolpath for specialized
+machining, such as machining pockets, faces or chamfers.</p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/Blend_mill_cut_parameters_ref.png" alt="An example of a 2D high speed Blend Mill toolpath." />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />What are the differences between the toolpaths?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <h2>Group</h2>
+                                                        <p>Blend Mill belongs to the 2D high speed toolpaths, Surface Finish Blend belongs to the surface finish/rough toolpaths, and 3D Blend belongs to the 3D high speed toolpaths. The toolpath group affects the parameters, geometry selection, and cutting speed. Learn more about these toolpath types in <a href="3D_Mill_Router_Toolpaths.htm" class="MCXref xref">3D Mill and Router Toolpaths</a> and <a href="2D_Mill_Router_Toolpaths.htm" class="MCXref xref">2D Mill and Router Toolpaths</a> toolpaths. </p>
+                                                        <h2>Location</h2>
+                                                        <p>Access the 3D Blend and Blend Mill by clicking the <span class="Bold">Milling</span> tab and selection the operation from either the <span class="Bold">3D</span> or <span class="Bold">2D</span> gallery. To access Surface Finish Blend, right-click in the Toolpaths Manager and select <span class="Bold">Mill toolpaths</span>, <span class="Bold">Surface Finish</span>, <span class="Bold">Blend</span>. </p>
+                                                        <h2>Geometry Selection </h2>
+                                                        <p>Geometry selection for 3D HST Blend is similar to the other 3D HST operations. After selecting the toolpath from the ribbon, the toolpath parameters dialog box opens. Use the <span class="Bold">Model Geometry</span> and <span class="Bold">Toolpath Control</span> pages in the toolpath dialog box to set machining regions, containment boundaries, and avoidance regions. </p>
+                                                        <p>For Surface Finish Blend, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> prompts you to select drive geometry, check geometry, blend geometry, and a tool containment boundary. You can also select an approximate starting point. This process is similar to the geometry selection process for all surface finish/rough operations.</p>
+                                                        <p>For Blend Mill, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> prompts you to select machining geometry. You cannot select any other type of chain geometry. You can also use <span class="Bold">Automatic regions</span> to have <span class="mc-variable CNC_Product.Product variable">Mastercam</span> automatically create machining regions for you based on the selected geometry. </p>
+                                                        <h2>Parameters</h2>
+                                                        <p>The following parameters are unique to each type of Blend operation: </p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>The <span class="Bold">Flatten chains</span> option for 3D HST Blend converts the selected <span class="Bold">Machining geometry</span> into 2D/planar curves before the toolpath has been generated. Flattening the chains may shorten their length.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>3D HST Blend includes <span class="Bold">Project</span> options for your selected <span class="Bold">Curves</span>. This option works with the <span class="Bold">Contain</span> option to further refine your toolpath. You can learn more about these options in the <a href="Toolpath_Control_Blend.htm" class="MCXref xref">Toolpath Control page: Blend</a> Help topic. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>3D HST Blend includes the <span class="Bold">Flip stepover</span> option, which reverses the cutting direction of the toolpath. This option is found on the <a href="Cut_Parameters_Blend.htm">Cut Parameters page</a>. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Surface Finish Blend includes the <a href="Blend_Along_Cut_Settings.htm">Blend Along Cut Settings dialog box</a>, which allows you to change the resolution of the tool stepover when using the 
+		 <span class="Bold">Along</span> option.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Blend Mill includes an <span class="Bold">Extend Entry/Exit</span> option, allowing you to adjust the initial and final tool engagement with the material. You can learn more about these options in the <a href="Cut_Parameters_Blend_Mill.htm" class="MCXref xref">Cut Parameters page: Blend Mill</a> Help topic. </p>
+                                                            </li>
+                                                        </ul>
+                                                        <p>Similar to how Blend operations share the geometry selection process of their toolpath group, Blend operations also share parameters with other toolpaths in their group.</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>3D HST Blend, Surface Finish Blend, and 2D Blend Mill include different cut styles in the <span class="Bold">Cutting methods</span> drop-down, based on their toolpath group. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>3D HST Blend operations have advanced linking parameter options, to give you more control over leads, retracts, and transitions. You can access these options on the <span class="Bold">Linking Parameters</span> page. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Surface Finish Blend operations have <a href="Gap_Settings.htm">Gap Settings</a> that allow you to control what happens when a break in tool motion occurs in a Surface toolpath.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Blend Mill operations includes break through that allows you to cut completely through the material by a specified amount. Break through causes the tool to cut into the spoil board to ensure a clean cut through the material.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Blend Mill operations include a <a href="Finish_Passes.htm">Finish Passes page</a> that allows you to add high speed finishing passes along the selected boundaries of the toolpath. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>To control the minimum and maximum machining depth for the toolpath, most Surface Finish operations use <a href="Depth_Limits.htm">Depth Limits</a>. Similarly, most 3D HST toolpaths allow you to enter a maximum and minimum Z depth value on the <span class="Bold">Steep/Shallow</span> page to establish the heights of the highest and lowest cutting passes. Learn more in <a href="Using_Z_Limits_to_Create_a_Machining_Zone.htm" class="MCXref xref">Using Z Limits to Create a Machining Zone</a>. 2D HST toolpaths include the <a href="Depth_Cuts.htm" class="MCXref xref">Depth Cuts page</a> which is used to divide the total depth of a toolpath into smaller Z-axis cuts to reduce tool wear. </p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />What are the similarities between the toolpaths?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>The three blend toolpaths share the following parameters:</p>
+                                                        <h1>2D/3D</h1>
+                                                        <p>All Blend toolpaths include a <span class="Bold">2D</span> and <span class="Bold">3D</span> option (for 3D HST Blend, this option is the <span class="Bold">Project</span> drop-down). This option affects how the created passes lie on the part. Selecting <span class="Bold">2D</span> keeps the passes equidistant in the Cplane. Selecting <span class="Bold">3D</span> keeps the passes equidistant in 3D, adding cuts in steep areas. The two examples below show <span class="Bold">3D</span> and <span class="Bold">2D</span> for a 3D high speed Blend toolpath. </p>
+                                                        <table class="TableStyle-CNC_RegularTable" style="mc-table-style: url('../../Resources/TableStyleSheets/CNC_RegularTable.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-CNC_RegularTable-Head-Header1">
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadE-Column1-Header1">3D</th>
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadD-Column1-Header1">2D</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyB-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/3D_Project.png" title="An example of the 3D option." alt="" />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyA-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/2D_Project.png" alt="An example of the 2D option." />
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p>Additionally, you can also choose between <span class="Bold">Across</span> and <span class="Bold">Along</span> cutting directions. <span class="Bold">Across</span> creates cuts from one chain to the other, beginning at the start point of the first selected chain. <span class="Bold">Along</span> creates cuts on the selected machining/drive geometry that follows along the chain direction, beginning at the start point of the first selected chain. The two examples below show <span class="Bold">Across</span> and <span class="Bold">Along</span> for a Blend Mill toolpath. </p>
+                                                        <table class="TableStyle-CNC_RegularTable" style="mc-table-style: url('../../Resources/TableStyleSheets/CNC_RegularTable.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                            <col class="TableStyle-CNC_RegularTable-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-CNC_RegularTable-Head-Header1">
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadE-Column1-Header1">Across </th>
+                                                                    <th class="TableStyle-CNC_RegularTable-HeadD-Column1-Header1">Along</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-CNC_RegularTable-Body-Body1">
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyB-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/2DBlendMill_Across.png" alt="An example of Across." />
+                                                                    </td>
+                                                                    <td class="TableStyle-CNC_RegularTable-BodyA-Column1-Body1">
+                                                                        <img src="../ToolpathsPics/2DBlendMill_Along.png" alt="An example of Along." />
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p>You can find these options in the <span class="Bold">Cut Parameters</span> page or <span class="Bold">Finish blend parameters</span> tab. </p>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>Certain combinations of these options are not possible depending on your Blend toolpath. For example, <span class="Bold">Across</span> is only available if you select <span class="Bold">2D</span> for Surface Finish Blend. </p>
+                                                        </div>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>3D HST Blend includes additional <span class="Bold">2D</span> and <span class="Bold">3D</span> controls for your selected <span class="Bold">Curves</span>. You can learn more about these options on the <a href="Toolpath_Control_Blend.htm" class="MCXref xref">Toolpath Control page: Blend</a> Help topic. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I decide between using a 3D high speed toolpath or a Surface toolpath? </a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>When deciding between using a high speed toolpath or a Surface Rough or Finish toolpath, consider the following:  </p>
+                                                        <ul>
+                                                            <li>Toolpaths may have options and parameters that are 
+			 unique to their group. For example, Surface toolpaths have more options for entering/exiting 
+			 the part, and 3D high speed toolpaths have more options for linking parameters. </li>
+                                                            <li>
+                                                                <p>3D HST toolpaths support holder collision checking when needed.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>3D HST toolpaths better support the use of stock models when needed.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I decide between using a 2D toolpath or a 3D toolpath?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>When deciding between using a 2D toolpath or a 3D toolpath, consider the following:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>2D toolpaths are best used for prismatic parts, meaning the walls of the part are generally vertical.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>3D toolpaths are best used for organic or mold/die parts. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>3D HST toolpaths support holder collision checking when needed.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />What causes the Reporting computation error to display for 3D high speed Blend?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>If you receive a computer error when generating a 3D high speed Blend toolpath, you may not have selected curves. The Blend toolpath requires at least two selected curves; the <span class="Bold">Curves</span> parameter is located on the <span class="Bold">Toolpath Control</span> page.</p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/Curves_Parameter.png" alt="The &quot;Curves&quot; parameter on the &quot;Toolpath Control&quot; page." />
+                                                        </p>
+                                                        <p>If you do have <span class="Bold">Curves</span> selected and are receiving this error, other parameters might be incorrect.</p>
+                                                    </div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li>
+                                                        <p><a href="2D_Mill_Router_Toolpaths.htm" class="MCXref xref">2D Mill and Router Toolpaths</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="../Common/Mill_Router_Toolpaths.htm" class="MCXref xref">Creating a Mill or Router Toolpath</a>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

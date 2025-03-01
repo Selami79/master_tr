@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Machine|Setup Sheet" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Creating Setup Sheets from .SET Files</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="558x558" href="../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Creating Setup Sheets from .SET Files</h1>
+                                                <p>The setup sheets you create using the .SET File program are automatically 
+ generated by the Setup Sheet function. They are based on a .SET file associated 
+ with the active machine group's control definition.</p>
+                                                <p>A .SET file is similar to a post processor file. It is a customization 
+ script that defines a specific setup sheet output. The .SET file can include:</p>
+                                                <ul>
+                                                    <li>format statements</li>
+                                                    <li>processing logic</li>
+                                                    <li>miscellaneous integers and custom 
+		 variable definitions</li>
+                                                    <li>system variables</li>
+                                                </ul>
+                                                <p>Setup sheet output typically contains information on machine group operations 
+ and tools in the current part file. This output is formatted as ASCII 
+ text that opens in the Mastercam default editor. You can use your preferred 
+ text editor to view, edit, save, and print the setup sheet output file.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Working 
+ with default .SET templates</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>For 
+	 each installed product, Mastercam provides a 
+	 default metric and U.S. .SET template file. These files are 
+	 located in the Mastercam installation location in the product's \POSTS 
+	 subdirectory, for example ..<span class="Filepath">\&lt;Shared 
+	 Data Folder&gt;\mill\Posts</span>. To create your own customized .SET 
+	 files, copy and rename these templates (you can also rename a .PST 
+	 file to a .SET format and modify accordingly), and then assign them 
+	 to products and control definitions.</p>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p> 
+	 All .SET files, including customized versions, must reside in the 
+	 product-level \POSTS subdirectory.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Assigning 
+ .SET files</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>You 
+	 can assign .SET files to a product, to the master 
+	 version of a control definition stored in the Mastercam database, 
+	 and to the local copy of a control definition stored in the Mastercam 
+	 part file. The following hierarchy 
+	 determines the .SET file that is used to create the setup sheet output.</p>
+                                                        <ul>
+                                                            <li><span class="Bold">Local Machine Group level:</span> When 
+	 working with a local copy of the machine and control definition in 
+	 the Toolpaths Manager, edit the control definition associated with 
+	 the machine group, assign a .SET file in the <span class="Bold">File 
+	 usage</span> list, and save the changes. This assignment is the most 
+	 specific and overrides all other .SET file defaults.</li>
+                                                            <li><span class="Bold">Control Definition level:</span> When creating control 
+	 definitions in the <span class="Bold">Machine 
+	 Type</span>, <span class="Bold">Control 
+	 Definition Manager</span>, <span class="Bold">Files</span> 
+	 properties page, use the <span class="Bold">File 
+	 usage</span> list to assign a .SET file to a selected control definition. 
+	 This assignment overrides the product level default. However, it is 
+	 not used if you change the .SET file at the <span class="Italic">local 
+	 machine group level</span> as described above.</li>
+                                                            <li><span class="Bold">Product level:</span> In 
+	 the <span class="Bold">File</span>, 
+	 <span class="Bold">Configuration</span>, 
+	 <span class="Bold">Files</span> 
+	 properties page, <span class="Bold">File usage</span> 
+	 list, a .SET file is assigned to each installed Mastercam product.This is the most general default. The template .SET 
+	 files provided with your installation are used as the initial defaults. 
+	 However, you can change this assignment. If you use an external .NCI 
+	 file to generate the setup sheet, the .SET file assigned to the machine 
+	 type (product level) is used.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Sample 
+ output from a .SET file</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>CUSTOMIZABLE MILL 
+	 SETUP SHEET - MILL.SET</p>
+                                                        <p>=========================================</p>
+                                                        <p>&#160;</p>
+                                                        <p>PROGRAM NAME &#160;&#160;= 
+	 CONTOUR AND POCKET</p>
+                                                        <p>DATE PROCESSED = 
+	 MAY. 24 2010</p>
+                                                        <p>TIME &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;= 
+	 3:44 PM</p>
+                                                        <p>MATERIAL TYPE &#160;= 
+	 ALUMINUM mm - 2024</p>
+                                                        <p>MACHINE NAME &#160;&#160;= 
+	 MILL DEFAULT MM</p>
+                                                        <p>GROUP NAME &#160;&#160;&#160;&#160;= 
+	 MACHINE GROUP-1</p>
+                                                        <p>&#160;</p>
+                                                        <p>--------------------------------------------------------------</p>
+                                                        <p>OPERATION TYPE = 
+	 CONTOUR</p>
+                                                        <p>TOOL NAME = &#160;&#160;&#160;&#160;8. 
+	 FLAT END MILL CRB</p>
+                                                        <p>TOOL DEF. (MANUFACTURER) 
+	 = &#160;&#160;&#160;&#160;</p>
+                                                        <p>TOOL DEF. (CHUCK) 
+	 = &#160;&#160;&#160;&#160;</p>
+                                                        <p>TOOL NUM. = 34</p>
+                                                        <p>TOOL DIA. = 8.000</p>
+                                                        <p>NUMBER OF FLUTES 
+	 = 4</p>
+                                                        <p>FLUTE LEN. &#160;&#160;&#160;= 
+	 20.</p>
+                                                        <p>OVERALL LEN. &#160;= 
+	 40.</p>
+                                                        <p>SHOULDER LEN. = 20.</p>
+                                                        <p>ARBOR DIA. &#160;&#160;&#160;= 
+	 8.</p>
+                                                        <p>HOLDER DIA. &#160;&#160;= 
+	 50.</p>
+                                                        <p>DIA. OFFSET = 34</p>
+                                                        <p>LEN. OFFSET = 34</p>
+                                                        <p>SPINDLE = 3500</p>
+                                                        <p>FEED RATE = 40.</p>
+                                                        <p>CUTTER COMP. (COMPUTER) 
+	 = LEFT</p>
+                                                        <p>STOCK TO LEAVE (XY)= 
+	 0.</p>
+                                                        <p>STOCK TO LEAVE (Z) 
+	 = 0.</p>
+                                                        <p>FEEDRATES: MAX = 
+	 40. MIN = 4.48</p>
+                                                        <p>MAX_X = +20.605 &#160;MIN_X 
+	 = -22.934</p>
+                                                        <p>MAX_Y = +42.072 &#160;MIN_Y 
+	 = -19.795</p>
+                                                        <p>MAX_Z = +25.000 &#160;MIN_Z 
+	 = -10.000</p>
+                                                        <p>TOOL FEED CUT LENGTH 
+	 = 908.286</p>
+                                                        <p>TOOL RAPID TRAVERSE 
+	 LENGTH = 612.265</p>
+                                                        <p>RAPID TIME = 2.94 
+	 SECONDS</p>
+                                                        <p>FEED TIME &#160;= 
+	 33 MINUTES, 50 SECONDS</p>
+                                                        <p>OPERATION TIME = 
+	 33 MINUTES, 52.94 SECONDS</p>
+                                                        <p>&#160;</p>
+                                                        <p>--------------------------------------------------------------</p>
+                                                        <p>OPERATION TYPE = 
+	 POCKET</p>
+                                                        <p>TOOL NAME = &#160;&#160;&#160;&#160;4. 
+	 FLAT END MILL CRB</p>
+                                                        <p>TOOL DEF. (MANUFACTURER) 
+	 = &#160;&#160;&#160;&#160;</p>
+                                                        <p>TOOL DEF. (CHUCK) 
+	 = &#160;&#160;&#160;&#160;</p>
+                                                        <p>TOOL NUM. = 31</p>
+                                                        <p>TOOL DIA. = 4.000</p>
+                                                        <p>NUMBER OF FLUTES 
+	 = 2</p>
+                                                        <p>FLUTE LEN. &#160;&#160;&#160;= 
+	 10.</p>
+                                                        <p>OVERALL LEN. &#160;= 
+	 30.</p>
+                                                        <p>SHOULDER LEN. = 20.</p>
+                                                        <p>ARBOR DIA. &#160;&#160;&#160;= 
+	 4.</p>
+                                                        <p>HOLDER DIA. &#160;&#160;= 
+	 28.</p>
+                                                        <p>DIA. OFFSET = 31</p>
+                                                        <p>LEN. OFFSET = 31</p>
+                                                        <p>SPINDLE = 3500</p>
+                                                        <p>FEED RATE = 25.</p>
+                                                        <p>CUTTER COMP. (COMPUTER) 
+	 = LEFT</p>
+                                                        <p>STOCK TO LEAVE (XY)= 
+	 0.</p>
+                                                        <p>STOCK TO LEAVE (Z) 
+	 = 0.</p>
+                                                        <p>ROUGHING ANGLE = 
+	 0.</p>
+                                                        <p>ROUGHING STEP SIZE 
+	 = 2.</p>
+                                                        <p>NUMBER OF FINISH 
+	 PASSES = 1.</p>
+                                                        <p>FINISH PASS STEP 
+	 SIZE = 2.5</p>
+                                                        <p>FINISH ALLOWANCE 
+	 = 1.</p>
+                                                        <p>FEED RATES: MAX = 
+	 25. MIN = 2.24</p>
+                                                        <p>MAX_X = +89.125 &#160;MIN_X 
+	 = +69.432</p>
+                                                        <p>MAX_Y = +18.047 &#160;MIN_Y 
+	 = -20.882</p>
+                                                        <p>MAX_Z = +25.000 &#160;MIN_Z 
+	 = -8.000</p>
+                                                        <p>TOOL FEED CUT LENGTH 
+	 = 1932.804</p>
+                                                        <p>TOOL RAPID TRAVERSE 
+	 LENGTH = 884.778</p>
+                                                        <p>RAPID TIME = 4.25 
+	 SECONDS</p>
+                                                        <p>FEED TIME &#160;= 
+	 2 HOURS, 33 MINUTES, 47.11 SECONDS</p>
+                                                        <p>OPERATION TIME = 
+	 2 HOURS, 33 MINUTES, 51.36 SECONDS</p>
+                                                        <p>&#160;</p>
+                                                        <p>==============================================================</p>
+                                                        <p>PROGRAM TOTALS (2 
+	 TOOLS):</p>
+                                                        <p>&#160;</p>
+                                                        <p>FEEDRATES: MAX = 
+	 40. MIN = 2.24</p>
+                                                        <p>MAX_X = +89.125 &#160;MIN_X 
+	 = -22.934</p>
+                                                        <p>MAX_Y = +42.072 &#160;MIN_Y 
+	 = -20.882</p>
+                                                        <p>MAX_Z = +25.000 &#160;MIN_Z 
+	 = -10.000</p>
+                                                        <p>TOTAL FEED CUT LENGTH 
+	 = 2841.09</p>
+                                                        <p>TOTAL RAPID TRAVERSE 
+	 LENGTH = 1497.043</p>
+                                                        <p>TOTAL RAPID TIME 
+	 = 7.19 SECONDS</p>
+                                                        <p>TOTAL FEED TIME = 
+	 3 HOURS, 7 MINUTES, 37.11 SECONDS</p>
+                                                        <p>CYCLE TIME: &#160;3 
+	 HOURS, 7 MINUTES, 56.3 SECONDS</p>
+                                                    </div>
+                                                </div>
+                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                    <ul>
+                                                        <li>To set the default editor for Mastercam, 
+		 use the Editor field in <span class="Bold">File</span>, <span class="Bold">Configuration</span>, <span class="Bold">Start 
+		 / Exit</span> properties page.</li>
+                                                        <li>
+                                                            <p>To configure the setup sheet program 
+		 (ActiveReport, .SET, or Other), choose <span class="Bold">File</span>, <span class="Bold">Configuration</span>, <span class="Bold">Reports</span> 
+		 page and select a format from the<span class="Bold"> Setup sheet program</span> list.</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li><a href="Working_with_Setup_Sheets.htm" class="MCXref xref">Working with Setup Sheets</a>
+                                                    </li>
+                                                    <li><a href="Creating_Setup_Sheets_with_Active_Reports.htm" class="MCXref xref">Creating Setup Sheets with ActiveReports</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

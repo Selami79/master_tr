@@ -1,0 +1,8 @@
+<svg id="cube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <path d="M3.43,8.57,15,14a2.77,2.77,0,0,0,2,0L28.58,8.57c.56-.26.56-.7,0-1L17,2.14a2.77,2.77,0,0,0-2,0L3.43,7.61c-.57.26-.57.7,0,1Z" style="fill: none;stroke: #d11141;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 1.9986061551742036px"/>
+  <path d="M3.43,23.33,15.08,28.8a2.67,2.67,0,0,0,2,0l11.66-5.47" style="fill: none;stroke: #d11141;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 1.9986061551742036px"/>
+  <line x1="16" y1="15" x2="16" y2="28" style="fill: none;stroke: #d11141;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.9986061551742036px"/>
+  <line x1="29" y1="8" x2="29" y2="23" style="fill: none;stroke: #d11141;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.9986061551742036px"/>
+  <line x1="3" y1="9" x2="3" y2="23" style="fill: none;stroke: #d11141;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.9986061551742036px"/>
+  <polygon points="0 0 0 32 32 32 32 0 0 0 0 0" style="fill: none;fill-rule: evenodd"/>
+</svg>

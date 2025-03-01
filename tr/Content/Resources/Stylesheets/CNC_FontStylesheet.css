@@ -1,0 +1,36 @@
+/*<meta conditions="CNC_Publish.Installation" />*/
+
+/* Used to declare fonts*/
+
+@font-face 
+{
+	font-family: 'Noto Sans';
+	src: url('./Fonts/NotoSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face 
+{
+	font-family: 'Noto Sans';
+	src: url('./Fonts/NotoSans-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face 
+{
+	font-family: 'Noto Sans';
+	src: url('./Fonts/NotoSans-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face 
+{
+	font-family: 'Noto Sans';
+	src: url('./Fonts/NotoSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Toolpaths|Common" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Use the Edit Common Parameters, Mill/Router dialog box to set values for one or more toolpath parameters for several operations at the same time. You can also use it to copy selected values from one operation to another. All the operations must be in the same machine group." />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Edit Common Parameters: Mill/Router dialog box</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Edit Common Parameters: Mill/Router dialog box</h1>
+                                                <p>Use the <span class="Bold">Edit Common Parameters</span>, <span class="Bold">Mill/Router</span> dialog 
+		 box to set values for one or more toolpath parameters for several 
+		 operations at the same time. You can also use it to copy selected 
+		 values from one operation to another. All the operations must 
+		 be in the same machine group.</p>
+                                                <p>The information in this topic is divided into several sections. 
+		 Click on the drop-downs to learn more.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Select 
+		 the operations to edit</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>In the Toolpaths Manager, select the operations to change. 
+			 When you change toolpath settings in the <span class="Bold">Edit Common parameters</span> 
+			 dialog box, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> writes them to all the operations 
+			 you select here.</p>
+                                                        <ul>
+                                                            <li>
+                    Press the [<span class="Bold">Ctrl</span>] or [<span class="Bold">Shift</span>] keys while clicking 
+				 to select several operations.
+                </li>
+                                                            <li>
+                    Click the group name to select all the operations.
+                </li>
+                                                        </ul>
+                                                        <p>You can select only operations from the active machine group, which is the machine group with the red insertion arrow in 
+			 the Toolpaths Manager.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Select 
+		 the settings to change</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Use the checkboxes to activate the fields or settings to 
+			 change. Use <span class="Bold">Select all</span> or <span class="Bold">Deselect all</span> to quickly toggle 
+			 all the fields.</p>
+                                                        <p>Then, for each field, enter or select the value to apply 
+			 to the selected operations. When you are working with the 
+			 cutting planes parameters, you can set several states in addition 
+			 to the height of the plane:</p>
+                                                        <ul>
+                                                            <li>
+                    Select an option from the <span class="Bold">Use</span> 
+				 drop list to simulate activating or turning off retract 
+				 and clearance planes. You can <span class="Bold">Enable</span> 
+				 or <span class="Bold">Disable</span> the planes for all 
+				 selected operations. Select <span class="Bold">No change</span> 
+				 to apply the value to only the operations where the plane 
+				 is used.
+                </li>
+                                                            <li>
+                    Select an option from the <span class="Bold">Abs/</span> 
+				 drop list to set the type of value to <span class="Bold">Absolute</span> or <span class="Bold">Incremental</span>
+				 for all the selected operations. Select <span class="Bold">No 
+				 change</span> to write only the numerical value without 
+				 changing its type.
+                </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Apply 
+		 the changes</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Click <span class="Bold">Apply</span> to write 
+			 the new values to the selected operations.</p>
+                                                        <p>The dialog box stays open so that you can select a different 
+			 set of operations and make other changes. Click <span class="Bold">Apply</span> 
+			 after each set of changes, or choose <span class="Bold">OK</span> 
+			 when you are done. Choosing <span class="Bold">OK</span> also 
+			 applies the current settings to the selected operations before 
+			 closing this dialog box.</p>
+                                                        <p>When you apply the changes, Mastercam automatically validates 
+			 the new values against the machine definition for the selected 
+			 machine group and notifies you of incompatibilities.</p>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p> Clicking <span class="Bold">Cancel</span> 
+			 does not undo changes that have already been applied.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Copying 
+		 values from one operation to another</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Use the <span class="Bold">Propagate</span> feature to copy 
+			 values from one operation to another. This is useful 
+			 when you import an operation from a library and want to apply 
+			 its values to operations in your current part file.</p>
+                                                        <ol>
+                                                            <li value="1">
+                    While you are 
+				 in the Toolpaths Manager, select one or more operations 
+				 whose values you want to change and the operation that
+				 has the values you want to copy.
+                </li>
+                                                            <li value="2">
+                    Right-click 
+				 in the Toolpaths Manager, and choose <span class="Bold">Edit 
+				 selected operations, Edit common parameters</span>.
+                </li>
+                                                            <li value="3">
+                    Click on the 
+				 source operation to select it, and then click <span class="Bold">Propagate</span>. Mastercam automatically reads the values from 
+				 that operation and loads them into all the fields.
+                </li>
+                                                            <li value="4">
+                    Use the checkboxes 
+				 to activate the fields whose values you want to copy.
+                </li>
+                                                            <li value="5">
+                    Click <span class="Bold">OK</span> or <span class="Bold">Apply</span> 
+				 to copy the values to the other operations.
+                </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                    <ul>
+                                                        <li>
+                You can only edit toolpath and operation parameters. 
+			 You cannot edit machine group properties or settings.
+            </li>
+                                                        <li>
+                When you return to the Toolpaths Manager you typically 
+			 need to regenerate operations whose parameters have been changed.
+            </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Parameters</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="Term">Propagate</p>
+                                                        <p>
+
+
+Select an operation in the list window, and click this button to load all of the fields
+with values from the selected operation.
+</p>
+                                                        <p class="Term">Operation list
+</p>
+                                                        <p>
+
+Displays the operations that have been selected in the Toolpaths Manager when you
+entered the Edit Common Parameters function. When you click <span class="Bold">Apply</span> or <span class="Bold">OK</span>, values from
+all the active fields are copied to the operations listed in the window.
+
+</p>
+                                                        <p class="Term">Clearance</p>
+                                                        <p>Sets the height at which the tool moves to and from the part. Select the checkbox to activate the clearance height. If it is not selected, the <span class="Bold">Retract</span> value is used as the clearance plane. Click the button to set or change the height. You can select a point on the geometry or enter a value.</p>
+                                                        <p data-mc-conditions="Milling/Holemaking Toolpaths.Thread Mill">For Thread Mill toolpaths, <span class="Bold">Clearance</span> sets the height that tool rapids to before and after cutting each thread. This is an absolute value. </p>
+                                                        <p data-mc-conditions="Milling/Holemaking Toolpaths.Drill,Milling/Application Toolpaths.Blade Expert,Milling/Application Toolpaths.Deburr,Milling/Application Toolpaths.Port Expert,Milling/Application Toolpaths.Project Curve,Milling/Application Toolpaths.Rotary,Milling/Application Toolpaths.Rotary Advanced,Milling/Application Toolpaths.Roughing,Milling/Application Toolpaths.Swarf,Milling/Pattern Toolpaths.Along Curve,Milling/Pattern Toolpaths.Curve,Milling/Pattern Toolpaths.Flow,Milling/Pattern Toolpaths.Morph,Milling/Pattern Toolpaths.Multisurface,Milling/Pattern Toolpaths.Parallel,Milling/Pattern Toolpaths.Port,Milling/Pattern Toolpaths.Swarf Milling,Milling/Pattern Toolpaths.Triangular Mesh">For Multiaxis toolpaths and Drill toolpaths with multiaxis functionality enabled, <span class="Bold">Clearance</span> is always an incremental distance from the current tool position.</p>
+                                                        <p data-mc-conditions="Milling/2D Standard Toolpaths.Model Chamfer">For Model Chamfer toolpaths, <span class="Bold">Clearance</span> is an absolute value from start and end. However, if there is a feature on the solid model that is higher than the entered <span class="Bold">Clearance</span> value (shown as <span class="Bold">1</span> below), Model Chamfer will instead use the entered <span class="Bold">Retract</span> value (shown as <span class="Bold">2</span> below) to clear it. </p>
+                                                        <p data-mc-conditions="Milling/2D Standard Toolpaths.Model Chamfer">
+                                                            <img src="../ToolpathsPics/ModelChamfer_Clearance.png" alt="A Model Chamfer toolpath displaying the difference between Clearance and Retract heights. " />
+                                                        </p>
+                                                        <p class="Term">Retract </p>
+                                                        <p>Sets the height that the tool moves up to before the next tool pass. Select the checkbox to activate the retract plane, and then click the button and select a point on the geometry or enter a value. The retract height should be set above the feed plane. If you do not enter a <span class="Bold">Clearance</span> height, the tool moves to the retract height between operations. </p>
+                                                        <p data-mc-conditions="Milling/Holemaking Toolpaths.Thread Mill">For Thread Mill toolpaths, <span class="Bold">Clearance</span> sets the height that tool rapids to before and after cutting each thread. This is an absolute value. </p>
+                                                        <p data-mc-conditions="Milling/Holemaking Toolpaths.Drill,Milling/Application Toolpaths.Blade Expert,Milling/Application Toolpaths.Deburr,Milling/Application Toolpaths.Port Expert,Milling/Application Toolpaths.Project Curve,Milling/Application Toolpaths.Rotary,Milling/Application Toolpaths.Rotary Advanced,Milling/Application Toolpaths.Roughing,Milling/Application Toolpaths.Swarf,Milling/Pattern Toolpaths.Along Curve,Milling/Pattern Toolpaths.Curve,Milling/Pattern Toolpaths.Flow,Milling/Pattern Toolpaths.Morph,Milling/Pattern Toolpaths.Multisurface,Milling/Pattern Toolpaths.Parallel,Milling/Pattern Toolpaths.Port,Milling/Pattern Toolpaths.Swarf Milling,Milling/Pattern Toolpaths.Triangular Mesh">For Multiaxis toolpaths and Drill toolpaths with multiaxis functionality enabled, <span class="Bold">Retract</span> is an incremental distance from the current tool position.</p>
+                                                        <p data-mc-conditions="Milling/2D Standard Toolpaths.Model Chamfer">For Model Chamfer toolpaths, the incremental value moves away from the current position and it is gouge checked against the selected solid model and the avoidance geometry.
+If the distance will gouge, Model Chamfer raises the value higher until it clears.</p>
+                                                        <p data-mc-conditions="Milling/2D Standard Toolpaths.Contour"> For 2D Contour toolpaths, when moving between chains, if the incremental retract height does not clear the top of stock by a safe distance, a minimum retract of .100 inches or 2 millimeters will be used.</p>
+                                                        <p class="Term">Feed plane </p>
+                                                        <p>Sets the height that the tool rapids to before changing to the plunge rate to enter the part. The tool also moves to this height between operations if you do not enter both the <span class="Bold">Clearance</span> height and the <span class="Bold">Retract</span> height. Select the checkbox to activate the feed plane, and then click the button and select a point on the geometry or enter a value. </p>
+                                                        <p data-mc-conditions="Milling/Application Toolpaths.Blade Expert,Milling/Application Toolpaths.Deburr,Milling/Application Toolpaths.Port Expert,Milling/Application Toolpaths.Project Curve,Milling/Application Toolpaths.Rotary,Milling/Application Toolpaths.Rotary Advanced,Milling/Application Toolpaths.Roughing,Milling/Application Toolpaths.Swarf,Milling/Pattern Toolpaths.Along Curve,Milling/Pattern Toolpaths.Curve,Milling/Pattern Toolpaths.Flow,Milling/Pattern Toolpaths.Morph,Milling/Pattern Toolpaths.Multisurface,Milling/Pattern Toolpaths.Parallel,Milling/Pattern Toolpaths.Port,Milling/Pattern Toolpaths.Swarf Milling,Milling/Pattern Toolpaths.Triangular Mesh">For Multiaxis toolpaths, <span class="Bold">Feed plane</span> is an incremental distance from the current tool position.</p>
+                                                        <p data-mc-conditions="Milling/2D Standard Toolpaths.Model Chamfer">For Model Chamfer toolpaths, <span class="Bold">Feed plane</span> is an incremental distance above the next cut depth. </p>
+                                                        <p class="Term">Top of stock
+
+
+</p>
+                                                        <p>Sets the height of the material in the Z axis. Many other toolpath parameters are
+measured from this position in incremental mode, such as clearance, retract, and
+feed planes. Click<span class="Bold"> Top of stock</span>, and select a point on the geometry or
+enter a value. Incremental values are measured from the chained geometry.
+</p>
+                                                        <p class="Term">Depth</p>
+                                                        <p>
+
+
+Determines the final machining depth and the lowest depth that the tool descends
+into the stock. The default depth is the depth of the first chain selected. Click <span class="Bold">Depth</span>, and select a point on the geometry or enter a value. Incremental
+values are relative to the chained geometry, not the top of stock.
+</p>
+                                                        <p class="Term">Rapid retract</p>
+                                                        <p>Select to retract from the part at the rapid rate set at the machine tool. If you do not select this option, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> uses the programmed <span class="Bold">Retract rate</span>.</p>
+                                                        <p> If selected for a 3D high speed toolpath, the feed rate is used for exit and lead out motion. If deselected, the <span class="Bold">Retract rate</span> is used for exit and lead out motion. </p>
+                                                        <p class="Term">Force tool change</p>
+                                                        <p>When the same tool is used in successive operations, this option replaces the null tool change in the NCI file with a tool change code, so that an event can be triggered between the two operations. The tool collision avoidance function assumes that the tool will go to the home position immediately after an operation with this option selected, even if the next operation uses the same tool.</p>
+                                                        <p class="Term">Batch</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p><span class="Bold">To batch</span> adds the current operation to a batch file for processing at a
+later time. Mastercam adds the toolpath to the Toolpaths Manager,
+but an NCI file is not generated until the batch is run. </p>
+                                                                <p>When you select a Mastercam
+file for batch processing, all operations marked for batch processing are automatically
+loaded into the batch operations list.
+
+
+</p>
+                                                            </li>
+                                                            <li><span class="Bold">No batch</span> stops all toolpath operations that have been
+set to batch on the Toolpath parameters tab from batch processing.
+
+
+
+
+
+
+
+
+
+</li>
+                                                        </ul>
+                                                        <p class="Term">Coolant</p>
+                                                        <p>Opens the <span class="Bold">Coolant</span> dialog box where you can select coolant options. The coolant options that are available to you are defined in the machine definition. When any of the coolant options are turned on, the button label will be marked with an asterisk.</p>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <ul>
+                                                                <li>The name of this button and the title of the dialog box it opens are customizable in the <span class="Bold">Coolant command</span> tab in the <span class="Bold">General Machine Parameters</span> dialog box. </li>
+                                                                <li>Use the <span class="Bold">Change at Point</span> feature to turn coolant on or off at specific points in the toolpath.</li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="Term">Miscellaneous values</p>
+                                                        <p>Opens the <span class="Bold">Miscellaneous values</span> dialog box to review or change the values of any custom integers and/or real variables that have been defined for this machine. This button can also be customized to launch an Add-In instead when it is clicked.</p>
+                                                        <p class="Term">Planes</p>
+                                                        <p>Select to set or change any of the following:
+</p>
+                                                        <ul>
+                                                            <li>
+
+the tool plane (Tplane) or work coordinate system used for the operation
+
+
+</li>
+                                                            <li>the Tplane or WCS origin</li>
+                                                            <li>
+
+
+the work offset associated with this operation.
+</li>
+                                                        </ul>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>For certain types of operations, you can also change the construction plane
+(Cplane).
+
+
+</p>
+                                                        </div>
+                                                        <p class="Term">Canned text</p>
+                                                        <p>Click to open the <span class="Bold">Canned text</span> dialog box to insert or review canned text commands in your NC program.</p>
+                                                        <p class="Term">Home position</p>
+                                                        <p data-mc-conditions="Product.Mill">Sets the position on the machine tool where the tool returns for tool changes and at the end of the NC program. The default home position is determined by the active machine and control definition. Click <span class="Bold">Home position</span> to override it for this operation.</p>
+                                                        <p class="Term">NC name</p>
+                                                        <p>
+
+
+Select to open the <span class="Bold">Enter new NC name</span> dialog box where you can change
+the name of the resulting NC file.
+</p>
+                                                        <p class="Term">Reference point</p>
+                                                        <p data-mc-conditions="Product.Mill,Product.Lathe,Product.Mill-Turn">Opens the <span class="Bold">Reference points</span> dialog box to set reference points. A reference point is a location that the tool moves to between the home position and the start of the toolpath (approach point), and another location that the tool moves to at the end of the toolpath before returning to the home position (retract point). </p>
+                                                        <p class="Term">Head number</p>
+                                                        <p>Sets the spindle or head used on a machine tool with multiple spindles or heads. When set to <span class="Bold">-1</span>, the head number parameter is not used. When <span class="Bold">Assign tool numbers sequentially</span> in your machine group properties is deselected, the <span class="Bold">Head number</span> parameter is set by the <span class="Bold">Station number</span> set in the tool definition. </p>
+                                                        <p class="Term">Feed rate</p>
+                                                        <p data-mc-conditions="Product.Mill">Sets the rate (inches per minute or millimeters per minute) at which the tool moves through the part. In 2-axis machining (except drilling), the feed rate only applies to tool movements in the X and Y directions (or parallel to the tool plane) when the tool touches the material. In 3-axis machining, the feed rate is interpolated in the X, Y, and Z directions. For Drill toolpaths, the feed rate is measured along the drilling axis. <span class="mc-variable CNC_Product.Product variable">Mastercam</span> calculates a default value according to the settings in your machine group properties, but you can override this by typing in a new value.</p>
+                                                        <p class="Term">Plunge rate</p>
+                                                        <p>Sets the feed rate <span class="mc-variable CNC_Product.Product variable">Mastercam</span> uses when plunging into the part. Typically, this applies to tool movements in the negative Z direction only.</p>
+                                                        <p class="Term">Length offset</p>
+                                                        <p>Displays the current length offset associated with the <span class="Bold">Tool number</span>. <span class="mc-variable CNC_Product.Product variable">Mastercam</span> reads and calculates this offset from the control definition. Enter a new value to override the control definition. </p>
+                                                        <p class="Term">Diameter offset</p>
+                                                        <p>Displays the current diameter offset associated with the <span class="Bold">Tool number</span>. <span class="mc-variable CNC_Product.Product variable">Mastercam</span> reads and calculates this offset from the control definition. Enter a new value to override the control definition. </p>
+                                                        <p class="Term">Retract rate</p>
+                                                        <p>Sets the feed rate <span class="mc-variable CNC_Product.Product variable">Mastercam</span> uses when pulling away from the part. Typically, this applies to tool movements in the positive Z direction only. </p>
+                                                        <p>If the <span class="Bold">Use plunge, retract rate in gap</span> option for Surface Rough and Surface Finish toolpaths (in the <span class="Bold">Gap settings</span> dialog box) is selected, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> always uses the <span class="Bold">Retract rate</span> value for vertical gap motion even if <span class="Bold">Rapid retract</span> is selected. </p>
+                                                        <p class="Term">Spindle speed</p>
+                                                        <p>
+                                                            <MadCap:conditionalText data-mc-conditions="Product.Mill">Determines the rotation speed of the spindle in revolutions per minute (RPM)</MadCap:conditionalText>. <span class="mc-variable CNC_Product.Product variable">Mastercam</span> calculates a default value according to the settings in the machine group properties, but you can override this by entering in a new value here. </p>
+                                                        <p><span class="mc-variable CNC_Product.Product variable">Mastercam</span> warns you if either the default or the value you type in is outside the range set in the machine definition. </p>
+                                                        <p class="Term">Spindle direction</p>
+                                                        <p>Sets the rotation direction for the selected tool as clockwise (<span class="Bold">CW</span>) or counterclockwise (<span class="Bold">CCW</span>). <span class="mc-variable CNC_Product.Product variable">Mastercam</span> displays a default value according to the value set in your machine group properties,  but you can override this by an option here.</p>
+                                                        <div class="Note" data-mc-autonum="&lt;b&gt;NOTE&lt;/b&gt; "><span class="autonumber"><span><b>NOTE</b> </span></span>
+                                                            <p>If the  default feed rates are <span class="Bold">From defaults</span> or <span class="Bold">User defined</span>, entering a negative spindle speed for these defaults sets the <span class="Bold">Spindle direction</span> to <span class="Bold">CCW</span>; a positive value sets it to <span class="Bold">CW</span>.</p>
+                                                        </div>
+                                                        <p class="Term">Tool selection window
+</p>
+                                                        <p>
+
+Chose the checkbox to activate the <span class="Bold">Tool selection</span> window, which displays the tools
+used in the selected operations. Right-click in the window to edit existing tools.
+create new tools, access the Tool Manager or the Speed and Feed Calculator, and change
+how the tools are displayed (icon or details).</p>
+                                                        <p class="Term">Select library tool</p>
+                                                        <p>Opens the <span class="Bold">Tool Selection</span> dialog box so that you can select a tool from a tool library, or select a different tool library. When you select a tool, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> copies the tool to the  current machine group and saves it to the part. The tool is then listed in the tool display window where it can be selected for any operation in the machine group.</p>
+                                                        <p class="Term">Tool filter </p>
+                                                        <p data-mc-conditions="Product.Mill,Product.Router">Opens the <span class="Bold">Tool List Filter</span> dialog box to set filter criteria for finding tools. </p>
+                                                        <p class="Term">Select all </p>
+                                                        <p>
+
+
+Activates all the fields.
+</p>
+                                                        <p class="Term">Deselect all</p>
+                                                        <p>Makes all the fields inactive.
+
+
+
+
+
+
+</p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Right-click 
+		 menu options (Tool selection window)</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="Term">Create new tool</p>
+                                                        <p>Use 
+				 this option to create a new tool instead of selecting 
+				 one from the list. The tool definition will be stored 
+				 in the current toolpath group unless you save it to a 
+				 library.
+</p>
+                                                        <p class="Term">Edit tool</p>
+                                                        <p>Use this option 
+				 to edit the tool definition for the selected tool. The 
+				 changes you make are stored in the machine group and 
+				 do not affect future parts that use the tool unless 
+				 you save the changes to a library.
+                </p>
+                                                        <p class="Term">Tool Manager</p>
+                                                        <p>Displays 
+				 the name of the current tool library, and opens the Tool 
+				 Manager so that you can work with the library and the 
+				 tools stored in the current machine group.
+                </p>
+                                                        <p class="Term">Feed/speed calculator</p>
+                                                        <p>Use the calculator to calculate feeds and speeds including 
+				 surface speed or feed per tooth.
+                </p>
+                                                        <p class="Term">View</p>
+                                                        <p>Display the tools 
+				 as large icons, small icons, or as a details list.
+</p>
+                                                    </div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li><a href="../Turning/Edit_Common_Parameters_Lathe.htm" class="MCXref xref">Edit Common Parameters Lathe dialog box</a>
+                                                    </li>
+                                                    <li><a href="../../View/Toolpaths_Manager.htm" class="MCXref xref">Toolpaths Manager</a>
+                                                    </li>
+                                                    <li><a href="Working_with_Toolpath_Defaults.htm" class="MCXref xref">Working with Toolpath Defaults</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

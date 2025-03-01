@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <g id="Note">
+    <path d="M5,4.11V27.88A2.12,2.12,0,0,0,7.12,30H24.88A2.12,2.12,0,0,0,27,27.88V11.21a3,3,0,0,0-.88-2L19.67,2.64A2.58,2.58,0,0,0,17.88,2H7.12A2.12,2.12,0,0,0,5,4.11Z" style="fill: none;stroke: #1e4659;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 1.9986095814415257px"/>
+    <path d="M18,2.11V8.88A2.12,2.12,0,0,0,20.12,11h6.76" style="fill: none;stroke: #1e4659;stroke-miterlimit: 10;stroke-width: 1.9986095814415257px"/>
+    <line x1="10" y1="20" x2="22" y2="20" style="fill: none;stroke: #1e4659;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.9986095814415257px"/>
+    <line x1="10" y1="25" x2="22" y2="25" style="fill: none;stroke: #1e4659;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.9986095814415257px"/>
+    <line x1="10" y1="15" x2="22" y2="15" style="fill: none;stroke: #1e4659;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.9986095814415257px"/>
+    <polygon points="0 0 0 32 32 32 32 0 0 0 0 0" style="fill: none;fill-rule: evenodd"/>
+  </g>
+</svg>

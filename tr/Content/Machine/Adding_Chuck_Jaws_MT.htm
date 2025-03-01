@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Machine|Job Setup|Mill-Turn Component Libraries" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Adding Chuck Jaws and Collets (Mill-Turn)</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="558x558" href="../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Adding Chuck Jaws and Collets (Mill-Turn)</h1>
+                                                <p>Creating a collet or a new set of chuck jaws and mounting them on your machine typically requires two separate tasks:</p>
+                                                <ul>
+                                                    <li>Define the new jaws or collet and add them to a component library.</li>
+                                                    <li>Select the new jaws or collet to mount on the machine.</li>
+                                                </ul>
+                                                <h2>Defining the New Component</h2>
+                                                <p>Follow these steps to define chuck jaws or a collet in Mill-Turn. These steps assume that you are adding them to one of the component libraries that are part of your <span class="Filepath">.machine</span> file.</p>
+                                                <ol style="list-style-type: decimal;">
+                                                    <li value="1">
+                                                        <p>
+						In <span class="Bold">Code Expert</span>, double-click the desired component library.</p>
+                                                        <p>
+                                                            <img src="MachinePics/tool-locators-in-machine-file.png" title="Picture of tool locators in a .machine file." alt="The tool locators in a &quot;.machine&quot; file." />
+                                                        </p>
+                                                        <p>Mastercam opens the component library in a new session of Mastercam.</p>
+                                                    </li>
+                                                    <li value="2">Right-click on a <span class="Bold">Chuck Jaws Group</span> or <span class="Bold">Collet Group</span> and select <span class="Bold">Add chuck jaws</span> or <span class="Bold">Collet</span>.<p> <img src="MachinePics/adding-chuck-jaws.png" title="Selecting the &quot;Add chuck jaws&quot; option from the right-click menu." alt="Selecting the &quot;Add chuck jaws&quot; option from the right-click menu." /></p><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />I don't see a Collet or Collet Chuck group in my library </a></span><div class="MCDropDownBody dropDownBody"><p>If your component library does not include a <span class="Bold">Collet</span> or <span class="Bold">Collet Chuck</span> group, follow these steps to add one. For example, if your <span class="Filepath">.machine</span> file has been migrated from an earlier version of Mastercam, these groups might not be present.</p><ol style="list-style-type: lower-alpha;"><li value="1">Right-click on <span class="Bold">Component library</span> at the base of the component tree and select <span class="Bold">Groups</span>.
+						<p><img src="MachinePics/add-groups.png" title="The Groups option on the right-click menu." alt="The Groups option on the right-click menu." /></p><p>The <span class="Bold">Groups</span> dialog box displays.</p></li><li value="2">Select each group that you want to include in the library. Remember that if you want to mount a collet on your machine, you will also need a collet chuck component, not a jawed chuck.</li><li value="3">Click <span class="Bold">OK</span>.</li></ol></div></div></li>
+                                                    <li value="3">Click the <span class="Bold">Geometry</span> tab. Use it to decide how you want to represent the shape of the component.   </li>
+                                                    <li value="4">Select <span class="Bold">Parametric</span> or <span class="Bold">Solid entity</span>  from the <span class="Bold">Geometry</span> drop-down. For chuck jaws, you can also choose a <span class="Bold">Chain</span> option. Expand the following drop-downs to see the next steps. As you work, the <span class="Bold">Preview</span> window updates in real-time to show the overall profile of the jaws. 
+
+
+
+			<p><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Defining your jaws with a wireframe profile</a></span><div class="MCDropDownBody dropDownBody"><p>You can model your jaws by selecting a chained profile of wireframe geometry. This technique is often used when your jaws have been machined to fit the shape of your part.</p><p>Select <span class="Bold">Chain</span> from the <span class="Bold">Geometry</span> list, then click the <span class="Bold">Select Geometry</span> button to select the geometry from the graphics window. The 
+					 geometry should be a 2D profile drawn in the upper quadrant. No part of the profile should cross the spindle center line.</p><p>You can create either rectangular or pie-shaped jaws with this method. See <a href="Component_Geometry_Chuck_Jaws_Chain.htm" class="MCXref xref">Geometry tab: Machine Component Manager (Chuck Jaws (Chain))</a> to learn more.</p></div></div></p><p><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Defining your component with a solid model</a></span><div class="MCDropDownBody dropDownBody"><p>You can model your collet or jaws by selecting a solid model. The model can be either a Mastercam solid on a level in your part file, or an external file in .STEP format. </p><p>Select <span class="Bold">Solid entity</span> from the <span class="Bold">Geometry</span> list, then select the model.</p><ul><li>In the picture below, click the left button to select a model from an external file. </li><li>Click the right button to select a model from the Solids Manager or the graphics window.</li></ul><p><img src="MachinePics/creating-a-chuck.png" title="The interface options for selecting a solid model for your chuck jaws." alt="The interface options for selecting a solid model for your chuck  jaws." /></p><p>Use the <span class="Bold">Align</span> function panel to orient the model and align it with the chuck and spindle, then enter the other settings on this tab. See the following topics to  learn more:</p><ul><li><a href="Align_Chuck_Jaw_Collet.htm" class="MCXref xref">Align Chuck/Jaw/Collet panel</a></li><li><a href="Component_Geometry_Collet_Solid.htm" class="MCXref xref">Geometry tab: Machine Component Manager (Collet (Solid))</a></li><li><a href="Component_Geometry_Chuck_Jaws_Solid.htm" class="MCXref xref">Geometry tab: Machine Component Manager (Chuck Jaws (Solid))</a></li></ul></div></div></p><p><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Defining your component parametrically</a></span><div class="MCDropDownBody dropDownBody"><p>Select <span class="Bold">Parametric</span> from the <span class="Bold">Geometry</span> list to define the collet or jaws by entering their dimensions directly in this dialog box. This lets you model them without creating or selecting any geometry. </p><ol style="list-style-type: lower-alpha;"><li value="1">For jaws, choose either the <span class="Bold">Rectangular</span> or <span class="Bold">Pie</span>-style option and enter the related dimensions. </li><li value="2">Click the <span class="Bold">Steps: Initialize</span> button to begin defining the jaw steps.
+										<p><img src="../View/ViewPics/initialize-chuck-jaw-definition.png" title="The &quot;Intialize chuck jaw definition&quot; button." alt="The &quot;Intialize chuck jaw definition&quot; button." class="MaxWidth" /></p></li><li value="3">Refine the dimensions for each step by entering the values directly in the grid. Use the other buttons to add or remove steps or invert the order.</li></ol><p>See <a href="Component_Parameters_Chuck_Jaws.htm" class="MCXref xref">Parameters tab: Machine Component Manager (Chuck Jaws)</a> or <a href="Component_Geometry_Collet_Parametric.htm" class="MCXref xref">Geometry tab: Machine Component Manager (Collet (Parametric))</a> to learn more.</p></div></div></p></li>
+                                                    <li value="5">
+                                                        <p>Click the <span class="Bold">Parameters</span> tab to define the location and clamp position.</p>
+                                                        <ol style="list-style-type: lower-alpha;">
+                                                            <li value="1">Choose whether to clamp the part on the <span class="Bold">Inside diameter</span> or <span class="Bold">Outside diameter</span>.</li>
+                                                            <li value="2">Click the <span class="Bold">Select Reference Point</span> button and select a point on the profile. This will be the programmed point for chuck or part-handling operations. It aligns with the clamping position on the part.</li>
+                                                        </ol>
+                                                    </li>
+                                                    <li value="6">Use the live <span class="Bold">Preview</span> window to see the changes as you enter new values. Right-click in the window to change the view and see other options.</li>
+                                                    <li value="7">Click <span class="Bold">OK</span> when you are done and close the <span class="Bold">Component Library</span> dialog box.</li>
+                                                    <li value="8">Close the Mastercam session and return to Code Expert.</li>
+                                                </ol>
+                                                <h2>Selecting Collets or Jaws and Mounting Them on Your Machine</h2>
+                                                <p>Once the collets and jaws have been created and saved to a component library, use the <span class="Bold">Machine Configuration</span> page in Job Setup to mount them on your machine. You can also select and use components that have been saved in a library different from the one that is included with your <span class="Filepath">.machine</span> file. </p>
+                                                <ol>
+                                                    <li value="1">Click <span class="Bold">Job Setup</span> in the Toolpaths Manager.
+			<p><img src="MachinePics/click-job-setup.png" title="Clicking the Job Setup node." alt="Clicking the Job Setup node." /></p></li>
+                                                    <li value="2">Select the <span class="Bold">Machine Configuration</span> page.</li>
+                                                    <li value="3">Right-click on the <span class="Bold">Chuck Jaws</span> node for the desired spindle, and choose <span class="Bold">Select new chuck jaws</span> or <span class="Bold">Edit chuck jaws</span>.
+The same steps apply to collets.				
+			<p><img src="MachinePics/chuck-jaw-node.png" title="The chuck jaws node in the Machine Configuration page." alt="The right-click menu of the &quot;chuck jaws&quot; node." class="MaxWidth" /></p><ul><li><span class="Bold">Select new chuck jaws</span> lets you select a set of jaws that have been saved in the current component library. You can also select and open a different component library.</li><li><span class="Bold">Edit chuck jaws</span> lets you redefine the chuck jaws' shape, profile, and other settings. Note that any changes made here apply to this part only; they will not override the settings of the jaws that are saved in the component library.</li></ul><p>There are additional steps to complete if you are replacing jaws with a collet or vice versa. See <a href="../Toolpaths/Turning/Work_Holding_Job_Setup.htm" class="MCXref xref">Job Setup: Work Holding page</a> to learn more.</p></li>
+                                                </ol>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li><a href="Default_Chucks_And_Jaws.htm" class="MCXref xref">Default Chucks, Jaws, and Collets</a>
+                                                    </li>
+                                                    <li><a href="Introduction_to_Mill-Turn_Component_Libraries.htm" class="MCXref xref">Introduction to Mill-Turn Component Libraries</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

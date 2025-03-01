@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <g id="list-alt">
+    <path d="M2,5.76V25.23a1.59,1.59,0,0,0,1.56,1.61H28.45A1.58,1.58,0,0,0,30,25.23V5.76a1.58,1.58,0,0,0-1.55-1.6H3.56A1.58,1.58,0,0,0,2,5.76Z" style="fill: none;stroke: #d11141;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2.0295974825389096px"/>
+    <path d="M7,8.79a1.55,1.55,0,1,1-1.5,1.55A1.53,1.53,0,0,1,7,8.79Z" style="fill: #d11141;fill-rule: evenodd"/>
+    <line x1="13" y1="10.34" x2="25" y2="10.34" style="fill: none;stroke: #d11141;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.0295974825389096px"/>
+    <path d="M7,19.11a1.55,1.55,0,1,1-1.5,1.54A1.52,1.52,0,0,1,7,19.11Z" style="fill: #d11141;fill-rule: evenodd"/>
+    <line x1="13" y1="20.65" x2="25" y2="20.65" style="fill: none;stroke: #d11141;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.0295974825389096px"/>
+    <path d="M7,14A1.55,1.55,0,1,1,5.5,15.5,1.52,1.52,0,0,1,7,14Z" style="fill: #d11141;fill-rule: evenodd"/>
+    <line x1="13" y1="15.5" x2="25" y2="15.5" style="fill: none;stroke: #d11141;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.0295974825389096px"/>
+    <polygon points="0 -1 0 32 32 32 32 -1 0 -1 0 -1" style="fill: none;fill-rule: evenodd"/>
+  </g>
+</svg>

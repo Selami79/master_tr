@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_Help_TopNavigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="The Parallel, Radial, Project, Raster, and Spiral toolpaths take a pattern lying on the XY plane of the tool plane, and projects the pattern down the Z axis of the tool plane onto the model." />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Z-Based Projection Toolpaths</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Help_TechDocStylesheet.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../Resources/DataTables/css/jquery.dataTables.css" />
+        <style>@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+</style>
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.select-language-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../Skins/Favicons/SmallLogo.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/thumbnail.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6109653-16">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-6109653-16');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../TopLevel/Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div>
+                                        <div class="Content-container">
+                                            <div class="Side-content">
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_CNC_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie select-language-button" title="Change language">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Z-Based Projection Toolpaths</h1>
+                                                <p>The Z-Based Projection toolpaths project a pattern lying in the XY plane of the tool plane down the Z axis onto the model. These toolpaths typically perform well on shallow areas, as the distance between pattern passes can vary when projected onto steep features. However, some toolpaths contain advanced options to improve the results on steep areas. </p>
+                                                <p>Z-Based Projection toolpaths consist of the following toolpaths:</p>
+                                                <ul>
+                                                    <li>Surface Finish and Surface Rough Parallel </li>
+                                                    <li>Surface Finish, Surface Rough, and 3D High Speed Radial</li>
+                                                    <li>Surface Finish, Surface Rough, and 3D High Speed Project </li>
+                                                    <li>3D High Speed Raster</li>
+                                                    <li>3D High Speed Spiral </li>
+                                                </ul>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Toolpath guidelines</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>The Z-Based Projection toolpaths contain a mix of roughing and finishing toolpaths. In most cases, it is best practice to create a finishing operation after a roughing operation. Additionally, keep the following in mind when creating a Radial or Spiral toolpath.</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>Radial toolpaths can have problems with overmachining in the area where 
+	 the cutting passes converge. In these cases, you can restrict the 
+	 tool motion by specifying an inner radius. <span class="mc-variable CNC_Product.Product variable">Mastercam</span> will not calculate 
+	 cutting passes for the area of the circle inside this radius. These parameters are found on the <span class="Bold">Cut Parameters</span> page. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>When creating a Spiral toolpath, you must enter the outer radius of the spiral and the coordinates of its center point. This is different from a Waterline toolpath, where each cutting pass represents the actual profile of the drive surface at a particular Z depth. </p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Types of Z-Based Projection operations</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>There are ten Z-Based Projection toolpaths: three finishing toolpaths and seven roughing toolpaths. All toolpaths project a pattern down the Z axis, but the type of pattern depends on your chosen toolpath. </p>
+                                                        <h2>Project </h2>
+                                                        <p>The Project toolpaths project curves, points, or another toolpath (NCI) file onto surfaces or solids. Projecting points onto surfaces can create plunging motion to clear small areas in detailed parts. Surface Rough Project can clean out cavities using a pocketing motion generated by a standard pocket projected onto the surfaces that make up the cavity. A common use of Surface Finish Project is engraving created by projecting curves onto surfaces as shown below:</p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/HST_Project.png" alt="A Project toolpath." />
+                                                        </p>
+                                                        <p>Point projection can create plunge-like motion with precise location of the points. Rough plunge, by contrast, creates the plunge points in a grid or along the path of a previously created operation.</p>
+                                                        <h2>Radial</h2>
+                                                        <p>The Radial toolpath machine from a center point outward, creating cuts like the spokes of a wheel. These toolpaths are best suited for rough parts. For 3D high speed Radial toolpaths, this machining strategy is most effective on areas with shallow curved surfaces and circular areas. Since the stepover between each pass is a 2D value calculated in the XY plane only, the cuts might not be appropriate for steep areas. This is especially true when the steep contour is perpendicular to the cutting direction. In such areas a Waterline, Spiral, or Hybrid toolpath might produce better results.</p>
+                                                        <p>
+                                                            <img src="../../CustomizeOnly/CustomizeOnlyPics/surface_rough_finish_radial.png" alt="A Radial toolpath." />
+                                                        </p>
+                                                        <p>&#160;</p>
+                                                        <h2>Parallel </h2>
+                                                        <p>The Parallel toolpath quickly remove stock using multiple, constant Z depth moves. Finish Parallel makes cuts directly on the selected machining surface. </p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/Surface rough finish parallel.png" alt="A Parallel toolpath." />
+                                                        </p>
+                                                        <h2>Raster</h2>
+                                                        <p>The Raster toolpath creates a set of parallel passes with a stepover along a line at a set angle. This toolpath is most effective on shallow, nearly horizontal surfaces, or steeper surfaces that are perpendicular to the angle of the passes. </p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/Raster.png" alt="A Raster toolpath." />
+                                                        </p>
+                                                        <h2>Spiral</h2>
+                                                        <p>The Spiral toolpath creates cutting passes where the tool feeds into the part in a continuous spiral instead of several discrete passes at a constant Z height. The spacing between each pass is a 2D distance 
+ measured in the XY plane, so this toolpath type works best on shallow 
+ parts whose features can be effectively machined with a circular motion. 
+ The following picture shows an example of a Spiral toolpath.</p>
+                                                        <p>
+                                                            <img src="../ToolpathsPics/hst-spiral.png" alt="A Spiral toolpath." />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />What are the differences between the toolpaths?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <h2>Group</h2>
+                                                        <p>3D high speed Raster, Radial, Project, and Spiral belong to the 3D high speed toolpaths and Surface Finish/Rough Parallel, Radial, and Project belong to the surface finish/rough toolpaths. The toolpath group affects the parameters, geometry selection, and cutting speed. </p>
+                                                        <h2>Location</h2>
+                                                        <p>Access 3D HST Radial, Raster, Spiral, and Project by clicking the <span class="Bold">Milling</span> tab and selecting the operation from the <span class="Bold">3D</span> gallery. </p>
+                                                        <p>
+                                                            <img src="../../Simulator/SimulatorPics/3DGallery.png" alt="The 3D toolpath gallery. " />
+                                                        </p>
+                                                        <p>To access Surface Finish/Rough Radial, Project, and Parallel, right-click in the Toolpaths Manager and select the toolpath from the <span class="Bold">Mill toolpaths</span>, <span class="Bold">Surface Finish</span> or <span class="Bold">Surface Rough</span> menu. </p>
+                                                        <p>
+                                                            <img src="../../Simulator/SimulatorPics/Toolpaths_RightClick.png" alt="The surface rough and finish toolpaths. " />
+                                                        </p>
+                                                        <h2>Geometry Selection </h2>
+                                                        <p>Geometry selection for 3D high speed Raster, Radial, Spiral, and Project is similar to the other 3D HST operations. After selecting the toolpath from the ribbon, the toolpath parameters dialog box opens. Use the <span class="Bold">Model Geometry</span> and <span class="Bold">Toolpath Control</span> pages in the toolpath dialog box to set machining regions and containment boundaries.</p>
+                                                        <p>For the surface finish/rough operations, <span class="mc-variable CNC_Product.Product variable">Mastercam</span> prompts you to select drive geometry, check geometry, and a tool containment boundary. You can also select an approximate starting point. This process is similar to the selection process for all surface finish/rough operations. </p>
+                                                        <h2>Parameters </h2>
+                                                        <ul>
+                                                            <li>
+                                                                <p>Rough Project, Finish Project, and 3D high speed Project include options on the <span class="Bold">Cut parameters</span> page or <span class="Bold">Project parameters</span> tab to set how you project curves, points, or another toolpath (NCI file) onto surfaces or solids. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>3D high speed Project includes the <span class="Bold">Order by depth</span> option, which controls the depth cut order. Deselect to order by input entry. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Spiral includes a <span class="Bold">Spiral clockwise</span> option on the <span class="Bold">Cut Parameters</span> page, which sets the direction of the spiral. This does not change the starting point of the spiral, only its direction. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>You can limit the machining zone by specifying a starting and ending angle for 3D high speed Radial. The start and end angle are positive values measured from the X-positive axis.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Raster toolpaths include the <span class="Bold">Machining angle</span> and <span class="Bold">Perpendicular fill</span> options on the <span class="Bold">Cut parameters</span> page. Machining angle orients the cutting passes. <span class="Bold">Perpendicular fill</span>, in conjunction with <span class="Bold">Custom</span>, limits passes relative to 1.4 times the <span class="Bold">Stepover</span>. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p> If you have selected an <span class="Bold">Approximate start point</span> for 3D high speed Raster or Radial, once an area has been machined the tool moves to the start point of the closest unmachined area. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>3D high speed Raster includes a <span class="Bold">Cut order</span> option on the <span class="Bold">Cut parameters</span> page. This allows you to order the cuts by clusters or lanes. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>3D high speed Radial and Spiral include the <span class="Bold">Center point</span>, <span class="Bold">Inner radius</span>, and <span class="Bold">Outer radius</span> parameters on the <span class="Bold">Cut parameters</span> page. <span class="Bold">Center point</span> sets the XY coordinates of the center point of machining. <span class="Bold">Inner radius</span> and <span class="Bold">Outer radius</span> are used to create the cutting passes. </p>
+                                                            </li>
+                                                        </ul>
+                                                        <p>Similar to how Z-Based Projection operations share the geometry selection process of their toolpath group, these operations also share parameters with other toolpaths in their group.</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>The 3D high speed toolpaths have more options for <span class="Bold">Cutting method</span> than the Surface Finish and Rough operations. Other 3D high speed toolpaths share these advanced options. However, 3D high speed Project does not have a <span class="Bold">Cutting method</span> option. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>3D high speed toolpaths have advanced linking parameter options to give you more control over leads, retracts, and transitions. You can access these options on the <span class="Bold">Linking Parameters</span> page.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>The surface finish and rough operations include a <a href="Gap_Settings.htm">Gap Settings dialog box</a> that allows you to control what happens when a break in tool motion occurs.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>To control the minimum and maximum machining depth for the toolpath, most Surface Finish operations use the <a href="Depth_Limits.htm" class="MCXref xref">Depth Limits dialog box</a>. Similarly, most 3D HST toolpaths allow you to enter a maximum and minimum Z depth value on the <span class="Bold">Steep/Shallow</span> page to establish the heights of the highest and lowest cutting passes. Learn more in <a href="Using_Z_Limits_to_Create_a_Machining_Zone.htm" class="MCXref xref">Using Z Limits to Create a Machining Zone</a>.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />What are the similarities between the toolpaths?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>In addition to all being pattern-projection toolpaths, the following parameters are shared between multiple toolpath types: </p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>Surface Rough Project, Radial, and Pencil include the <span class="Bold">Allow negative/positive Z motion along surface</span> option on the toolpath parameters tab. These options let the tool cut along the surface while plunging.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>3D HST Spiral, Radial, and Raster include <span class="Bold">Down up/mill</span> options, <span class="Bold">Overlap</span> and <span class="Bold">Shallow angle</span>. <span class="Bold">Overlap</span> ensures that the toolpath does not leave unwanted scallops or cusps in the transition areas between passes of different directions. <span class="Bold">Shallow angle</span> creates down or up milling passes in areas where the <span class="Bold">Machining geometry</span> is almost flat. These options are on the <span class="Bold">Cut Parameters</span> page. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Surface Rough Parallel, Radial, and Project include options for plunge control. <span class="Bold">Plunge control</span> determines the type of Z-axis movements for surface rough toolpaths. Learn more in <a href="Plunge_Control_Surface_Rough_Toolpaths.htm" class="MCXref xref">Plunge Control: Surface Rough Toolpaths</a>. This option is also shared with Surface Rough Flowline. </p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />How do I decide between using a 3D high speed toolpath or a Surface toolpath? </a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>When deciding between using a high speed toolpath or a Surface Rough or Finish toolpath, consider the following:  </p>
+                                                        <ul>
+                                                            <li>Toolpaths may have options and parameters that are 
+			 unique to their group. For example, Surface toolpaths have more options for entering/exiting 
+			 the part, and 3D high speed toolpaths have more options for linking parameters. </li>
+                                                            <li>
+                                                                <p>3D HST toolpaths support holder collision checking when needed.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>3D HST toolpaths better support the use of stock models when needed.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <h3 class="RelatedTopics" data-mc-autonum="Learn more"><span class="autonumber"><span>Learn more</span></span>&#160;</h3>
+                                                <ul>
+                                                    <li>
+                                                        <p><a href="3D_Mill_Router_Toolpaths.htm" class="MCXref xref">3D Mill and Router Toolpaths</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><a href="../Common/Mill_Router_Toolpaths.htm" class="MCXref xref">Creating a Mill or Router Toolpath</a>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" charset="utf8" src="../../Resources/DataTables/js/jquery.dataTables.js">
+                                    </script>
+                                    <script>/* <![CDATA[ */
+			$(document).ready( function () {
+			$('#Sortable').DataTable();
+			} );
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="FooterWrapper">
+        <div class="Footer">
+            <div class="Column12">
+                <div style="text-align: left;"><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "><img src="../../Resources/Images/HTML5/CNC_MastercamWhite_264x46.png" alt="Mastercam.com" class="mainlogo" style="width: 264;height: 46;" /></a><a href="https://www.mastercam.com/" target="_blank" title="The Mastercam website. " alt="The Mastercam website. "> </a>
+                </div>
+            </div>
+            <div class="AboutContact">
+                <div>
+                    <h2>About Us</h2>
+                    <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span> is dedicated to providing state-of-the-art software tools for CAD/CAM manufacturing markets. Our goal is to provide superior software products based on our users' needs to solve simple to complex design and machining problems.</p>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class="AboutContact">
+                        <div>
+                            <p><span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Address variable">671 Old Post Road</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.CityZip variable">Tolland, CT 06084</span>
+                            </p>
+                            <p><span class="mc-variable CNC_Company.Country variable">USA</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>In USA: <span class="mc-variable CNC_Company.PhoneNumber variable">800.228.2877</span></p>
+                            <p>Fax: <span class="mc-variable CNC_Company.FaxNumber variable">+1 860.872.1565</span></p>
+                            <p>Outside USA: <span class="mc-variable CNC_Company.InternationalPhoneNumber variable">+1 860.875.5006</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column12">
+                <div>
+                    <h2>Follow Us</h2><a href="https://www.facebook.com/Mastercam" target="_blank" title="Facebook" alt="Facebook"><img src="../../Resources/Images/HTML5/CNC_FBLogoW_32x32.png" alt="Facebook.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.instagram.com/mastercam/" target="_blank" title="Instagram.com" alt="Instagram.com"><img src="../../Resources/Images/HTML5/CNC_InstagramLogoW_32x32.png" alt="Instagram.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://www.linkedin.com/company/cnc-software" target="_blank" title="Linkedin.com" alt="Linkedin.com"><img src="../../Resources/Images/HTML5/CNC_LinkedInLogoW_32x27.png" alt="Linkedin.com" class="socialicons" style="width: 32;height: 27;" /></a><a href="https://www.youtube.com/user/MastercamCadCam" target="_blank" title="Youtube.com" alt="Youtube.com"><img src="../../Resources/Images/HTML5/CNC_YouTubeLogoW_32x32.png" alt="Youtube.com" class="socialicons" style="width: 32;height: 32;" /></a><a href="https://twitter.com/Mastercam" target="_blank" title="Twitter.com" alt="Twitter.com"><img src="../../Resources/Images/HTML5/CNC_XLogoW.png" alt="Twitter.com" /></a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid lightgray;" class="Copyright">
+                <div>
+                    <p> Copyright ©<span class="mc-variable CNC_TimeDate.CopyrightYear variable">2024</span> <span class="mc-variable CNC_Company.CompanyName variable">Mastercam</span>. All rights reserved.</p>
+                </div>
+                <div>
+                    <p><a href="https://my.mastercam.com/privacy" target="_blank">Privacy Statement</a>&#160;|&#160;<a href="https://www.mastercam.com/privacy/" target="_blank">Privacy</a>&#160;|&#160;<a href="https://my.mastercam.com/terms" target="_blank">Terms of Use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
