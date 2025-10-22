@@ -27,7 +27,14 @@ class MastercamAssistant:
         genai.configure(api_key=api_key)
 
         # Gemini model (Türkçe için en uygun)
-        self.model = genai.GenerativeModel('gemini-1.5-flash')
+        # Not: Model ismi API versiyonuna göre değişebilir
+        try:
+            self.model = genai.GenerativeModel('gemini-1.5-flash-latest')
+        except:
+            try:
+                self.model = genai.GenerativeModel('gemini-1.5-pro')
+            except:
+                self.model = genai.GenerativeModel('gemini-pro')
 
         # Vector database
         self.vector_db = vector_db
