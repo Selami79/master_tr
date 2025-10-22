@@ -78,11 +78,20 @@ def initialize_assistant():
     db_path = app_dir / "data" / "chromadb"
     docs_path = project_root / "tr"
 
+    # Debug bilgisi
+    print(f"DEBUG: app_dir = {app_dir}")
+    print(f"DEBUG: db_path = {db_path}")
+    print(f"DEBUG: db_path exists? {db_path.exists()}")
+    if db_path.exists():
+        print(f"DEBUG: db_path contents: {list(db_path.glob('*'))}")
+
     # Vector DB yükle
     db = VectorDatabase(persist_directory=str(db_path))
     if not db.get_collection():
-        st.warning("⚠️ Vector database yüklenmedi! Önce dokümanları yükleyin.")
-        st.info("Terminalde şu komutu çalıştırın: `python scripts/setup_database.py`")
+        st.error(f"⚠️ Vector database yüklenmedi!")
+        st.info(f"📂 Aranan klasör: {db_path}")
+        st.info(f"📁 Klasör var mı? {db_path.exists()}")
+        st.warning("Terminalde şu komutu çalıştırın: `python scripts/setup_database.py`")
         st.stop()
 
     # Asistan oluştur
