@@ -72,13 +72,17 @@ def initialize_assistant():
         st.error("⚠️ GEMINI_API_KEY bulunamadı! Lütfen .env dosyasını oluşturun.")
         st.stop()
 
-    # Path'leri otomatik bul
-    app_dir = Path(__file__).parent  # mastercam_assistant/
+    # Path'leri otomatik bul - ABSOLUTE PATH kullan
+    app_dir = Path(__file__).parent.resolve()  # mastercam_assistant/
     project_root = app_dir.parent  # D:\MASTERCAM2025\
     db_path = app_dir / "data" / "chromadb"
     docs_path = project_root / "tr"
 
     # Debug bilgisi
+    st.info(f"🔍 DEBUG: app_dir = {app_dir}")
+    st.info(f"🔍 DEBUG: db_path = {db_path}")
+    st.info(f"🔍 DEBUG: db_path exists? {db_path.exists()}")
+
     print(f"DEBUG: app_dir = {app_dir}")
     print(f"DEBUG: db_path = {db_path}")
     print(f"DEBUG: db_path exists? {db_path.exists()}")
@@ -86,12 +90,19 @@ def initialize_assistant():
         print(f"DEBUG: db_path contents: {list(db_path.glob('*'))}")
 
     # Vector DB yükle
-    db = VectorDatabase(persist_directory=str(db_path))
-    if not db.get_collection():
-        st.error(f"⚠️ Vector database yüklenmedi!")
+    try:
+        db = VectorDatabase(persist_directory=str(db_path))
+        collection_loaded = db.get_collection()
+
+        if not collection_loaded:
+            st.error(f"⚠️ Vector database yüklenmedi!")
+            st.info(f"📂 Aranan klasör: {db_path}")
+            st.info(f"📁 Klasör var mı? {db_path.exists()}")
+            st.warning("Terminalde şu komutu çalıştırın: `python scripts/setup_database.py`")
+            st.stop()
+    except Exception as e:
+        st.error(f"❌ Veritabanı yükleme hatası: {e}")
         st.info(f"📂 Aranan klasör: {db_path}")
-        st.info(f"📁 Klasör var mı? {db_path.exists()}")
-        st.warning("Terminalde şu komutu çalıştırın: `python scripts/setup_database.py`")
         st.stop()
 
     # Asistan oluştur
