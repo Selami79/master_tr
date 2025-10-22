@@ -60,7 +60,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-@st.cache_resource
+@st.cache_resource(ttl=3600)  # 1 saat cache
 def initialize_assistant():
     """Asistanı başlatır (sadece bir kez)"""
     # .env dosyasını yükle
