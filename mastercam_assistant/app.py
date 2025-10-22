@@ -72,16 +72,22 @@ def initialize_assistant():
         st.error("⚠️ GEMINI_API_KEY bulunamadı! Lütfen .env dosyasını oluşturun.")
         st.stop()
 
+    # Path'leri otomatik bul
+    app_dir = Path(__file__).parent  # mastercam_assistant/
+    project_root = app_dir.parent  # D:\MASTERCAM2025\
+    db_path = app_dir / "data" / "chromadb"
+    docs_path = project_root / "tr"
+
     # Vector DB yükle
-    db = VectorDatabase(persist_directory="./mastercam_assistant/data/chromadb")
+    db = VectorDatabase(persist_directory=str(db_path))
     if not db.get_collection():
         st.warning("⚠️ Vector database yüklenmedi! Önce dokümanları yükleyin.")
-        st.info("Terminalde şu komutu çalıştırın: `python mastercam_assistant/scripts/setup_database.py`")
+        st.info("Terminalde şu komutu çalıştırın: `python scripts/setup_database.py`")
         st.stop()
 
     # Asistan oluştur
     assistant = MastercamAssistant(api_key, db)
-    return assistant
+    return assistant, str(docs_path)
 
 
 def display_message(role: str, content: str):
@@ -153,7 +159,7 @@ def main():
         """)
 
         st.markdown("### 📊 İstatistikler")
-        assistant = initialize_assistant()
+        assistant, docs_path = initialize_assistant()
         stats = assistant.vector_db.get_stats()
         st.metric("Toplam Döküman", stats.get('total_documents', 0))
 
@@ -182,7 +188,7 @@ def main():
         st.session_state.messages = []
 
     # Asistanı yükle
-    assistant = initialize_assistant()
+    assistant, docs_path = initialize_assistant()
 
     # Sohbet geçmişini göster
     chat_container = st.container()
@@ -199,7 +205,7 @@ def main():
 
                 # Görselleri göster
                 if "images" in message:
-                    display_images(message["images"], "../tr")
+                    display_images(message["images"], docs_path)
 
     # Kullanıcı input
     st.markdown("---")

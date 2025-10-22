@@ -23,10 +23,19 @@ def main():
 
     # 1. HTML Parser
     print("\n📄 Adım 1: HTML Dökümanları Parse Ediliyor...")
-    docs_path = "/home/user/master_tr/tr"
 
-    if not Path(docs_path).exists():
+    # tr/ klasörünü otomatik bul
+    # Script: D:\MASTERCAM2025\mastercam_assistant\scripts\setup_database.py
+    # tr/ klasörü: D:\MASTERCAM2025\tr
+    script_dir = Path(__file__).parent  # scripts/
+    project_root = script_dir.parent.parent  # D:\MASTERCAM2025\
+    docs_path = project_root / "tr"
+
+    print(f"📂 Dokümantasyon klasörü: {docs_path}")
+
+    if not docs_path.exists():
         print(f"❌ Hata: {docs_path} bulunamadı!")
+        print(f"\n💡 İpucu: 'tr' klasörü şurada olmalı: {project_root}")
         return
 
     parser = DocumentationParser(docs_path)
@@ -42,7 +51,9 @@ def main():
 
     # 2. Vector Database Kurulumu
     print("\n🗄️ Adım 2: Vector Database Oluşturuluyor...")
-    db = VectorDatabase(persist_directory="./mastercam_assistant/data/chromadb")
+    # ChromaDB klasörünü mastercam_assistant/data/chromadb içinde oluştur
+    db_path = script_dir.parent / "data" / "chromadb"
+    db = VectorDatabase(persist_directory=str(db_path))
 
     # Collection oluştur
     db.create_collection("mastercam_docs")
